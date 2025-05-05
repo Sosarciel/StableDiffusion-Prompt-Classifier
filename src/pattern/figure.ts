@@ -1,0 +1,54 @@
+import { formatPatterns } from "../Utils";
+import * as character from './character';
+
+
+/**人物 */
+const set = [
+    ...character.patterns.any,
+    "short hair",
+    "large breasts",
+    "blue eyes",
+    "blonde hair",
+    "bangs",
+    "orange hair",
+    "hair over one eye",
+    "hair between eyes",
+    "sidelocks",
+    "shiny skin",
+    "long hair", "hair bun", "double bun", "braid",
+    "very long hair", "side braid", "single hair bun",
+    "twintails", "purple eyes", "brown hair", "pink eyes",
+    "crossed bangs", "huge breasts",
+    "mole", "animal ears", "symbol-shaped pupils",
+    "tail", "demon tail", "wings", "demon wings", "black wings",
+    "bat wings", "mini wings", "pink hair", "yellow eyes", "brown eyes", "orange eyes",
+    "pointy ears", "horns", "demon horns", "curled horns", "flat chest", "small breasts", "fang",
+    "loli", "demon girl",
+    "purple hair", "ponytail", "thick thighs",
+    "hanging breasts", "twin drills", "drill hair", "medium hair", "short twintails",
+    "blue hair", "multicolored hair", "streaked hair", "red hair", "grey hair", "two-tone hair", "heterochromia",
+    "braided ponytail", "single braid", "red eyes", "black hair",
+    "wolf tail", "wolf ears", "light blue hair", "ahoge",
+    "animal ear fluff", "wolf girl",
+    "dark-skinned female", "dark skin", "white hair", "twin braids",
+    "female pubic hair", "pubic tattoo",
+    "mole under eye", "fangs",
+    "extra ears", "fox tail", "fox ears", "animal hands", "swept bangs", "multiple tails", "curvy", "fur",
+    "tattoo",
+    "cosplay",  "fox girl", "claws",
+    "mole on breast", "eyes visible through hair", "hair over eyes",
+    "low twintails", "blunt bangs",
+    "blanket", "rabbit ears", "rabbit tail", "mouse tail", "medium breasts",
+    "rabbit girl", "mouse ears",
+    "gradient hair", "green eyes", "aqua eyes", "aqua hair", "ringlets", "colored tips", "bright pupils", "antlers",
+    "cat ears", "dog ears", "light purple hair", "shiny hair", "bob cut",
+    "cat girl", "kemonomimi mode", "werewolf", "parted bangs",
+    "white tail", "kitsune", "extra eyes", "disembodied limb",
+    "feathered wings", "low wings", "head wings", "angel wings",
+    "tentacles", "halo", "black nails", "purple nails", "absurdly long hair", "hair flowing over",
+    "dragon tail", "dragon girl", "dragon horns",
+    "colored inner hair", "french braid",
+    "mole under mouth", "messy hair", "black eyes", "skin fang"
+];
+export const patterns = formatPatterns(set);
+export const includes = ["character"];

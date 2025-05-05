@@ -1,0 +1,23 @@
+
+
+
+
+接下来我将会给出一些词汇，帮我对其进行分类
+可用的类别有:
+background  任何非人物的背景元素
+clothing    人物的服装
+footwear    人物的脚部服装 如 shoes, high heels
+effect      画面的特殊效果 如 shiny, copyright name, english text
+expression  人物面部表情
+figure      人物主体特征 如发型 胸部大小 瞳色
+item        非背景的 较小的物品 或是小动物
+pose        人物姿势
+focus       镜头焦点对象 如 breasts, legs, sideboob
+quantity    人数 如1girl, solo
+condition   人物状态 如 skindentation, steaming body, breasts out
+composition 构图/拍摄手法 如 cowboy shot, pov, foreshortening
+
+每个词汇只能属于一个类别
+如果你认为某个词汇不属于以上任何一个类别, 单独输出为other
+输出格式为typescript字符串数组
+如果理解了, 那么我接下来就将开始发送文本

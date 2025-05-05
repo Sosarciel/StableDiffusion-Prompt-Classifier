@@ -1,0 +1,31 @@
+{
+    "name": "@sosarciel-stablediffusion/imagedata-prompt-classifier",
+    "version": "1.0.0",
+    "description": "StableDiffusion-PromptClassifier",
+    "exports": {
+        ".": {
+            "require": "./dist/cjs/index.js",
+            "import": "./dist/mjs/index.js"
+        }
+    },
+    "types": "./dist/cjs/index.d.ts",
+    "scripts": {
+        "release": "powershell scripts/release",
+        "compile": "powershell scripts/compile",
+        "watch": "powershell scripts/watch"
+    },
+    "author": "zwa73",
+    "license": "ISC",
+    "files": [
+        "data",
+        "dist",
+        "index.js",
+        "index.d.ts"
+    ],
+    "dependencies": {
+        "@zwa73/utils": "^1.0.207"
+    },
+    "devDependencies": {
+        "@types/node": "^22.13.9"
+    }
+}
