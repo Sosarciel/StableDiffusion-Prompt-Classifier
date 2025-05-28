@@ -12,6 +12,7 @@ const set = [
     "patreon logo", "patreon username", "artist name",
     "colophon", "company name", "copyright name", "copyright",
     "commentary", "dated commentary",
-    "release date", "signature", "character signature", "borrowed character", "web address"
+    "release date", "signature", "character signature", "borrowed character", "web address",
+    "blur censor",
 ];
 export const patterns = formatPatterns(set);

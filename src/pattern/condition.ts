@@ -12,6 +12,7 @@ const set = [
     "wet", "after sex", "cumdrip",
     "cum", "cum in pussy",
     "ejaculation", "cum on feet", "cum on body",
-    "erection", "precum", "food on body", "chocolate on body"
+    "erection", "precum", "food on body", "chocolate on body",
+    "stomach bulge", "saliva"
 ];
 export const patterns = formatPatterns(set);

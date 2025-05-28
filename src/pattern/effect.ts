@@ -9,6 +9,6 @@ const set = [
     "monochrome", "greyscale","steam",
     "dated", "sparkle", "reflection", "light particles",
     "glowing", "magic", "floating object",
-    "flashing"
+    "flashing", "motion blur", "motion lines"
 ];
 export const patterns = formatPatterns(set);

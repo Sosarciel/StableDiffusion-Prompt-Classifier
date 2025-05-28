@@ -73,7 +73,7 @@ const clothing = [
     "red sweater", "off-shoulder sweater", "monocle", "glasses",
     "center opening", "armlet",
     "suit", "business suit", "formal", "hakama", "red hakama",
-    "hip vent"
+    "hip vent","babydoll"
 ]
 
 export const patterns = formatPatterns(clothing);

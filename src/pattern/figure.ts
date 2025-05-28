@@ -48,7 +48,8 @@ const set = [
     "tentacles", "halo", "black nails", "purple nails", "absurdly long hair", "hair flowing over",
     "dragon tail", "dragon girl", "dragon horns",
     "colored inner hair", "french braid",
-    "mole under mouth", "messy hair", "black eyes", "skin fang"
+    "mole under mouth", "messy hair", "black eyes", "skin fang",
+    "green hair", "dark-skinned male"
 ];
 export const patterns = formatPatterns(set);
 export const includes = ["character"];
