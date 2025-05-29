@@ -113,6 +113,6 @@ const set = [
     "on stomach", "the pose", "feet up", "profile",
     "imminent penetration", "imminent vaginal", "buttjob", "two-footed footjob","crossed ankles",
     "holding smoking pipe", "wariza", "v",
-    "sex","sex from behind","standing sex"
+    "sex","sex from behind","standing sex","hands on hips"
 ]
 export const patterns = formatPatterns(set);

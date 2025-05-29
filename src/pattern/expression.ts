@@ -22,6 +22,7 @@ const set = [
     "breath", "ahegao",
     ":/", "narrowed eyes", "nose blush",
     "grin", "smirk", "evil smile", "evil grin",
-    "trembling", "one eye covered", "+ +"
+    "trembling", "one eye covered", "+ +",
+    ":t", "pout",
 ]
 export const patterns = formatPatterns(set);
