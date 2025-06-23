@@ -121,6 +121,10 @@ export type ExcludePromptResult = {
     reserve:string[];
 }
 
+/**提取prompt
+ * 将 不符合保留条件 或 符合排除条件 的分为 exclude
+ * 剩余分为 reserve
+ */
 export const extractPrompt = async (input:Record<string,number>,opt?:ExcludePromptOpt):Promise<ExcludePromptResult>=>{
     const {exclude,reserve,minrep} = opt??{};
     const excludeFunc = exclude!=undefined&&exclude?.length>0 ? await getTestFunc(...(exclude??[])) : ()=>false;
