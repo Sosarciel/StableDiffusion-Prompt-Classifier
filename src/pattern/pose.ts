@@ -1,7 +1,9 @@
 import { formatPatterns } from "../Utils";
+import * as expressing from './expression';
 
 /** 姿势 或 某个身体部位的特写 */
 const set = [
+    ...expressing.patterns.any,
     "holding",
     /^holding [^ ]+$/,
     /^hands on own [^ ]+$/,
