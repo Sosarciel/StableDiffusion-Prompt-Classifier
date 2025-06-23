@@ -127,8 +127,8 @@ export type ExcludePromptResult = {
  */
 export const extractPrompt = async (input:Record<string,number>,opt?:ExcludePromptOpt):Promise<ExcludePromptResult>=>{
     const {exclude,reserve,minrep} = opt??{};
-    const excludeFunc = exclude!=undefined&&exclude?.length>0 ? await getTestFunc(...(exclude??[])) : ()=>false;
-    const reserveFunc = reserve!=undefined&&reserve?.length>0 ? await getTestFunc(...(reserve??[])) : ()=>true;
+    const excludeFunc = exclude!=undefined&&exclude?.length>0 ? await getTestFunc(...exclude) : ()=>false;
+    const reserveFunc = reserve!=undefined&&reserve?.length>0 ? await getTestFunc(...reserve) : ()=>true;
 
     const excludeList:string[] = [];
     const reserveList:string[] = [];
