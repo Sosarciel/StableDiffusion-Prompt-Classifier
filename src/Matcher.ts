@@ -38,12 +38,13 @@ export const getPatternMap = memoize(async ()=>{
 
 
 
-
-function autotest(r:Patterns,target:string){
-    if(r.text.includes(target)) return true;
-    if(r.regex.some(re=>re.test(target))) return true;
+/**测试target是否符合patterm */
+function autotest(pattern:Patterns,target:string){
+    if(pattern.text.includes(target)) return true;
+    if(pattern.regex.some(re=>re.test(target))) return true;
     return false;
 }
+
 /**分类提示词
  * @param prompts 提示词
  * @returns 分类后的提示词
@@ -107,6 +108,8 @@ export async function getTestFunc(...category:string[]) {
 export type ExcludePromptOpt = {
     /**排除类别 */
     exclude?:string[];
+    /**保留类别 */
+    reserve?:string[];
     /**最小重复n次才会被提取 */
     minrep?:number;
 }
@@ -114,25 +117,25 @@ export type ExcludePromptOpt = {
 export type ExcludePromptResult = {
     /**排除内容 */
     exclude:string[];
-    /**其余内容 */
-    remaining:string[];
+    /**保留内容 */
+    reserve:string[];
 }
 
-/**排除提示词 */
-export const excludePrompt = async (input:Record<string,number>,opt?:ExcludePromptOpt):Promise<ExcludePromptResult>=>{
-    const {exclude,minrep} = opt??{};
-    const excludeFunc = await getTestFunc(...(exclude??[]));
+export const extractPrompt = async (input:Record<string,number>,opt?:ExcludePromptOpt):Promise<ExcludePromptResult>=>{
+    const {exclude,reserve,minrep} = opt??{};
+    const excludeFunc = exclude!=undefined&&exclude?.length>0 ? await getTestFunc(...(exclude??[])) : ()=>false;
+    const reserveFunc = reserve!=undefined&&reserve?.length>0 ? await getTestFunc(...(reserve??[])) : ()=>true;
 
     const excludeList:string[] = [];
-    const remainingList:string[] = [];
+    const reserveList:string[] = [];
     Object.entries(input).forEach(([k,v])=>{
         if(v<(minrep??0)) return excludeList.push(k);
-        if(excludeFunc(k)) return excludeList.push(k);
-        remainingList.push(k);
+        if(excludeFunc(k) || !reserveFunc(k)) return excludeList.push(k);
+        reserveList.push(k);
     });
 
     return {
         exclude:Array.from(new Set(excludeList)),
-        remaining:Array.from(new Set(remainingList)),
+        reserve:Array.from(new Set(reserveList)),
     };
 }
