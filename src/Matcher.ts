@@ -104,7 +104,7 @@ export async function getTestFunc(...category:string[]) {
 }
 
 
-
+/**提取选项 */
 export type ExcludePromptOpt = {
     /**排除类别 */
     exclude?:string[];
@@ -114,6 +114,7 @@ export type ExcludePromptOpt = {
     minrep?:number;
 }
 
+/**提取结果 */
 export type ExcludePromptResult = {
     /**排除内容 */
     exclude:string[];
@@ -121,11 +122,23 @@ export type ExcludePromptResult = {
     reserve:string[];
 }
 
-/**提取prompt
- * 将 不符合保留条件 或 符合排除条件 的分为 exclude
- * 剩余分为 reserve
+/**提示词出现次数表 */
+export type PromptCountMap = Record<string,number>;
+
+/**从字符串数组获取提示词次数表 */
+export const getPromptCountMap = (input:string[])=>input.reduce((acc,k)=>{
+        acc[k.trim()]=1;
+        return acc;
+    },{} as PromptCountMap);
+
+/**提取prompt  
+ * 将 不符合保留条件 或 符合排除条件 的分为 exclude  
+ * 剩余分为 reserve  
+ * 即保留与排除重叠时, 排除重叠部分  
+ * @param input - 提示词输入
+ * @param opt   - 选项
  */
-export const extractPrompt = async (input:Record<string,number>,opt?:ExcludePromptOpt):Promise<ExcludePromptResult>=>{
+export const extractPrompt = async (input:PromptCountMap,opt?:ExcludePromptOpt):Promise<ExcludePromptResult>=>{
     const {exclude,reserve,minrep} = opt??{};
     const excludeFunc = exclude!=undefined&&exclude?.length>0 ? await getTestFunc(...exclude) : ()=>false;
     const reserveFunc = reserve!=undefined&&reserve?.length>0 ? await getTestFunc(...reserve) : ()=>true;
