@@ -9,7 +9,7 @@ const set = [
     "sirius (azur lane)",
     "barbara (genshin impact)", "yanfei (genshin impact)",
     "nilou (genshin impact)", "shinjou akane", " yae sakura",
-    "producer (idolmaster)"
+    "producer (idolmaster)", "flandre scarlet",
 ];
 export const patterns = formatPatterns(set);
 

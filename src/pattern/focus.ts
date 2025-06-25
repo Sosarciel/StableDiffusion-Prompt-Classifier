@@ -19,6 +19,7 @@ const set = [
     "eyeball", "eye focus", "eldritch abomination", "clothed sex", "chikan",
     "veiny penis", "pubic hair", "veins", "male pubic hair",
     "ass focus", "large penis", "backboob",
-    "pervert", "female pervert", "testicles"
+    "pervert", "female pervert", "testicles",
+    "kneepits"
 ]
 export const patterns = formatPatterns(set);

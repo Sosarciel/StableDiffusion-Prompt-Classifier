@@ -13,6 +13,7 @@ const set = [
     "colophon", "company name", "copyright name", "copyright",
     "commentary", "dated commentary",
     "release date", "signature", "character signature", "borrowed character", "web address",
-    "blur censor",
+    "blur censor", "novelty censor", "bar censor", "engrish text",
+    "ranguage", "content rating",
 ];
 export const patterns = formatPatterns(set);

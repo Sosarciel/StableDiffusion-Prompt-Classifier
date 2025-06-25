@@ -105,7 +105,7 @@ export async function getTestFunc(...category:string[]) {
 
 
 /**提取选项 */
-export type ExcludePromptOpt = {
+export type ExtractPromptOpt = {
     /**排除类别 */
     exclude?:string[];
     /**保留类别 */
@@ -115,7 +115,7 @@ export type ExcludePromptOpt = {
 }
 
 /**提取结果 */
-export type ExcludePromptResult = {
+export type ExtractPromptResult = {
     /**排除内容 */
     exclude:string[];
     /**保留内容 */
@@ -138,7 +138,7 @@ export const getPromptCountMap = (input:string[])=>input.reduce((acc,k)=>{
  * @param input - 提示词输入
  * @param opt   - 选项
  */
-export const extractPrompt = async (input:PromptCountMap,opt?:ExcludePromptOpt):Promise<ExcludePromptResult>=>{
+export const extractPrompt = async (input:PromptCountMap,opt?:ExtractPromptOpt):Promise<ExtractPromptResult>=>{
     const {exclude,reserve,minrep} = opt??{};
     const excludeFunc = exclude!=undefined&&exclude?.length>0 ? await getTestFunc(...exclude) : ()=>false;
     const reserveFunc = reserve!=undefined&&reserve?.length>0 ? await getTestFunc(...reserve) : ()=>true;

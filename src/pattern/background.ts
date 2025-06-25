@@ -102,7 +102,8 @@ const set = [
     "contrail", "scenery", "leaf",
     "crowd", "faceless", "faceless male", "contemporary",
     "against glass", "bedroom", "bed sheet", "valentine",
-    "column", "cage", "skyline", "cherry blossoms"
+    "column", "cage", "skyline", "cherry blossoms",
+    "cover page", "doujin cover",
 ]
 
 

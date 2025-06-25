@@ -17,7 +17,8 @@ const clothing = [
     /^.*necktie$/, /^.*choker$/, /^.*hairband$/, /^.*hair ornament$/,
     /^.*\(symbol\)$/, /^.*cap$/, /^.* coat$/,
     /^.*capelet$/,/^.*panties$/,
-    /^.* cape$/, "cape",
+    /^.* cape$/, /^.* vest$/,
+    "cape", "vest",
     "coat", "labcoat",
     "plaid", "bandaid", "head wreath", "o-ring",
     "sweater vest", "midriff peek", "hair intakes", "midriff",
@@ -73,7 +74,7 @@ const clothing = [
     "red sweater", "off-shoulder sweater", "monocle", "glasses",
     "center opening", "armlet",
     "suit", "business suit", "formal", "hakama", "red hakama",
-    "hip vent","babydoll"
+    "hip vent","babydoll",
 ]
 
 export const patterns = formatPatterns(clothing);
