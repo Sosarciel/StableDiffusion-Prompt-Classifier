@@ -8,8 +8,8 @@ const set = [
     "mash kyrielight (dangerous beast)", "raiden shogun",
     "sirius (azur lane)",
     "barbara (genshin impact)", "yanfei (genshin impact)",
-    "nilou (genshin impact)", "shinjou akane", " yae sakura",
-    "producer (idolmaster)", "flandre scarlet",
+    "nilou (genshin impact)", "shinjou akane", "yae sakura",
+    "producer (idolmaster)", "flandre scarlet", "gotou hitori"
 ];
 export const patterns = formatPatterns(set);
 
