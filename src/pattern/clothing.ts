@@ -4,22 +4,74 @@ import * as footwear from './footwear';
 /** 任何和主体角色有关的服装 */
 const clothing = [
     ...footwear.patterns.any,
-    /^.*shorts$/, /^.*dress$/, /^.*thighhighs$/, /^.*thighhigh$/,
-    /^.*sleeves$/, /^.*pantyhose$/, /^.*gloves$/, /^.*glove$/,
-    /^.*skirt$/, /^.*veil$/, /^.*socks$/, /^.*shirt$/,
-    /^.*clothes$/, /^.* bow$/, "bow", /^.*legwear$/, /^.*flower$/,
-    /^.*hood$/, /^.*bikini$/, /^.*scrunchie$/, /^.*earrings$/,
-    /^.*eyewear$/, /^.*swimsuit$/, /^.*headwear$/, /^.*jacket$/, /^.*rose$/,
-    /^.*hoodie$/, /^.*ribbon$/, /^.*leotard$/, /^.*bowtie$/,
-    /^.*belt$/, /^.*hat$/, /^.*bell$/, /^goggles.*$/,
-    /^mask.*$/, /^.*mask$/, /^.*uniform$/, /^.*collar$/,
-    /^.*neckerchief$/, /^.*kimono$/, /^.*apron$/, /^.*gauntlets$/,
-    /^.*necktie$/, /^.*choker$/, /^.*hairband$/, /^.*hair ornament$/,
-    /^.*\(symbol\)$/, /^.*cap$/, /^.* coat$/,
-    /^.*capelet$/,/^.*panties$/,
-    /^.* cape$/, /^.* vest$/,
-    "cape", "vest",
-    "coat", "labcoat",
+    /^.+ \(symbol\)$/, /^goggles.+ $/,
+
+    //头饰
+    "hairband"  , /^.+ hairband$/,
+    "hair ornament", /^.+ hair ornament$/,
+
+    //帽子
+    "hat"       , /^.+ hat$/,
+    "cape"      , /^.+ cape$/,
+    "cap"       , /^.+ cap$/,
+    "hood"      , /^.+ hood$/,
+
+    //面部
+    "mask"      , /^mask .+$/, /^.+ mask$/,
+    "veil"      , /^.+ veil$/,
+
+    //脖子
+    "bowtie"    , /^.+ bowtie$/,
+    "collar"    , /^.+ collar$/,
+    "neckerchief", /^.+ neckerchief$/,
+    "necktie"   , /^.+ necktie$/,
+    "choker"    , /^.+ choker$/,
+
+    //腰部
+    "belt"      , /^.+ belt$/,
+
+    //身体服饰
+    "kimono"    , /^.+ kimono$/,
+    "leotard"   , /^.+ leotard$/,
+    "uniform"   , /^.+ uniform$/,
+    "hoodie"    , /^.+ hoodie$/,
+    "apron"     , /^.+ apron$/,
+    "jacket"    , /^.+ jacket$/,
+
+    //内衣
+    "panties"   , /^.+ panties$/,
+
+    //手部
+    "gauntlets" , /^.+ gauntlets$/,
+
+    //不定装饰
+    "rose"      , /^.+ rose$/,
+    "ribbon"    , /^.+ ribbon$/,
+    "bell"      , /^.+ bell$/,
+
+    "capelet"   , /^.+ capelet$/,
+    "headwear"  , /^.+ headwear$/,
+    "eyewear"   , /^.+ eyewear$/,
+    "earrings"  , /^.+ earrings$/,
+    "scrunchie" , /^.+ scrunchie$/,
+    "swimsuit"  , /^.+ swimsuit$/,
+    "bikini"    , /^.+ bikini$/,
+    "flower"    , /^.+ flower$/,
+    "legwear"   , /^.+ legwear$/,
+    "clothes"   , /^.+ clothes$/,
+    "shirt"     , /^.+ shirt$/,
+    "skirt"     , /^.+ skirt$/,
+    "gloves"    , /^.+ gloves?$/,
+    "pantyhose" , /^.+ pantyhose$/,
+    "sleeves"   , /^.+ sleeves$/,
+    "shorts"    , /^.+ shorts$/,
+    "dress"     , /^.+ dress$/,
+    "thighhigh" , /^.+ thighhighs?$/,
+    "vest"      , /^.+ vest$/,
+    "coat"      , /^.+ coat$/,
+    "bow"       , /^.+ bow$/,
+
+    "labcoat",
     "plaid", "bandaid", "head wreath", "o-ring",
     "sweater vest", "midriff peek", "hair intakes", "midriff",
     "wa maid", "shoulder cutout", "bandages", "bandaid on leg",
