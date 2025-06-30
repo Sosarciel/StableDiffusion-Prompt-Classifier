@@ -2,13 +2,7 @@
     "name": "@sosarciel-stablediffusion/imagedata-prompt-classifier",
     "version": "1.0.0",
     "description": "StableDiffusion-PromptClassifier",
-    "exports": {
-        ".": {
-            "require": "./dist/cjs/index.js",
-            "import": "./dist/mjs/index.js"
-        }
-    },
-    "types": "./dist/cjs/index.d.ts",
+	"main": "dist/index.js",
     "scripts": {
         "release": "powershell scripts/release",
         "compile": "powershell scripts/compile",
