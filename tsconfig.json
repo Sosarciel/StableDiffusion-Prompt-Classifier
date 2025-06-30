@@ -2,11 +2,9 @@
   "compilerOptions": {
     "allowJs": true,
     "strict": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "node16",
+    "moduleResolution": "node16",
     "esModuleInterop": true,
-    "outDir": "./dist",
-    "declaration": true,
     "baseUrl": ".",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,

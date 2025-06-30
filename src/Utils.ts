@@ -23,9 +23,9 @@ export function formatPatterns(patterns:(string|RegExp)[]) {
 }
 
 /**根目录 */
-export const ROOT_PATH = path.join(__dirname, '..', '..');
+export const ROOT_PATH = path.join(__dirname, '..');
 /**模式目录 */
-export const PATTERNS_PATH = path.join(ROOT_PATH, 'dist', "cjs", 'pattern');
+export const PATTERNS_PATH = path.join(ROOT_PATH, 'dist', 'pattern');
 /**数据目录 */
 export const DATA_PATH = path.join(ROOT_PATH, 'data');
 /**词库目录 */

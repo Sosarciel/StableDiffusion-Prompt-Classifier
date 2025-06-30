@@ -6,5 +6,5 @@ function New-Script {
 }
 
 # 开始运行脚本
-New-Script "tsc -w -p tsconfig.cjs.json"
-New-Script "tsc-alias -w -p tsconfig.cjs.json"
+New-Script "tsc -w -p tsconfig.compile.json"
+New-Script "tsc-alias -w -p tsconfig.compile.json"

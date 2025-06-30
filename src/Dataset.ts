@@ -1,5 +1,5 @@
 import { memoize, UtilFT } from "@zwa73/utils";
-import { PROMPTSET_PATH as PROMPTSET_PATH } from "./Utils";
+import { PROMPTSET_PATH } from "./Utils";
 
 
 
