@@ -66,7 +66,7 @@ const set = [
     "stylus", "handheld game console", "lamp", "drawing tablet", "laptop",
     "chocolate", "heart-shaped chocolate", "kiseru",
     "harp", "instrument", "doll", "character doll",
-    "gohei"
+    "gohei", "babydoll",
 ]
 
 export const patterns = formatPatterns(set);

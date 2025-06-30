@@ -7,7 +7,7 @@ import { formatPatterns } from "../Utils";
 const set = [
     "footwear"      , /^[^ ]+ footwear$/,
     "boots"         , /^.+ boots$/,
-    "socks"         , /^.+ socks$/,
+    "socks"         , "sock", /^.+ socks?$/,
     "shoes"         , /^.+ shoes$/,
     "heels"         , /^.+ heels$/,
 
