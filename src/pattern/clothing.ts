@@ -159,6 +159,7 @@ const clothing = [
     "monocle",
     "center opening", "armlet",
     "formal", "hakama", "red hakama",
+    "blindfold",
 ]
 
 export const patterns = format(clothing);

@@ -8,7 +8,9 @@ import { PatternTable } from './PatternUtils';
 /**获取所有类别 */
 export const getPatternsCategory = memoize(async ()=>{
     const fileNames = await fs.promises.readdir(PATTERNS_PATH);
-    return fileNames.filter(name=>path.parse(name).ext=='.js').map(name=>path.parse(name).name);
+    return fileNames
+        .filter(name=>path.parse(name).ext=='.js')
+        .map(name=>path.parse(name).name);
 });
 
 
@@ -39,13 +41,13 @@ class PatternObject {
 
 /**获取类别对应的正则表达式
  * @param category 类别
- * @returns 正则表达式
+ * @returns 类别:匹配对象
  */
 export const getPatternMap = memoize(async ()=>{
     const fileNames = await fs.promises.readdir(PATTERNS_PATH);
     const filePaths = fileNames.filter(name=>path.parse(name).ext=='.js').map(name=>path.join(PATTERNS_PATH,name));
     return filePaths
-        .map( filePath => new PatternObject(filePath))
+        .map( fp => new PatternObject(fp))
         .reduce((acc,cur)=>{
             return {...acc, [cur.name]:cur };
         },{} as Record<string,PatternObject>);
