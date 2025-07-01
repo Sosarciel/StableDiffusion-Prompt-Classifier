@@ -11,12 +11,31 @@ export const getPatternsCategory = memoize(async ()=>{
     return fileNames.filter(name=>path.parse(name).ext=='.js').map(name=>path.parse(name).name);
 });
 
-export type PatternObject = {
-    name:string,
-    patterns:PatternTable,
-    includes:string[],
-};
 
+class PatternObject {
+    name    :string;
+    patterns:PatternTable={};
+    includes:string[]=[];
+    inited = false;
+
+    constructor(public filePath:string){
+        this.name = path.parse(filePath).name;
+    }
+    init(){
+        if(this.inited) return;
+        const data = require(this.filePath);
+        this.patterns = data.patterns as PatternTable;
+        this.includes = data.includes as string[];
+        this.inited = true;
+    }
+    /**测试target是否符合patterm */
+    autotest(target:string){
+        this.init();
+        if(this.patterns.text?.includes(target)) return true;
+        if(this.patterns.regex?.some(re=>re.test(target))) return true;
+        return false;
+    }
+}
 
 /**获取类别对应的正则表达式
  * @param category 类别
@@ -25,25 +44,14 @@ export type PatternObject = {
 export const getPatternMap = memoize(async ()=>{
     const fileNames = await fs.promises.readdir(PATTERNS_PATH);
     const filePaths = fileNames.filter(name=>path.parse(name).ext=='.js').map(name=>path.join(PATTERNS_PATH,name));
-    return filePaths.map( filePath =>{
-        const name = path.parse(filePath).name;
-        const data = require(filePath);
-        const patterns = data.patterns as PatternTable;
-        const includes = data.includes as string[];
-        return {name,patterns,includes};
-    }).reduce((acc,cur)=>{
-        return {...acc, [cur.name]:cur };
-    },{} as Record<string,PatternObject>);
+    return filePaths
+        .map( filePath => new PatternObject(filePath))
+        .reduce((acc,cur)=>{
+            return {...acc, [cur.name]:cur };
+        },{} as Record<string,PatternObject>);
 });
 
 
-
-/**测试target是否符合patterm */
-function autotest(pattern:PatternTable,target:string){
-    if(pattern.text?.includes(target)) return true;
-    if(pattern.regex?.some(re=>re.test(target))) return true;
-    return false;
-}
 
 /**分类提示词
  * @param prompts 提示词
@@ -51,32 +59,33 @@ function autotest(pattern:PatternTable,target:string){
  */
 export async function classificationPrompt(...prompts:string[]){
     const pmap = await getPatternMap();
-    return prompts.reduce((acc,cur)=>{
-        const hasMatch:PatternObject[] = [];
-        Object.entries(pmap).forEach(([k,v])=>{
-            if(autotest(v.patterns,cur)){
-                acc[k] = acc[k]??[];
-                acc[k].push(cur);
+    return prompts.reduce((table,cur)=>{
+        const matchList:PatternObject[] = [];
+        Object.entries(pmap).forEach(([category,pobj])=>{
+            if(!pobj.autotest(cur)) return;
+            table[category] = table[category]??[];
+            table[category].push(cur);
 
-                if(hasMatch.length==0)
-                    hasMatch.push(v);
-                //如果是包含关系
-                else if(hasMatch.length >= 1 && v.includes!=null && !v.includes.includes(hasMatch[0].name))
-                    hasMatch[0] = v;
-                //如果不是被包含关系
-                else if(hasMatch.length >= 1 && hasMatch[0].includes!=null && !hasMatch[0].includes.includes(v.name))
-                    hasMatch.push(v);
-                if(hasMatch.length>1){
-                    if(v.includes!=null)
-                    SLogger.info(`匹配到多类别的提示词 prompt:${cur} category:`, hasMatch);
-                }
-            }
+            //第一次匹配无条件加入
+            if(matchList.length==0)
+                matchList.push(pobj);
+
+            //如果新项目对原项呈包含关系 则替换原项
+            else if(matchList.length >= 1 && pobj.includes!=null && !pobj.includes.includes(matchList[0].name))
+                matchList[0] = pobj;
+
+            //如果新项目对原项不呈包含关系 则再次加入
+            else if(matchList.length >= 1 && matchList[0].includes!=null && !matchList[0].includes.includes(pobj.name))
+                matchList.push(pobj);
+
+            if(matchList.length>1 && pobj.includes!=null)
+                SLogger.info(`匹配到多类别的提示词 prompt:${cur} category:`, matchList);
         })
-        if(hasMatch.length==0){
-            acc.missed = acc.missed??[];
-            acc.missed.push(cur);
+        if(matchList.length==0){
+            table.missed = table.missed??[];
+            table.missed.push(cur);
         }
-        return acc;
+        return table;
     },{}as Record<string,string[]>)
 }
 
@@ -86,21 +95,24 @@ export async function classificationPrompt(...prompts:string[]){
  */
 export async function getTestFunc(...category:string[]) {
     const pmap = await getPatternMap();
+
     //去除类别
     const nmap = category.map(s=>{
         const rs = pmap[s];
         if(rs==undefined) throwError(`未找到类别:${s}`);
         return rs;
     });
+
     //移除已被包含的部分
     const filterincs = nmap.map(v=>{
         if(v.includes==null) return [];
         return v.includes;
     }).flat();
+
     const fullPatterns = nmap
-        .filter(v=>!filterincs.includes(v.name))
-        .map(v=>v.patterns).flat();
-    return (s:string)=>fullPatterns.some(r=>autotest(r,s));
+        .filter(v=>!filterincs.includes(v.name));
+
+    return (s:string)=>fullPatterns.some(r=>r.autotest(s));
 }
 
 
