@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 import * as details from './details';
 
 /** 某个身体部位的特写 图片焦点 */
@@ -22,4 +22,4 @@ const set = [
     "pervert", "female pervert", "testicles",
     "kneepits"
 ]
-export const patterns = formatPatterns(set);
+export const patterns = format(set);

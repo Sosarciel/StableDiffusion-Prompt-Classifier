@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 import * as footwear from './footwear';
 
 /** 任何和主体角色有关的服装 */
@@ -161,5 +161,5 @@ const clothing = [
     "formal", "hakama", "red hakama",
 ]
 
-export const patterns = formatPatterns(clothing);
+export const patterns = format(clothing);
 export const includes = ["footwear"];

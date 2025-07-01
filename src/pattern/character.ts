@@ -1,5 +1,5 @@
 
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 
 /**具体人物 */
@@ -11,5 +11,5 @@ const set = [
     "nilou (genshin impact)", "shinjou akane", "yae sakura",
     "producer (idolmaster)", "flandre scarlet", "gotou hitori"
 ];
-export const patterns = formatPatterns(set);
+export const patterns = format(set);
 

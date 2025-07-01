@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 import * as character from './character';
 
 
@@ -51,5 +51,5 @@ const set = [
     "mole under mouth", "messy hair", "black eyes", "skin fang",
     "green hair", "dark-skinned male"
 ];
-export const patterns = formatPatterns(set);
+export const patterns = format(set);
 export const includes = ["character"];

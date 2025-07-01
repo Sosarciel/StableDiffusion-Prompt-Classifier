@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 
 /** 背景 地点 时间 等非主体角色因素 */
@@ -103,10 +103,10 @@ const set = [
     "crowd", "faceless", "faceless male", "contemporary",
     "against glass", "bedroom", "bed sheet", "valentine",
     "column", "cage", "skyline", "cherry blossoms",
-    "cover page", "doujin cover",
+    "cover page", "doujin cover", "bar (place)"
 ]
 
 
 
-export const patterns = formatPatterns(set);
+export const patterns = format(set);
 

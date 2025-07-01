@@ -1,5 +1,5 @@
 
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 
 /**人物 */
@@ -9,4 +9,4 @@ const set = [
     "foreshortening",
     "head out of frame", "close-up"
 ];
-export const patterns = formatPatterns(set);
+export const patterns = format(set);

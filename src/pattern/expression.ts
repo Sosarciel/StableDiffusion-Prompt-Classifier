@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 /** 姿势 或 某个身体部位的特写 */
 const set = [
@@ -25,4 +25,4 @@ const set = [
     "trembling", "one eye covered", "+ +",
     ":t", "pout",
 ]
-export const patterns = formatPatterns(set);
+export const patterns = format(set);

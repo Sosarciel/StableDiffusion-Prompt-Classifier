@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 
 /**人物 */
@@ -11,4 +11,4 @@ const set = [
     "glowing", "magic", "floating object",
     "flashing", "motion blur", "motion lines"
 ];
-export const patterns = formatPatterns(set);
+export const patterns = format(set);

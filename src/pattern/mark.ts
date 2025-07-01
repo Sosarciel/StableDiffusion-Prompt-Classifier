@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 
 /**水印 */
@@ -16,4 +16,4 @@ const set = [
     "blur censor", "novelty censor", "bar censor", "engrish text",
     "ranguage", "content rating",
 ];
-export const patterns = formatPatterns(set);
+export const patterns = format(set);

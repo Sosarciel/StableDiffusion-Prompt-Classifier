@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 
 /** 人数 */
@@ -12,4 +12,4 @@ const set = [
     "people", "multiple boys", "6+boys"
 ]
 
-export const patterns = formatPatterns(set);
+export const patterns = format(set);

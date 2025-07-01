@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 /** 某个身体部位的细节描述 图片焦点 */
 const set = [
@@ -9,4 +9,4 @@ const set = [
     "anus peek", "crotch seam", "gusset", "breast press",
     "pink lips",
 ]
-export const patterns = formatPatterns(set);
+export const patterns = format(set);

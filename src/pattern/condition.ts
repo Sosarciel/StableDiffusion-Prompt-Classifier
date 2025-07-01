@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 
 /**人物状态 */
@@ -15,4 +15,4 @@ const set = [
     "erection", "precum", "food on body", "chocolate on body",
     "stomach bulge", "saliva"
 ];
-export const patterns = formatPatterns(set);
+export const patterns = format(set);

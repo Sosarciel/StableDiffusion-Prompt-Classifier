@@ -1,4 +1,4 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 import * as expression from './expression';
 
 /** 姿势 或 某个身体部位的特写 */
@@ -119,4 +119,4 @@ const set = [
     "spread ass", "top-down bottom-up", "hand on own ass",
     "looking through legs", "ass grab", "shirt lift", "grabbing own ass"
 ]
-export const patterns = formatPatterns(set);
+export const patterns = format(set);

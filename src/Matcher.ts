@@ -1,7 +1,8 @@
 import fs from 'fs';
-import { formatPatterns, PATTERNS_PATH } from './Utils';
+import { PATTERNS_PATH } from './Utils';
 import path from 'pathe';
 import { memoize, SLogger, throwError, UtilFunc } from '@zwa73/utils';
+import { PatternTable } from './PatternUtils';
 
 
 /**获取所有类别 */
@@ -10,10 +11,9 @@ export const getPatternsCategory = memoize(async ()=>{
     return fileNames.filter(name=>path.parse(name).ext=='.js').map(name=>path.parse(name).name);
 });
 
-export type Patterns = ReturnType<typeof formatPatterns>;
 export type PatternObject = {
     name:string,
-    patterns:Patterns,
+    patterns:PatternTable,
     includes:string[],
 };
 
@@ -39,7 +39,7 @@ export const getPatternMap = memoize(async ()=>{
 
 
 /**测试target是否符合patterm */
-function autotest(pattern:Patterns,target:string){
+function autotest(pattern:PatternTable,target:string){
     if(pattern.text.includes(target)) return true;
     if(pattern.regex.some(re=>re.test(target))) return true;
     return false;

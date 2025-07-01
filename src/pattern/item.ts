@@ -1,9 +1,15 @@
-import { formatPatterns } from "../Utils";
+import { format } from "../PatternUtils";
 
 
 /** 非环境类小物品或是手持物 */
 const set = [
-    /^.*rifle$/,
+    //冷兵器
+    "sword",
+
+    //热兵器
+    "rifle", /^.+ rifle$/,
+
+
     "scope",
     "wand", "fruit",
     "book", "paper",
@@ -31,7 +37,7 @@ const set = [
     "hand fan", "microphone",
     "scroll","tanuki","balloon",
     "gun", "handgun", "food",
-    "petals","sword","inflatable raft",
+    "petals","inflatable raft",
     "crab","fork","knife","animal","ball",
     "popsicle","wind chime",
     "paper fan","uchiwa","bottle",
@@ -66,7 +72,7 @@ const set = [
     "stylus", "handheld game console", "lamp", "drawing tablet", "laptop",
     "chocolate", "heart-shaped chocolate", "kiseru",
     "harp", "instrument", "doll", "character doll",
-    "gohei", "babydoll",
+    "gohei", "babydoll", "stool"
 ]
 
-export const patterns = formatPatterns(set);
+export const patterns = format(set);
