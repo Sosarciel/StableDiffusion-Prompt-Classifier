@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { PATTERNS_PATH } from './Utils';
 import path from 'pathe';
-import { memoize, SLogger, throwError, UtilFunc } from '@zwa73/utils';
+import { memoize, SLogger, throwError } from '@zwa73/utils';
 import { PatternTable } from './PatternUtils';
 
 
@@ -25,10 +25,10 @@ export type PatternObject = {
 export const getPatternMap = memoize(async ()=>{
     const fileNames = await fs.promises.readdir(PATTERNS_PATH);
     const filePaths = fileNames.filter(name=>path.parse(name).ext=='.js').map(name=>path.join(PATTERNS_PATH,name));
-    return filePaths.map((filePath)=>{
+    return filePaths.map( filePath =>{
         const name = path.parse(filePath).name;
         const data = require(filePath);
-        const patterns = data.patterns as PatternObject['patterns'];
+        const patterns = data.patterns as PatternTable;
         const includes = data.includes as string[];
         return {name,patterns,includes};
     }).reduce((acc,cur)=>{
@@ -40,8 +40,8 @@ export const getPatternMap = memoize(async ()=>{
 
 /**测试target是否符合patterm */
 function autotest(pattern:PatternTable,target:string){
-    if(pattern.text.includes(target)) return true;
-    if(pattern.regex.some(re=>re.test(target))) return true;
+    if(pattern.text?.includes(target)) return true;
+    if(pattern.regex?.some(re=>re.test(target))) return true;
     return false;
 }
 

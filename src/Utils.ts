@@ -1,10 +1,5 @@
-import { AnyFunc } from '@zwa73/utils';
 import path from 'pathe';
 
-
-const escapeRegExp = (str: string) => {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-};
 
 /**根目录 */
 export const ROOT_PATH = path.join(__dirname, '..');

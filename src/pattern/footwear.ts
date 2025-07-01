@@ -1,17 +1,17 @@
 
-import { formatPatterns } from "../Utils";
+import { desc, descPlural, format } from "../PatternUtils";
 
 
 
 /** 任何对脚部或鞋的描写 */
 const set = [
-    "footwear"      , /^[^ ]+ footwear$/,
-    "boots"         , /^.+ boots$/,
-    "socks"         , "sock", /^.+ socks?$/,
-    "shoes"         , /^.+ shoes$/,
-    "heels"         , /^.+ heels$/,
+    desc("footwear"),
+    desc("boots"),
+    descPlural("sock"),
+    desc("shoes"), "shoes removed",
+    desc("heels"),
 
-    "shoes removed", "barefoot",
+    "barefoot",
     "slippers",
     "sneakers",
     "mary janes",
@@ -22,5 +22,5 @@ const set = [
     "shoe soles", "zouri", "geta","toeless legwear"
 ]
 
-export const patterns = formatPatterns(set);
+export const patterns = format(set);
 

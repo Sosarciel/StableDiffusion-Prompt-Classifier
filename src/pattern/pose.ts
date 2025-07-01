@@ -3,7 +3,7 @@ import * as expression from './expression';
 
 /** 姿势 或 某个身体部位的特写 */
 const set = [
-    ...expression.patterns.any,
+    expression.patterns,
     "holding",
     /^holding [^ ]+$/,
     /^hands on own [^ ]+$/,

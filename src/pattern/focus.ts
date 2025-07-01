@@ -3,7 +3,7 @@ import * as details from './details';
 
 /** 某个身体部位的特写 图片焦点 */
 const set = [
-    ...details.patterns.any,
+    details.patterns,
     "breasts", "sideboob", "underboob",
     "legs", "feet", "toes",
     "soles", "toenails", "fingernails",

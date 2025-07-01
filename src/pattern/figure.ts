@@ -4,7 +4,7 @@ import * as character from './character';
 
 /**人物 */
 const set = [
-    ...character.patterns.any,
+    character.patterns,
     "short hair",
     "large breasts",
     "blue eyes",
