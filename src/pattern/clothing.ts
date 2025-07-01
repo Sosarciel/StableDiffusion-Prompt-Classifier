@@ -6,16 +6,12 @@ const clothing = [
     footwear.patterns,
 
     //头饰
-    desc("hairband"),
-    desc("hair ornament"),
-    desc("headwear"),
+    desc("hairband"), desc("hair ornament"), desc("headwear"),
     "hair intakes", "hair rings", "hair stick", "hairclip",
     "headband",
 
     //帽子
-    desc("hat"),
-    desc("cape"),
-    desc("cap"),
+    desc("hat"), desc("cape"), desc("cap"),
     desc("hood"),
     desc("scrunchie"),
 
