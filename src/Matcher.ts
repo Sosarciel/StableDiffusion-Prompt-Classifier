@@ -1,57 +1,118 @@
 import fs from 'fs';
 import { PATTERNS_PATH } from './Utils';
 import path from 'pathe';
-import { memoize, SLogger, throwError } from '@zwa73/utils';
-import { PatternTable } from './PatternUtils';
+import { memoize, pipe, SLogger, throwError, UtilFT } from '@zwa73/utils';
+import { format, PatternTable, PatternToken } from './PatternUtils';
 
 
-/**获取所有类别 */
-export const getPatternsCategory = memoize(async ()=>{
-    const fileNames = await fs.promises.readdir(PATTERNS_PATH);
-    return fileNames
-        .filter(name=>path.parse(name).ext=='.js')
-        .map(name=>path.parse(name).name);
+
+let categoryMap:Record<string,string> = null as any;
+/**获取类别路径映射表 */
+export const getPatternsCategoryMap = async ()=>{
+    if(categoryMap!=null) return categoryMap;
+    categoryMap = await pipe(
+        UtilFT.fileSearchGlob(PATTERNS_PATH,'**/*.js'),
+        fileNames => Promise.all(fileNames.map(async filepath=>{
+            const parsed = path.parse(filepath);
+            if(parsed.name=='index') return [path.parse(parsed.dir).name, filepath] as const;
+            return [parsed.name,filepath] as const;
+        })),
+        entrys=>entrys.reduce((acc,cur)=>{
+            const [name,filepath] = cur;
+            acc[name] = filepath;
+            return acc;
+        },{} as Record<string,string>)
+    );
+    return categoryMap;
+};
+
+/**获取所有子类别 */
+export const getPatternsCategory = memoize(async (pat?:string)=>{
+    const categoryMap = await getPatternsCategoryMap();
+    if(pat==null) return Object
+        .entries(categoryMap)
+        .map(([k,v])=>({name:k,path:v}));
+
+    return Object.entries(categoryMap)
+        .filter(([k,v])=>{
+            const rel = path.relative(PATTERNS_PATH,v);
+            return rel.includes(path.join(pat,path.sep)) &&
+                !rel.includes(path.join(pat,'index.js'));
+        })
+        .map(([k,v])=>({name:k,path:v}));
 });
 
 
+let patternObjectMap:Record<string,PatternObject> = null as any;
+/**获取类别对应的匹配符对象
+ * @param category 类别
+ * @returns 类别: 匹配符对象
+ */
+export const getPatternObjectMap = async ()=>{
+    if(patternObjectMap!=null) return patternObjectMap;
+    patternObjectMap = await pipe(
+        getPatternsCategory(),
+        categories=> Promise.all(categories.map(async category=>PatternObject.create(category.name))),
+        patternObj=> patternObj.reduce((acc,cur)=>{
+            acc[cur.name] = cur;
+            return acc;
+        },{} as Record<string,PatternObject>)
+    );
+    return patternObjectMap;
+};
+
+
 class PatternObject {
-    name    :string;
-    patterns:PatternTable={};
-    includes:string[]=[];
+    private patterns:PatternTable={};
+    private _subcategory:string[]=[];
     inited = false;
 
-    constructor(public filePath:string){
-        this.name = path.parse(filePath).name;
+    private constructor(public name:string, public filePath:string){}
+    static async create(category:string){
+        const map = await getPatternsCategoryMap();
+        const instance = new PatternObject(category,map[category]);
+        return instance;
     }
-    init(){
+    async init(){
         if(this.inited) return;
         const data = require(this.filePath);
-        this.patterns = data.patterns as PatternTable;
-        this.includes = data.includes as string[];
+        const tokens = [...data.patterns] as PatternToken[];
+
+        const cateMap = await getPatternsCategoryMap();
+        this._subcategory = (await getPatternsCategory(this.name)).map(v=>v.name);
+
+        for(const subcate of this._subcategory){
+            const subdata = require(cateMap[subcate]);
+            tokens.push(...subdata.patterns);
+        }
+
+        //console.log(tokens)
+        this.patterns = format(tokens);
+
         this.inited = true;
     }
+
+    /**包含某个类别 */
+    include(target:PatternObject|string){
+        if(typeof target=='string')
+            return this._subcategory.includes(target);
+
+        return this._subcategory.includes(target.name);
+    }
+
+    async subcategory(){
+        await this.init();
+        return this._subcategory;
+    }
+
     /**测试target是否符合patterm */
-    autotest(target:string){
-        this.init();
+    async autotest(target:string){
+        await this.init();
         if(this.patterns.text?.includes(target)) return true;
         if(this.patterns.regex?.some(re=>re.test(target))) return true;
         return false;
     }
 }
-
-/**获取类别对应的正则表达式
- * @param category 类别
- * @returns 类别:匹配对象
- */
-export const getPatternMap = memoize(async ()=>{
-    const fileNames = await fs.promises.readdir(PATTERNS_PATH);
-    const filePaths = fileNames.filter(name=>path.parse(name).ext=='.js').map(name=>path.join(PATTERNS_PATH,name));
-    return filePaths
-        .map( fp => new PatternObject(fp))
-        .reduce((acc,cur)=>{
-            return {...acc, [cur.name]:cur };
-        },{} as Record<string,PatternObject>);
-});
 
 
 
@@ -60,7 +121,7 @@ export const getPatternMap = memoize(async ()=>{
  * @returns 分类后的提示词
  */
 export async function classificationPrompt(...prompts:string[]){
-    const pmap = await getPatternMap();
+    const pmap = await getPatternObjectMap();
     return prompts.reduce((table,cur)=>{
         const matchList:PatternObject[] = [];
         Object.entries(pmap).forEach(([category,pobj])=>{
@@ -73,14 +134,14 @@ export async function classificationPrompt(...prompts:string[]){
                 matchList.push(pobj);
 
             //如果新项目对原项呈包含关系 则替换原项
-            else if(matchList.length >= 1 && pobj.includes!=null && !pobj.includes.includes(matchList[0].name))
+            else if(matchList.length >= 1 && !pobj.include(matchList[0]))
                 matchList[0] = pobj;
 
             //如果新项目对原项不呈包含关系 则再次加入
-            else if(matchList.length >= 1 && matchList[0].includes!=null && !matchList[0].includes.includes(pobj.name))
+            else if(matchList.length >= 1 && !matchList[0].include(pobj))
                 matchList.push(pobj);
 
-            if(matchList.length>1 && pobj.includes!=null)
+            if(matchList.length>1)
                 SLogger.info(`匹配到多类别的提示词 prompt:${cur} category:`, matchList);
         })
         if(matchList.length==0){
@@ -96,7 +157,7 @@ export async function classificationPrompt(...prompts:string[]){
  * @returns 测试函数
  */
 export async function getTestFunc(...category:string[]) {
-    const pmap = await getPatternMap();
+    const pmap = await getPatternObjectMap();
 
     //去除类别
     const nmap = category.map(s=>{
@@ -106,15 +167,25 @@ export async function getTestFunc(...category:string[]) {
     });
 
     //移除已被包含的部分
-    const filterincs = nmap.map(v=>{
-        if(v.includes==null) return [];
-        return v.includes;
-    }).flat();
+    const filterincs = await pipe(nmap,
+        nmap=>Promise.all(nmap.map(async v=>{
+            if(v.subcategory()==null) return [];
+            return v.subcategory();
+        })),
+        nmap=>nmap.flat(),
+    )
 
-    const fullPatterns = nmap
-        .filter(v=>!filterincs.includes(v.name));
+    const fullPatterns = nmap.filter(v=>!filterincs.includes(v.name));
 
-    return (s:string)=>fullPatterns.some(r=>r.autotest(s));
+    const fn = async (s: string): Promise<boolean> => {
+        for (const r of fullPatterns) {
+            if (await r.autotest(s)) {
+                return true;
+            }
+        }
+        return false;
+    };
+    return fn;
 }
 
 
@@ -154,19 +225,41 @@ export const getPromptCountMap = (input:string[])=>input.reduce((acc,k)=>{
  */
 export const extractPrompt = async (input:PromptCountMap,opt?:ExtractPromptOpt):Promise<ExtractPromptResult>=>{
     const {exclude,reserve,minrep} = opt??{};
+
     const excludeFunc = exclude!=undefined&&exclude?.length>0 ? await getTestFunc(...exclude) : ()=>false;
     const reserveFunc = reserve!=undefined&&reserve?.length>0 ? await getTestFunc(...reserve) : ()=>true;
 
     const excludeList:string[] = [];
     const reserveList:string[] = [];
-    Object.entries(input).forEach(([k,v])=>{
-        if(v<(minrep??0)) return excludeList.push(k);
-        if(excludeFunc(k) || !reserveFunc(k)) return excludeList.push(k);
+    const entrys = Object.entries(input)
+    for(const [k,v] of entrys){
+        if(v<(minrep??0)){
+            excludeList.push(k);
+            continue;
+        }
+        if(await excludeFunc(k) || !await reserveFunc(k)) {
+            excludeList.push(k);
+            continue;
+        }
         reserveList.push(k);
-    });
+    };
 
     return {
         exclude:Array.from(new Set(excludeList)),
         reserve:Array.from(new Set(reserveList)),
     };
 }
+
+
+
+//(async ()=>{
+//    const cate = await getPatternsCategory("clothing");
+//    console.log(`clothing category:`,cate);
+//
+//    console.log(`categorys:`,await getPatternsCategory());
+//    const pmap = await getPatternObjectMap();
+//    console.log(`pattern object map:`,Object.keys(pmap));
+//
+//    console.log(await extractPrompt({"1girls":1},{exclude:["clothing"]}));
+//
+//})();

@@ -1,8 +1,8 @@
-import { format } from "../PatternUtils";
+import { format } from "PatternUtils";
 
 
 /**人物状态 */
-const set = [
+export const patterns = [
     "pussy juice",
     "skindentation",
     "steaming body",
@@ -15,4 +15,3 @@ const set = [
     "erection", "precum", "food on body", "chocolate on body",
     "stomach bulge", "saliva"
 ];
-export const patterns = format(set);

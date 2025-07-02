@@ -1,10 +1,8 @@
-import { format } from "../PatternUtils";
-import * as character from './character';
+import { format } from "PatternUtils";
 
 
 /**人物 */
-const set = [
-    character.patterns,
+export const patterns = [
     "short hair",
     "large breasts",
     "blue eyes",
@@ -51,5 +49,3 @@ const set = [
     "mole under mouth", "messy hair", "black eyes", "skin fang",
     "green hair", "dark-skinned male"
 ];
-export const patterns = format(set);
-export const includes = ["character"];

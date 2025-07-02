@@ -1,8 +1,8 @@
-import { format } from "../PatternUtils";
+import { format } from "PatternUtils";
 
 
 /**水印 */
-const set = [
+export const patterns = [
     "watermark",
     "uncensored", "convenient censoring",
     "character name",
@@ -16,4 +16,3 @@ const set = [
     "blur censor", "novelty censor", "bar censor", "engrish text",
     "ranguage", "content rating",
 ];
-export const patterns = format(set);

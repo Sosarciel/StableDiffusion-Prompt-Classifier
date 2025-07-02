@@ -1,7 +1,7 @@
-import { format } from "../PatternUtils";
+import { format } from "PatternUtils";
 
 /** 姿势 或 某个身体部位的特写 */
-const set = [
+export const patterns = [
     "closed mouth",
     "open mouth",
     "smile",
@@ -25,4 +25,3 @@ const set = [
     "trembling", "one eye covered", "+ +",
     ":t", "pout",
 ]
-export const patterns = format(set);

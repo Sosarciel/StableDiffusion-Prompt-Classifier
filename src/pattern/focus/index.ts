@@ -1,9 +1,7 @@
-import { format } from "../PatternUtils";
-import * as details from './details';
+import { format } from "PatternUtils";
 
 /** 某个身体部位的特写 图片焦点 */
-const set = [
-    details.patterns,
+export const patterns = [
     "breasts", "sideboob", "underboob",
     "legs", "feet", "toes",
     "soles", "toenails", "fingernails",
@@ -22,4 +20,3 @@ const set = [
     "pervert", "female pervert", "testicles",
     "kneepits"
 ]
-export const patterns = format(set);

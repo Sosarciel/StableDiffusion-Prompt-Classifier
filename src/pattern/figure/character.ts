@@ -1,9 +1,9 @@
 
-import { format } from "../PatternUtils";
+import { format } from "PatternUtils";
 
 
 /**具体人物 */
-const set = [
+export const patterns = [
     "atago (azur lane)", "mash kyrielight (dangerous beast) (cosplay)",
     "mash kyrielight (dangerous beast)", "raiden shogun",
     "sirius (azur lane)",
@@ -11,5 +11,4 @@ const set = [
     "nilou (genshin impact)", "shinjou akane", "yae sakura",
     "producer (idolmaster)", "flandre scarlet", "gotou hitori"
 ];
-export const patterns = format(set);
 

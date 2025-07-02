@@ -1,8 +1,8 @@
-import { format } from "../PatternUtils";
+import { format } from "PatternUtils";
 
 
 /** 非环境类的可移动的物品或是手持物 */
-const set = [
+export const patterns = [
     //冷兵器
     "weapon",
     "sword",
@@ -120,4 +120,3 @@ const set = [
 
 ]
 
-export const patterns = format(set);

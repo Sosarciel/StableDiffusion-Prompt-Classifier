@@ -1,10 +1,7 @@
-import { desc, descPlural, format } from "../PatternUtils";
-import * as footwear from './footwear';
+import { desc, descPlural, format } from "PatternUtils";
 
 /** 任何和主体角色有关的服装 */
-const clothing = [
-    footwear.patterns,
-
+export const patterns = [
     //头饰
     desc("hairband"), desc("hair ornament"), desc("headwear"),
     "hair intakes", "hair rings", "hair stick", "hairclip",
@@ -157,6 +154,3 @@ const clothing = [
     "formal", "hakama", "red hakama",
     "blindfold",
 ]
-
-export const patterns = format(clothing);
-export const includes = ["footwear"];

@@ -26,7 +26,15 @@ export function format(patterns:PatternToken[]):PatternTable {
             out.text?.push(pattern);
         else if (pattern instanceof RegExp)
             out.regex?.push(pattern);
-        else acc(pattern)
+        else {
+            // 递归处理子 table
+            if (pattern.text)
+                out.text!.push(...pattern.text);
+            if (pattern.regex)
+                out.regex!.push(...pattern.regex);
+            if (pattern.table)
+                pattern.table.forEach(sub => acc(sub));
+        }
     }
 
     patterns.forEach(acc);

@@ -1,8 +1,8 @@
-import { format } from "../PatternUtils";
+import { format } from "PatternUtils";
 
 
 /** 背景 地点 时间 等非主体角色因素 */
-const set = [
+export const patterns = [
     "building",
     "city",
     "sky",
@@ -107,6 +107,4 @@ const set = [
 ]
 
 
-
-export const patterns = format(set);
 

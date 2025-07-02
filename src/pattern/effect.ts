@@ -1,8 +1,8 @@
-import { format } from "../PatternUtils";
+import { format } from "PatternUtils";
 
 
 /**人物 */
-const set = [
+export const patterns = [
     "stats", "clothes writing",
     "shiny", "shadow", "viewfinder",
     "dutch angle", "science fiction","logo",
@@ -11,4 +11,3 @@ const set = [
     "glowing", "magic", "floating object",
     "flashing", "motion blur", "motion lines"
 ];
-export const patterns = format(set);

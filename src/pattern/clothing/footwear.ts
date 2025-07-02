@@ -1,10 +1,10 @@
 
-import { desc, descPlural, format } from "../PatternUtils";
+import { desc, descPlural, format } from "PatternUtils";
 
 
 
 /** 任何对脚部或鞋的描写 */
-const set = [
+export const patterns = [
     desc("footwear"),
     desc("boots"),
     descPlural("sock"),
@@ -21,6 +21,4 @@ const set = [
     "single shoe",
     "shoe soles", "zouri", "geta","toeless legwear"
 ]
-
-export const patterns = format(set);
 

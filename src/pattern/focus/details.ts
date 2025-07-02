@@ -1,7 +1,7 @@
-import { format } from "../PatternUtils";
+import { format } from "PatternUtils";
 
 /** 某个身体部位的细节描述 图片焦点 */
-const set = [
+export const patterns = [
     "toenail polish", "red nails", "nail polish", "blue nails",
     "partially visible vulva","cameltoe",
     "areola slip", "covered nipples",
@@ -9,4 +9,3 @@ const set = [
     "anus peek", "crotch seam", "gusset", "breast press",
     "pink lips",
 ]
-export const patterns = format(set);
