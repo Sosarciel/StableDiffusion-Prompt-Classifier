@@ -1,8 +1,9 @@
 
 
-
+/**任何pattern可用的成员 */
 export type PatternToken = string|RegExp|PatternTable;
 
+/**格式化的pattern文件 */
 export type PatternTable = {
     regex?: RegExp[];
     text ?: string[];
