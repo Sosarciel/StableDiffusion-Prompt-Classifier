@@ -1,7 +1,7 @@
 import { format } from "PatternUtils";
 
 
-/**人物 */
+/**效果 */
 export const patterns = [
     "stats", "clothes writing",
     "shiny", "shadow", "viewfinder",

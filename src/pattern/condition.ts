@@ -1,7 +1,7 @@
 import { format } from "PatternUtils";
 
 
-/**人物状态 */
+/**人物/物体状态 */
 export const patterns = [
     "pussy juice",
     "skindentation",
