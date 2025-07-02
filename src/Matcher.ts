@@ -191,10 +191,12 @@ export async function getTestFunc(...category:string[]) {
 
 /**提取选项 */
 export type ExtractPromptOpt = {
-    /**排除类别 */
+    /**排除类别 默认无 */
     exclude?:string[];
-    /**保留类别 */
+    /**保留类别 与exclude冲突时排除 默认全部 */
     reserve?:string[];
+    /**优先保留的类别 与exclude冲突时保留 默认无 */
+    must?:string[];
     /**最小重复n次才会被提取 */
     minrep?:number;
 }
@@ -219,13 +221,15 @@ export const getPromptCountMap = (input:string[])=>input.reduce((acc,k)=>{
 /**提取prompt  
  * 将 不符合保留条件 或 符合排除条件 的分为 exclude  
  * 剩余分为 reserve  
+ * 先 reserve 再 exclude 再 must
  * 即保留与排除重叠时, 排除重叠部分  
  * @param input - 提示词输入
  * @param opt   - 选项
  */
 export const extractPrompt = async (input:PromptCountMap,opt?:ExtractPromptOpt):Promise<ExtractPromptResult>=>{
-    const {exclude,reserve,minrep} = opt??{};
+    const {exclude,reserve,must,minrep} = opt??{};
 
+    const mustFunc = must!=undefined&&must?.length>0 ? await getTestFunc(...must) : ()=>false;
     const excludeFunc = exclude!=undefined&&exclude?.length>0 ? await getTestFunc(...exclude) : ()=>false;
     const reserveFunc = reserve!=undefined&&reserve?.length>0 ? await getTestFunc(...reserve) : ()=>true;
 
@@ -237,7 +241,7 @@ export const extractPrompt = async (input:PromptCountMap,opt?:ExtractPromptOpt):
             excludeList.push(k);
             continue;
         }
-        if(await excludeFunc(k) || !await reserveFunc(k)) {
+        if((await excludeFunc(k) && !await mustFunc(k)) || !await reserveFunc(k)) {
             excludeList.push(k);
             continue;
         }
