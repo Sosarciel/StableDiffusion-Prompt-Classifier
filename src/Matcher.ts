@@ -1,12 +1,5 @@
-import fs from 'fs';
-import { PATTERNS_PATH } from './Utils';
-import path from 'pathe';
-import { ivk, memoize, pipe, PRecord, SLogger, throwError, UtilFT } from '@zwa73/utils';
-import { format, PatternTable, PatternToken } from './PatternUtils';
+import { pipe, SLogger, throwError } from '@zwa73/utils';
 import { getPatternCategoryMap, PatternObject } from './PatternObject';
-
-
-
 
 
 /**分类提示词

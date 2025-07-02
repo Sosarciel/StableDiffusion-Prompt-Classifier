@@ -78,6 +78,7 @@ export const getPatternsCategory = memoize(async (pat?:string)=>{
         .map(([k,v])=>({name:k,path:v}));
 });
 
+/**加载完成的pattern对象 */
 export class PatternObject {
     static patternObjectMap:PRecord<string,PatternObject> = {};
     private patterns:PatternTable={};
