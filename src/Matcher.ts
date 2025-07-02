@@ -92,7 +92,8 @@ export type PromptCountMap = Record<string,number>;
 
 /**从字符串数组获取提示词次数表 */
 export const getPromptCountMap = (input:string[])=>input.reduce((acc,k)=>{
-        acc[k.trim()]=1;
+        acc[k.trim()]??=0;
+        acc[k.trim()]++;
         return acc;
     },{} as PromptCountMap);
 
@@ -104,7 +105,7 @@ export const getPromptCountMap = (input:string[])=>input.reduce((acc,k)=>{
  * @param input - 提示词输入
  * @param opt   - 选项
  */
-export const extractPrompt = async (input:PromptCountMap,opt?:ExtractPromptOpt):Promise<ExtractPromptResult>=>{
+export const extractPrompt = async (input:PromptCountMap|string[],opt?:ExtractPromptOpt):Promise<ExtractPromptResult>=>{
     const {exclude,reserve,include,minrep} = opt??{};
 
     const reserveFunc = reserve!=undefined&&reserve?.length>0 ? await getTestFunc(...reserve) : ()=>false;
@@ -113,7 +114,7 @@ export const extractPrompt = async (input:PromptCountMap,opt?:ExtractPromptOpt):
 
     const excludeList:string[] = [];
     const reserveList:string[] = [];
-    const entrys = Object.entries(input)
+    const entrys = Object.entries(Array.isArray(input) ? getPromptCountMap(input): input);
     for(const [k,v] of entrys){
         if(v<(minrep??0)){
             excludeList.push(k);
