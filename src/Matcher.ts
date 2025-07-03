@@ -53,13 +53,7 @@ export async function getTestFunc(...category:string[]) {
     }));
 
     //移除已被包含的部分
-    const filterincs = await pipe(nmap,
-        nmap=>Promise.all(nmap.map(async v=>{
-            if(v.subcategory()==null) return [];
-            return v.subcategory();
-        })),
-        nmap=>nmap.flat(),
-    )
+    const filterincs = nmap.map(v=>v.subcategory()).flat();
 
     const fullPatterns = nmap.filter(v=>!filterincs.includes(v.name));
 
@@ -79,12 +73,26 @@ export type ExtractPromptOpt = {
     minrep?:number;
 }
 
+
 /**提取结果 */
-export type ExtractPromptResult = {
+export class ExtractPromptResult {
     /**排除内容 */
     exclude:string[];
     /**保留内容 */
     reserve:string[];
+    constructor(data:{
+        exclude:string[];
+        reserve:string[];
+    }){
+        this.exclude = data.exclude;
+        this.reserve = data.reserve;
+    }
+
+    async extractPrompt(opt?:ExtractPromptOpt) {
+        const result = await extractPrompt(this.reserve,opt);
+        result.exclude.push(...this.exclude);
+        return result;
+    }
 }
 
 /**提示词出现次数表 */
@@ -129,10 +137,10 @@ export const extractPrompt = async (input:PromptCountMap|string[],opt?:ExtractPr
         reserveList.push(k);
     };
 
-    return {
+    return new ExtractPromptResult({
         exclude:Array.from(new Set(excludeList)),
         reserve:Array.from(new Set(reserveList)),
-    };
+    });
 }
 
 
