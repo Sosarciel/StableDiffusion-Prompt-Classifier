@@ -19,6 +19,7 @@ export const patterns = [
     desc("earrings"),
     "glasses"   , "sunglasses",
     /^goggles.+ $/,
+    "makeup"    ,
 
     //脖子
     desc("bowtie"),
@@ -93,6 +94,7 @@ export const patterns = [
     "strapless",
     "off shoulder", "bare shoulders",
     "nude", "completely nude", "see-through",
+    "headwear removed",
 
     //风格套装
     "playboy bunny",
@@ -101,6 +103,7 @@ export const patterns = [
     /^.+ outfit$/,
     /^.+ costume$/,
     "bandaged leg", "bandaged head", "bandaged arm",
+    "riding",
 
 
     "plaid", "head wreath", "o-ring",
@@ -152,5 +155,5 @@ export const patterns = [
     "monocle",
     "center opening", "armlet",
     "formal", "hakama", "red hakama",
-    "blindfold",
+    "blindfold", "weapon on back"
 ]

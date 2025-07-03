@@ -115,5 +115,5 @@ export const patterns = [
     "holding smoking pipe", "wariza", "v",
     "sex","sex from behind","standing sex","hands on hips",
     "spread ass", "top-down bottom-up", "hand on own ass",
-    "looking through legs", "ass grab", "shirt lift", "grabbing own ass"
+    "looking through legs", "ass grab", "shirt lift", "grabbing own ass","kneeling"
 ]
