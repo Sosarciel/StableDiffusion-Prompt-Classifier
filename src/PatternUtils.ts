@@ -56,3 +56,36 @@ export function descPlural(str:string):PatternTable{
         regex:[new RegExp(`^.+ ${escapeRegExp(str)}s?$`)]
     }
 }
+
+const color = [
+    "orange","blonde","pink","purple","blue","red","grey","black","white","green", "brown","yellow","aqua",
+    "light blue","light purple",
+    "multicolored","gradient"
+] as const;
+/**颜色描述 */
+export function colorDesc(str:string):PatternTable{
+    return {
+        text :[...color.map(c => `${c} ${str}`), str],
+    }
+}
+
+const length = [
+    "short","long","very long","medium","absurdly long",
+] as const;
+/**长度描述 */
+export function lengthDesc(str:string):PatternTable{
+    return {
+        text :[...length.map(c => `${c} ${str}`), str],
+    }
+}
+
+
+const size = [
+    "small","medium","large","huge",
+] as const;
+/**大小描述 */
+export function sizeDesc(str:string):PatternTable{
+    return {
+        text :[...size.map(c => `${c} ${str}`), str],
+    }
+}
