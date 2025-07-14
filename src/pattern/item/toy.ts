@@ -5,7 +5,7 @@ import { format } from "PatternUtils";
 export const patterns = [
     "teddy bear",
     "stuffed toy",
-    "bell", "stuffed animal",
+    "stuffed animal",
     "card", "playing card",
     "ball", "balloon",
     "sex toy", "riding crop",

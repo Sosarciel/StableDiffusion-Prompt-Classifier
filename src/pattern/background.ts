@@ -103,7 +103,8 @@ export const patterns = [
     "crowd", "faceless", "faceless male", "contemporary",
     "against glass", "bedroom", "bed sheet", "valentine",
     "column", "cage", "skyline", "cherry blossoms",
-    "cover page", "doujin cover", "bar (place)","snow"
+    "cover page", "doujin cover", "bar (place)","snow",
+    "door", "comic", "speech bubble"
 ]
 
 

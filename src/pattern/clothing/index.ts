@@ -55,6 +55,7 @@ export const patterns = [
     //臀部服饰
     "hip vent",
     desc("skirt"),
+    "miniskirt",
 
     //内衣
     desc("panties"),
@@ -88,6 +89,7 @@ export const patterns = [
     /^.+ \(symbol\)$/,
     "jewelry"   ,
     "bandages"  ,
+    "tail ornament",
 
     //穿着风格
     /^.+ cutout$/,

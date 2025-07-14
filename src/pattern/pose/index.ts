@@ -115,5 +115,10 @@ export const patterns = [
     "holding smoking pipe", "wariza", "v",
     "sex","sex from behind","standing sex","hands on hips",
     "spread ass", "top-down bottom-up", "hand on own ass",
-    "looking through legs", "ass grab", "shirt lift", "grabbing own ass","kneeling","ballet"
+    "looking through legs", "ass grab", "shirt lift", "grabbing own ass","kneeling","ballet",
+    "carrying person", "carrying", "hug",
+    "lifting person", "lying on person", "on person",
+    "piggyback", "straddling", "sitting on person",
+    "hug from behind", "girl on top", "looking at another",
+    "talking"
 ]

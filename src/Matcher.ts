@@ -12,8 +12,9 @@ export async function classificationPrompt(...prompts:string[]){
 
     return prompts.reduce((table,cur)=>{
         const matchList:PatternObject[] = [];
-        Object.entries(pmap).forEach(([category,pobj])=>{
+        Object.entries(pmap).forEach(([idx,pobj])=>{
             if(!pobj.autotest(cur)) return;
+            const category = pobj.name;
             table[category] = table[category]??[];
             table[category].push(cur);
 
@@ -30,7 +31,7 @@ export async function classificationPrompt(...prompts:string[]){
                 matchList.push(pobj);
 
             if(matchList.length>1)
-                SLogger.info(`匹配到多类别的提示词 prompt:${cur} category:`, matchList);
+                SLogger.info(`匹配到多类别的提示词 prompt:${cur} category:`, matchList.map(m=>m.name));
         })
         if(matchList.length==0){
             table.missed = table.missed??[];

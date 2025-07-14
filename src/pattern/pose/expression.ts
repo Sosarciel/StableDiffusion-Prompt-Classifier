@@ -24,4 +24,5 @@ export const patterns = [
     "grin", "smirk", "evil smile", "evil grin",
     "trembling", "one eye covered", "+ +",
     ":t", "pout",
+    "tearing up", "scared", "wavy mouth",
 ]

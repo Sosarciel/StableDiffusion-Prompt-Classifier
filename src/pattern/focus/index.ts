@@ -21,5 +21,5 @@ export const patterns = [
     "veiny penis", "veins",
     "ass focus", "large penis", "backboob",
     "pervert", "female pervert", "testicles",
-    "kneepits"
+    "kneepits", "size difference","implied sex"
 ]

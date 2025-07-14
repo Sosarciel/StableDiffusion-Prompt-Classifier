@@ -70,5 +70,6 @@ export const patterns = [
     "dragon tail", "dragon girl", "dragon horns",
     "french braid",
     "mole under mouth", "skin fang",
-    "dark-skinned male"
+    "dark-skinned male",
+    "cat tail", "pale skin"
 ];

@@ -9,6 +9,7 @@ export const patterns = [
     "sirius (azur lane)",
     "barbara (genshin impact)", "yanfei (genshin impact)",
     "nilou (genshin impact)", "shinjou akane", "yae sakura",
-    "producer (idolmaster)", "flandre scarlet", "gotou hitori"
+    "producer (idolmaster)", "flandre scarlet", "gotou hitori",
+    "commander (girls' frontline)", "commander (azur lane)"
 ];
 
