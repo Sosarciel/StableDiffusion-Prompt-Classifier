@@ -8,7 +8,7 @@ export const patterns = [
     desc("footwear"),
     desc("boots"),
     descPlural("sock"),
-    desc("shoes"), "shoes removed",
+    desc("shoes"),
     desc("heels"),
 
     "barefoot",

@@ -120,5 +120,5 @@ export const patterns = [
     "lifting person", "lying on person", "on person",
     "piggyback", "straddling", "sitting on person",
     "hug from behind", "girl on top", "looking at another",
-    "talking"
+    "talking","female masturbation", "masturbation","spread toes","bathing"
 ]

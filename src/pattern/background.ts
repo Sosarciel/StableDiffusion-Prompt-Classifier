@@ -105,6 +105,7 @@ export const patterns = [
     "column", "cage", "skyline", "cherry blossoms",
     "cover page", "doujin cover", "bar (place)","snow",
     "door", "comic", "speech bubble", "wind",
+    "bathtub", "bath"
 ]
 
 

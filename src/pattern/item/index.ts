@@ -6,7 +6,11 @@ export const patterns = [
     //杂项物品
     "test tube", "vial", "bottle", "signature",
 
-    //其他
+    //脱下的衣物
     "eyewear removed",
+    "panties removed",
+    "headwear removed",
+    "skirt removed",
+    "shoes removed"
 ]
 

@@ -96,7 +96,6 @@ export const patterns = [
     "strapless",
     "off shoulder", "bare shoulders",
     "nude", "completely nude", "see-through",
-    "headwear removed",
 
     //风格套装
     "playboy bunny",
@@ -137,7 +136,7 @@ export const patterns = [
     "polka dot", "highleg",
     "race queen", "panty straps", "bikini top only",
     "virtual youtuber",
-    "no pants", "thong", "lace trim", "lace", "skirt removed",
+    "no pants", "thong", "lace trim", "lace",
     "pasties", "thighlet", "gold trim",
     "qing guanmao", "crotch rope", "naked bandage",
     "sarashi", "chest sarashi",
@@ -146,6 +145,7 @@ export const patterns = [
     "breast curtains",
     "piercing", "navel piercing", "nipple piercing", "nipple rings",
     "tongue piercing", "pussy piercing", "ear piercing", "clitoris piercing",
+    "tail piercing",
     "fishnets", "leash",
     "crotchless",
     "side-tie bikini bottom", "fake tail",

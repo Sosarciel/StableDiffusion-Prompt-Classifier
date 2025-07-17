@@ -24,6 +24,7 @@ export const patterns = [
     "hair flowing over","shiny hair", "gradient hair", "eyes visible through hair", "hair over eyes",
     "twintails","short twintails","low twintails",
     "side ponytail",
+    "two-tone hair",
 
     //眼睛
     colorDesc('eyes'),
@@ -72,5 +73,5 @@ export const patterns = [
     "french braid",
     "mole under mouth", "skin fang",
     "dark-skinned male",
-    "cat tail", "pale skin"
+    "cat tail", "pale skin",
 ];
