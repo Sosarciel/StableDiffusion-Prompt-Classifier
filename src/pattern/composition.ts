@@ -7,5 +7,5 @@ export const patterns = [
     "cowboy shot",
     "pov",
     "foreshortening",
-    "head out of frame", "close-up"
+    "head out of frame", "close-up",
 ];

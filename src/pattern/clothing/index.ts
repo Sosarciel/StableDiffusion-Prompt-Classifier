@@ -157,5 +157,6 @@ export const patterns = [
     "monocle",
     "center opening", "armlet",
     "formal", "hakama", "red hakama",
-    "blindfold", "weapon on back"
+    "blindfold", "weapon on back",
+    "sundress", "spaghetti strap", "strap slip"
 ]

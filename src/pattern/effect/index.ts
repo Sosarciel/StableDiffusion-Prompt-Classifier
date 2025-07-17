@@ -9,5 +9,7 @@ export const patterns = [
     "monochrome", "greyscale","steam",
     "dated", "sparkle", "reflection", "light particles",
     "glowing", "magic", "floating object",
-    "flashing", "motion blur", "motion lines"
+    "flashing", "motion blur", "motion lines",
+    "see-through silhouette", "chromatic aberration",
+    "lens flare", "summer", "backlighting",
 ];
