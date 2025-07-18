@@ -2,6 +2,9 @@ import { format } from "PatternUtils";
 
 /** 姿势 或 某个身体部位的特写 */
 export const patterns = [
+    //大型物体交互
+    "on vehicle", "on bed", "on chair", 
+
     "holding",
     /^holding [^ ]+$/,
     /^hands on own [^ ]+$/,
@@ -104,7 +107,7 @@ export const patterns = [
     "upside-down", "falling", "legs up", "shoe dangle", "hanging", "hand between legs", "plantar flexion",
     "lifted by self", "dress lift", "foot out of frame", "skirt hold",
     "viewer holding leash", "selfie", "reaching towards viewer", "outstretched arm", "leash pull", "clenched hand",
-    "gaping", "on chair", "reclining",
+    "gaping", "reclining",
     "footjob",
     "stepped on", "ankle grab", "arm grab", "leg lift", "leg grab", "arms at sides",
     "hand on own face", "head rest", "hand on own cheek",

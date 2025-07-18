@@ -9,5 +9,6 @@ export const patterns = [
     "umbrella","oil-paper umbrella",
     "smoking pipe", "kiseru",
     "hand mirror","watering can",
-    "harp", "instrument","flute","recorder"
+    "harp", "instrument","flute","recorder",
+    "torch",
 ]

@@ -9,4 +9,9 @@ export const patterns = [
     "candle", "vase", "candlestand",
     "cushion", "jack-o'-lantern",
     "lamp","stool", "drawing tablet",
+    "checkered flag",
+    "school desk", "desk", "school chair",
+    "tablecloth", "chandelier", "couch",
+    "letterboxed", "mirror", "bed","armchair",
+    "throne","bed sheet",
 ]

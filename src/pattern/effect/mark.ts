@@ -15,5 +15,6 @@ export const patterns = [
     "release date", "signature", "character signature", "borrowed character", "web address",
     "blur censor", "novelty censor", "bar censor", "engrish text",
     "ranguage", "content rating",
-    "pixiv id", "twitter username","page number"
+    "pixiv id", "twitter username","page number",
+    "stats",
 ];

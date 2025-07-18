@@ -12,8 +12,7 @@ import { colorDesc, format, lengthDesc, sizeDesc } from "PatternUtils";
 /**人物 */
 export const patterns = [
     //头发
-    colorDesc('hair'),
-    lengthDesc('hair'),
+    "hair", colorDesc('hair'), lengthDesc('hair'),
     "streaked hair",
     "messy hair",
     "colored inner hair",

@@ -42,14 +42,18 @@ export function format(patterns:PatternToken[]):PatternTable {
     return out;
 }
 
-/**描述匹配符 */
+/**描述匹配符  
+ * /^.+ item$/,"item"
+ */
 export function desc(str:string):PatternTable{
     return {
         text :[str],
         regex:[new RegExp(`^.+ ${escapeRegExp(str)}$`)]
     }
 }
-/*描述匹配符 单数/复数 * */
+/**描述匹配符 单数/复数  
+ * /^.+ items?$/,"item","items"
+ */
 export function descPlural(str:string):PatternTable{
     return {
         text :[str,`${str}s`],
@@ -62,20 +66,24 @@ const color = [
     "light blue","light purple",
     "multicolored","gradient"
 ] as const;
-/**颜色描述 */
+/**颜色描述  
+ * /^(color) item$/
+ */
 export function colorDesc(str:string):PatternTable{
     return {
-        text :[...color.map(c => `${c} ${str}`), str],
+        text :[...color.map(c => `${c} ${str}`)],
     }
 }
 
 const length = [
     "short","long","very long","medium","absurdly long",
 ] as const;
-/**长度描述 */
+/**长度描述  
+ * /^(length) item$/,"item"
+ */
 export function lengthDesc(str:string):PatternTable{
     return {
-        text :[...length.map(c => `${c} ${str}`), str],
+        text :[...length.map(c => `${c} ${str}`)],
     }
 }
 
@@ -83,9 +91,11 @@ export function lengthDesc(str:string):PatternTable{
 const size = [
     "small","medium","large","huge",
 ] as const;
-/**大小描述 */
+/**大小描述  
+ * /^(size) item$/
+ */
 export function sizeDesc(str:string):PatternTable{
     return {
-        text :[...size.map(c => `${c} ${str}`), str],
+        text :[...size.map(c => `${c} ${str}`)],
     }
 }

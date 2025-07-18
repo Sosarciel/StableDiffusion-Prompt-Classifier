@@ -56,6 +56,7 @@ export const patterns = [
     "hip vent",
     desc("skirt"),
     "miniskirt",
+    "microskirt",
 
     //内衣
     desc("panties"),

@@ -11,4 +11,5 @@ export const patterns = [
     "sex toy", "riding crop",
     "doll", "character doll", "babydoll",
     "yarn", "yarn ball",
+    "holding pom poms"
 ]

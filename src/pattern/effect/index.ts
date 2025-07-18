@@ -3,7 +3,7 @@ import { format } from "PatternUtils";
 
 /**效果 */
 export const patterns = [
-    "stats", "clothes writing",
+    "clothes writing",
     "shiny", "shadow", "viewfinder",
     "dutch angle", "science fiction","logo",
     "monochrome", "greyscale","steam",
@@ -11,5 +11,5 @@ export const patterns = [
     "glowing", "magic", "floating object",
     "flashing", "motion blur", "motion lines",
     "see-through silhouette", "chromatic aberration",
-    "lens flare", "summer", "backlighting",
+    "blurry","lens flare", "backlighting",
 ];
