@@ -15,6 +15,7 @@ export const patterns = [
     "size difference",
 
     //身体部位
+    "breasts","nails","eyes",
     "male pubic hair","female pubic hair","pubic hair",
     "sideboob", "underboob", "backboob",
     "testicles","veiny penis", "large penis",
