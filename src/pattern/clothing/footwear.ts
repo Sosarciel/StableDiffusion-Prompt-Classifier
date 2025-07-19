@@ -11,6 +11,8 @@ export const patterns = [
     desc("shoes"),
     desc("heels"),
 
+    "ballet slippers",
+    "shackles",
     "barefoot",
     "slippers",
     "sneakers",

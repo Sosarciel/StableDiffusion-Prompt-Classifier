@@ -1,4 +1,4 @@
-import { colorDesc, format, lengthDesc, sizeDesc } from "PatternUtils";
+import { colorDesc, desc, format, lengthDesc, sizeDesc } from "PatternUtils";
 
 
 
@@ -36,6 +36,9 @@ export const patterns = [
     //指甲
     colorDesc('nails'),
 
+    //不定装饰
+    desc("tattoo"),
+
     "bangs",
     "sidelocks",
     "shiny skin",
@@ -54,10 +57,8 @@ export const patterns = [
     "wolf tail", "wolf ears", "ahoge",
     "animal ear fluff", "wolf girl",
     "dark-skinned female", "dark skin", "twin braids",
-    "pubic tattoo",
     "mole under eye", "fangs",
     "extra ears", "fox tail", "fox ears", "animal hands", "swept bangs", "multiple tails", "curvy", "fur",
-    "tattoo",
     "cosplay",  "fox girl", "claws",
     "blunt bangs",
     "blanket", "rabbit ears", "rabbit tail", "mouse tail",
