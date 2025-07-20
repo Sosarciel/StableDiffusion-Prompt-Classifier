@@ -14,10 +14,16 @@ export const patterns = [
     "erection", "precum", "food on body", "chocolate on body",
     "stomach bulge", "saliva",
     "after sex", "after vaginal",
+    "drooling","saliva trail",
+    "wet hair",
 
     //情景状态
     "exhibitionism",
     "public indecency",
     "implied sex",
     "pet play",
+    "netorare",
+    "incest",
+    "mixed bathing",
+    "happy sex",
 ];

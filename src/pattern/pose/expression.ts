@@ -25,5 +25,6 @@ export const patterns = [
     "trembling", "one eye covered", "+ +",
     ":t", "pout",
     "tearing up", "scared", "wavy mouth",
-    ":p","clenched teeth"
+    ":p","clenched teeth", "upper teeth only",
+    "torogao"
 ]

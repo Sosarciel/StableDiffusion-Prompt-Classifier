@@ -61,7 +61,7 @@ export const patterns = [
     //室内环境
     "candlelight",
     "ceiling light", "tiles", "stage", "stage lights",
-    "bedroom",
+    "bedroom","bathroom", "shower (place)", "tile wall", "glass",
 
     //城市背景
     "building", "city",
@@ -77,7 +77,7 @@ export const patterns = [
     "train", "train interior",
     "ground vehicle",
     "car", "sports car",
-    "watercraft", "ship", "boat", 
+    "watercraft", "ship", "boat",
 
     //设计效果背景
     "cover page", "doujin cover","tachi-e",
@@ -114,6 +114,7 @@ export const patterns = [
     "smoke",
     "contrail",
     "against glass",
+    "overflow", "soap bubbles",
 ]
 
 

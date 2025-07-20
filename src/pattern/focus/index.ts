@@ -12,7 +12,7 @@ export const patterns = [
     //人物特征
     "faceless", "faceless male",
     "pervert", "female pervert",
-    "size difference",
+    "size difference", "height difference", "age difference",
 
     //身体部位
     "breasts","nails","eyes",
@@ -29,5 +29,5 @@ export const patterns = [
     "armpit crease", "linea alba",
     "hetero", "femdom", "clothed female nude male", "penis",
     "eyeball", "eldritch abomination", "clothed sex", "chikan",
-    "veins",
+    "veins", "bulge"
 ]

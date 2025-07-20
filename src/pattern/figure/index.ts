@@ -24,6 +24,8 @@ export const patterns = [
     "twintails","short twintails","low twintails",
     "side ponytail",
     "two-tone hair",
+    "curly hair",
+    "high ponytail", "short ponytail", "hair up",
 
     //眼睛
     colorDesc('eyes'),
@@ -38,6 +40,9 @@ export const patterns = [
 
     //不定装饰
     desc("tattoo"),
+
+    //肤色
+    "albino",
 
     "bangs",
     "sidelocks",
@@ -74,4 +79,5 @@ export const patterns = [
     "mole under mouth", "skin fang",
     "dark-skinned male",
     "cat tail", "pale skin",
+    "petite",
 ];

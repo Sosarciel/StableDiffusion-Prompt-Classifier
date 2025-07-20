@@ -9,6 +9,7 @@ export const patterns = [
     /\dboys/,
     /\dgirl/,
     /\dboy/,
-    "people", "multiple boys", "6+boys"
+    "people", "multiple boys", "6+boys",
+    "siblings", "couple", "brother and sister"
 ]
 

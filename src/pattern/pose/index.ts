@@ -5,6 +5,21 @@ export const patterns = [
     //大型物体交互
     "on vehicle", "on bed", "on chair", 
 
+    //衣服动作
+    "panty pull",
+    "clothes lift",
+    "skirt lift",
+
+    //身体状态
+    "breasts on glass",
+    "bouncing breasts",
+
+    //体位
+    "doggystyle",
+
+    //目光方向
+    "looking up",
+
     "holding",
     /^holding [^ ]+$/,
     /^hands on own [^ ]+$/,
@@ -89,8 +104,6 @@ export const patterns = [
     "squatting",
     "looking away",
     "standing on one leg",
-    "clothes lift",
-    "skirt lift",
     "feet out of frame",
     "legs apart",
     "arm support",
@@ -123,5 +136,6 @@ export const patterns = [
     "lifting person", "lying on person", "on person",
     "piggyback", "straddling", "sitting on person",
     "hug from behind", "girl on top", "looking at another",
-    "talking","female masturbation", "masturbation","spread toes","bathing"
+    "talking","female masturbation", "masturbation","spread toes","bathing",
+    "showering", "against wall",
 ]

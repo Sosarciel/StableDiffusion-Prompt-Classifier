@@ -7,4 +7,5 @@ export const patterns = [
     "gift box","box","gift",
     "school bag", "shoulder bag", "bag charm",
     "can", "treasure chest",
+    "backpack", "black bag",
 ]
