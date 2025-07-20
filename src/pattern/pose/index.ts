@@ -9,6 +9,8 @@ export const patterns = [
     "panty pull",
     "clothes lift",
     "skirt lift",
+    "shirt grab",
+    "clothes grab", "clothes pull",
 
     //身体状态
     "breasts on glass",
@@ -19,6 +21,11 @@ export const patterns = [
 
     //目光方向
     "looking up",
+
+    //交互动作
+    "hand on another's head",
+    "headpat",
+    "lap pillow",
 
     "holding",
     /^holding [^ ]+$/,

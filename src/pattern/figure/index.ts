@@ -41,8 +41,12 @@ export const patterns = [
     //不定装饰
     desc("tattoo"),
 
-    //肤色
+    //皮肤
     "albino",
+
+    //眼部
+    colorDesc("pupils"),
+    "symbol-shaped pupils",
 
     "bangs",
     "sidelocks",
@@ -50,7 +54,7 @@ export const patterns = [
     "double bun", "braid",
     "side braid",
     "crossed bangs",
-    "mole", "animal ears", "symbol-shaped pupils",
+    "mole", "animal ears",
     "tail", "demon tail", "wings", "demon wings", "black wings",
     "bat wings", "mini wings",
     "pointy ears", "horns", "demon horns", "curled horns", "flat chest", "fang",

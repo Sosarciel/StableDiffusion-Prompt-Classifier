@@ -12,6 +12,6 @@ export const patterns = [
     "producer (idolmaster)", "flandre scarlet", "gotou hitori",
     "commander (girls' frontline)", "commander (azur lane)",
     "tokoyami towa", "bibi (tokoyami towa)",
-    "elin",
+    "elin","sensei (blue archive)",
 ];
 
