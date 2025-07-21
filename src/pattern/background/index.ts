@@ -19,7 +19,7 @@ export const patterns = [
     "pillar",
     "bathtub", "bath",
     "bar (place)",
-    "column", "cage", 
+    "column", "cage",
 
     //不定描述
     "outdoors",
@@ -31,53 +31,10 @@ export const patterns = [
     "crow",
     "dragon",
 
-    //植物环境
-    "grass",
-    "lotus",
-    "lily pad",
-    "spider lily",
-    "flower field","forest","nature",
-    "field", "cherry blossoms", "leaf",
-
-    //自然环境
-    "sky", colorDesc("sky"),
-    "star \(sky\)",
-    "gradient sky", "cloudy sky", "night sky",
-    "cloud",
-    "night", "evening",
-    "twilight", "moonlight", "starry sky",
-    "full moon", "moon","red moon",
-    "day", "sunset", "sun", "dusk", "sunrise", "sunlight",
-    "underwater", "water", "swimming", "freediving",
-    "light rays",
-    "bare tree", "tree",
-    "autumn", "summer", "winter", "spring",
-    "rain",
-    "wind",
-    "horizon","skyline",
-    "snow",
-    "scenery",
-
     //室内环境
     "candlelight",
     "ceiling light", "tiles", "stage", "stage lights",
     "bedroom","bathroom", "shower (place)", "tile wall", "glass",
-
-    //城市背景
-    "building", "city",
-    "skyscraper", "cityscape",
-    "crowd", "contemporary",
-    "road",
-    "train station",
-    "city lights",
-    "real world location", "street",
-    "classroom", "school",
-
-    //机械背景
-    "train", "train interior",
-    "ground vehicle",
-    "car", "sports car",
-    "watercraft", "ship", "boat",
 
     //设计效果背景
     "cover page", "doujin cover","tachi-e",
@@ -113,9 +70,5 @@ export const patterns = [
     "darkness",
     "smoke",
     "contrail",
-    "against glass",
     "overflow", "soap bubbles",
 ]
-
-
-

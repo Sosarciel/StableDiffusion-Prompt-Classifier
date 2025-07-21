@@ -26,6 +26,7 @@ export const patterns = [
     "hand on another's head",
     "headpat",
     "lap pillow",
+    "against glass",
 
     "holding",
     /^holding [^ ]+$/,
