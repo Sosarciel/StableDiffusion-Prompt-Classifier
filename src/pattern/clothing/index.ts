@@ -30,6 +30,7 @@ export const patterns = [
     "blindfold", 
     "medical eyepatch",
     "eyewear on head",
+    "black blindfold",
 
     //脖子
     desc("bowtie"),

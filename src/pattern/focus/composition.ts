@@ -8,4 +8,5 @@ export const patterns = [
     "pov","pov hands",
     "foreshortening",
     "head out of frame", "close-up",
+    "multiple views",
 ];

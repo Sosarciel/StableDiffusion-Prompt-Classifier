@@ -8,9 +8,26 @@ quantity.ts        数量主类, 没有子类, 所有描述数量的应该在这
 子类是可递归嵌套的, 但目前我还没分到那么细
 你的主要工作就是在我给出需要分类的词汇之后
 用ls查看我的目录结构, 找到对应的无法细分的最终子类, 然后以类似:
-typea: "texta", "textb"
-typeb: "textc", "textd"
-这样的格式列出告诉我分类结果, 输出尽量简介, 不需要做任何额外说明
-如果你认为某个词不适用于任何分类请用 other: "xx" 表达
+`typea: "texta", "textb"`
+`typeb: "textc", "textd"`
+这样的格式列出告诉我分类结果, 输出尽量简洁, 并且用代码格式如`xxx`嵌套, 不需要做任何额外说明
+
+同时有一些可能需要注意含义的词汇类别
+background  这个大类包含 任何非人物的背景元素, 或是固定设施
+item        非背景的 较小的物品 或是小动物
+clothing    这个大类包含 所有的人物的服装或是可能穿在身上的东西
+  - footwear    人物的脚部服装 如 shoes, high heels
+pose        影响人物肢体/动作的姿势, 也就是排除所有面部表情的姿势
+  - expression  人物面部表情
+effect      画面的特殊效果 如 shiny, copyright name, english text
+figure      人物主体特征 如发型 胸部大小 瞳色
+focus       这个大类的index包含 任何镜头焦点对象 如 breasts, legs, sideboob
+  - condition   人物状态 如 skindentation, steaming body, breasts out
+  - composition 构图/拍摄手法 如 cowboy shot, pov, foreshortening
+quantity    人数 如1girl, solo
+
+每个词汇只能属于一个类别
+如果你认为某个词汇不属于以上任何一个类别, 单独输出为other
+
 但注意不要创建或是写入任何东西, 同时尽量以递归搜索的方式列出所有子类, 避免一层一层的多次ls
 如果你明白了那么我接下来就要开始发送词汇

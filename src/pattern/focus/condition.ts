@@ -16,6 +16,7 @@ export const patterns = [
     "after sex", "after vaginal",
     "drooling","saliva trail",
     "wet hair",
+    "female ejaculation",
 
     //情景状态
     "exhibitionism",
@@ -26,4 +27,5 @@ export const patterns = [
     "incest",
     "mixed bathing",
     "happy sex",
+    "public use",
 ];

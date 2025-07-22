@@ -15,9 +15,14 @@ export const patterns = [
     //身体状态
     "breasts on glass",
     "bouncing breasts",
+    "facing away", "arched back",
+    "breast rest",
+    "gagged", "covered eyes",
 
     //体位
     "doggystyle",
+    "dildo riding",
+    "double penetration",
 
     //目光方向
     "looking up",
@@ -27,6 +32,9 @@ export const patterns = [
     "headpat",
     "lap pillow",
     "against glass",
+
+    //位置
+    "in box", "in container",
 
     "holding",
     /^holding [^ ]+$/,

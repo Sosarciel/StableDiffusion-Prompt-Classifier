@@ -26,6 +26,7 @@ export const patterns = [
     "two-tone hair",
     "curly hair",
     "high ponytail", "short ponytail", "hair up",
+    "low-tied long hair", "low ponytail",
 
     //眼睛
     colorDesc('eyes'),
@@ -43,6 +44,7 @@ export const patterns = [
 
     //皮肤
     "albino",
+    "sign", "body writing",
 
     //眼部
     colorDesc("pupils"),

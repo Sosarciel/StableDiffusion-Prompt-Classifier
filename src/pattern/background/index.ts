@@ -42,6 +42,7 @@ export const patterns = [
     "fake screenshot",
     "blurry foreground",
     "picture frame", "painting (object)",
+    "blue theme",
 
     //特殊地点
     "ruins",

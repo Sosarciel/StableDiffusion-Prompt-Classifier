@@ -13,5 +13,6 @@ export const patterns = [
     "commander (girls' frontline)", "commander (azur lane)",
     "tokoyami towa", "bibi (tokoyami towa)",
     "elin","sensei (blue archive)",
+    "skadi (arknights)", "skadi the corrupting heart (arknights)", "specter (arknights)", "doctor (arknights)",
 ];
 
