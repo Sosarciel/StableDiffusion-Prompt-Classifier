@@ -1,7 +1,7 @@
 import { format } from "PatternUtils";
 
 
-/**人物/物体状态 */
+/**人物/物体的非动作状态 */
 export const patterns = [
     //身体状态
     "pussy juice",
