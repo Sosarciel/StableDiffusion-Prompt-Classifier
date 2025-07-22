@@ -8,6 +8,7 @@ export const patterns = [
     "skindentation",
     "steaming body",
     "breasts out",
+    "breast press",
     "wet", "cumdrip",
     "cum", "cum in pussy",
     "ejaculation", "cum on feet", "cum on body",

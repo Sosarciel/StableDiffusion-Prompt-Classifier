@@ -2,7 +2,7 @@
 import { format } from "PatternUtils";
 
 
-/**人物 */
+/**构图方式 */
 export const patterns = [
     "cowboy shot",
     "pov","pov hands",

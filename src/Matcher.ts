@@ -14,21 +14,23 @@ export async function classificationPrompt(...prompts:string[]){
         const matchList:PatternObject[] = [];
         Object.entries(pmap).forEach(([idx,pobj])=>{
             if(!pobj.autotest(cur)) return;
-            const category = pobj.name;
-            table[category] = table[category]??[];
-            table[category].push(cur);
 
             //第一次匹配无条件加入
-            if(matchList.length==0)
+            if(matchList.length==0){
                 matchList.push(pobj);
+            }
 
             //如果新项目对原项呈包含关系 则替换原项
-            else if(matchList.length >= 1 && !pobj.include(matchList[0]))
+            else if(matchList.length >= 1 && !pobj.include(matchList[0])){
                 matchList[0] = pobj;
+                //console.log(1,matchList);
+            }
 
             //如果新项目对原项不呈包含关系 则再次加入
-            else if(matchList.length >= 1 && !matchList[0].include(pobj))
+            else if(matchList.length >= 1 && !matchList[0].include(pobj)){
                 matchList.push(pobj);
+                //console.log(2,matchList);
+            }
 
             if(matchList.length>1)
                 SLogger.info(`匹配到多类别的提示词 prompt:${cur} category:`, matchList.map(m=>m.name));
@@ -36,6 +38,10 @@ export async function classificationPrompt(...prompts:string[]){
         if(matchList.length==0){
             table.missed = table.missed??[];
             table.missed.push(cur);
+        }else{
+            const category = matchList[0].name;
+            table[category] = table[category]??[];
+            table[category].push(cur);
         }
         return table;
     },{}as Record<string,string[]>)
