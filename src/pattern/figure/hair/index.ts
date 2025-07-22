@@ -1,0 +1,47 @@
+import { colorDesc, desc, format, lengthDesc, sizeDesc } from "PatternUtils";
+
+
+
+
+
+
+
+
+
+
+/**人物 */
+export const patterns = [
+    //头发
+    lengthDesc('hair'),
+    "messy hair", "hair flowing over","shiny hair",
+
+    //发髻
+    "double bun", "hair bun", "single hair bun",
+
+    //发型位置关系
+    "hair over one eye",
+    "hair between eyes",
+    "eyes visible through hair", "hair over eyes",
+
+    //马尾辫
+    "braided ponytail", "ponytail",
+    "side ponytail","high ponytail", "short ponytail","low ponytail",
+    "twintails","short twintails","low twintails",
+
+    //辫子
+    "braid", "side braid", "single braid", "twin braids","french braid",
+
+    //刘海
+    "bangs", "crossed bangs",
+    "blunt bangs", "parted bangs",
+    "swept bangs",
+
+    //其他发型
+    "curly hair", "hair up",
+    "low-tied long hair",
+
+    "twin drills", "ahoge",
+    "ringlets",
+    "curvy",
+    "bob cut",
+];

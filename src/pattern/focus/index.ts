@@ -1,4 +1,4 @@
-import { format } from "PatternUtils";
+import { format, sizeDesc } from "PatternUtils";
 
 /** 某个身体部位的特写 图片焦点 */
 export const patterns = [
@@ -14,20 +14,39 @@ export const patterns = [
     "pervert", "female pervert",
     "size difference", "height difference", "age difference",
 
-    //身体部位
-    "breasts","nails","eyes",
-    "male pubic hair","female pubic hair","pubic hair",
-    "sideboob", "underboob", "backboob",
-    "testicles","veiny penis", "large penis",
-    "legs", "feet", "toes","kneepits",
-    "soles", "toenails", "fingernails",
+    //头发
+    "hair","sidelocks",
+
+    //臀部腹部
     "groin",
-    "nipples", "pussy", "anus", "vaginal",
+    "penis", sizeDesc("penis"), "veiny penis","testicles",
+    "male pubic hair","female pubic hair","pubic hair",
+    "pussy", "anus", "vaginal",
     "anal", "cervix", "clitoris",
-    "between legs", "eyelashes",
+
+    //胸部
+    "breasts","nipples",
+    "sideboob", "underboob", "backboob",
     "breasts apart",
-    "armpit crease", "linea alba",
-    "hetero", "femdom", "clothed female nude male", "penis",
-    "eyeball", "eldritch abomination", "clothed sex", "chikan",
-    "veins", "bulge"
+    "armpit crease",
+
+    //腿部
+    "legs", "kneepits", "between legs",
+
+    //脚部
+    "feet", "toes", "toenails",
+    "soles",
+
+    //眼部
+    "eyes", "eyelashes", "eyeball",
+
+    //手部
+    "nails", "fingernails",
+
+    //其他
+    "linea alba",
+    "clothed female nude male",
+    "eldritch abomination", "clothed sex",
+    "veins", "bulge",
+    "chikan", "hetero", "femdom",
 ]
