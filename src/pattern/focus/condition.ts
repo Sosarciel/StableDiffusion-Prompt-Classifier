@@ -29,4 +29,7 @@ export const patterns = [
     "mixed bathing",
     "happy sex",
     "public use",
+    "chikan", "hetero", "femdom",
+    "clothed female nude male",
+    "clothed sex",
 ];

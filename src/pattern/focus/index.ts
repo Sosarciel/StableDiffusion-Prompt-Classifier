@@ -45,8 +45,6 @@ export const patterns = [
 
     //其他
     "linea alba",
-    "clothed female nude male",
-    "eldritch abomination", "clothed sex",
+    "eldritch abomination",
     "veins", "bulge",
-    "chikan", "hetero", "femdom",
 ]
