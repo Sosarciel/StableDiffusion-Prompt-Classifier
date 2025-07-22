@@ -39,9 +39,11 @@ export async function classificationPrompt(...prompts:string[]){
             table.missed = table.missed??[];
             table.missed.push(cur);
         }else{
-            const category = matchList[0].name;
-            table[category] = table[category]??[];
-            table[category].push(cur);
+            matchList.map(pobj=>{
+                const category = pobj.name;
+                table[category] = table[category]??[];
+                table[category].push(cur);
+            })
         }
         return table;
     },{}as Record<string,string[]>)
