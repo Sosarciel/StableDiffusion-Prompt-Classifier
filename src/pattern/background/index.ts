@@ -26,11 +26,8 @@ export const patterns = [
     "indoors",
     desc("background"),
 
-    //生物背景
-    "bird",
+    //生物集群
     "crow",
-    "dragon",
-    "eastern dragon",
 
     //室内环境
     "candlelight",

@@ -1,9 +1,8 @@
 import { colorDesc, desc, format } from "PatternUtils";
 
 
-/** 背景 地点 时间 等非主体角色因素 */
+/** 固定设施 */
 export const patterns = [
-    //固定物体
     "railing",
     "window",
     "campfire",

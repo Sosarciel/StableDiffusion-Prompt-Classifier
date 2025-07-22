@@ -11,6 +11,7 @@ export const patterns = [
     "bug", "butterfly",
     "bat (animal)",
     "monster", "creature", "skeleton", "ghost",
-    "fish"
+    "fish", "bird", "dragon",
+    "eastern dragon",
 ]
 
