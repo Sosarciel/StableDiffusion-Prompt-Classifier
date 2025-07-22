@@ -16,6 +16,9 @@
         "index.js",
         "index.d.ts"
     ],
+	"bin": {
+		"Prompt-Classifier": "bin/cli"
+	},
     "dependencies": {
         "@zwa73/utils": "^1.0.207"
     },
