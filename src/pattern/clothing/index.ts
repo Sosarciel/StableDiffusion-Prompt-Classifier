@@ -181,7 +181,6 @@ export const patterns = [
     "bandaged leg", "bandaged head", "bandaged arm",
     "riding",
     "virtual youtuber",
-    "christmas",
     "lolita fashion",
     "race queen",
     "cheerleader", "pom pom (cheerleading)", "pom pom (clothes)",

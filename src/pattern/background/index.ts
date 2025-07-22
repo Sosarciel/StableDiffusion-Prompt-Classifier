@@ -30,6 +30,7 @@ export const patterns = [
     "bird",
     "crow",
     "dragon",
+    "eastern dragon",
 
     //室内环境
     "candlelight",
@@ -50,10 +51,6 @@ export const patterns = [
     "ocean",
     "graveyard",
     "castle",
-
-    //复合背景
-    "halloween",
-    "valentine",
 
     //特殊环境/特效背景
     "explosion",

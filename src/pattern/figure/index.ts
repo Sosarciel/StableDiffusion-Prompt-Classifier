@@ -54,7 +54,7 @@ export const patterns = [
     //尾巴
     "wolf tail", "tail", "demon tail",
     "rabbit tail", "mouse tail", "white tail", "cat tail", "dragon tail",
-    "multiple tails", "fox tail",
+    "multiple tails", "fox tail","flame-tipped tail",
 
     //嘴部
     "fang", "skin fang", "fangs",
