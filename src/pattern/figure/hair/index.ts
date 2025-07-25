@@ -28,6 +28,7 @@ export const patterns = [
     "braided ponytail", "ponytail",
     "side ponytail","high ponytail", "short ponytail","low ponytail",
     "twintails","short twintails","low twintails",
+    "one side up", "two side up",
 
     //辫子
     "braid", "side braid", "single braid", "twin braids","french braid",

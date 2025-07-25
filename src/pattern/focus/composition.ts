@@ -6,7 +6,10 @@ import { format } from "PatternUtils";
 export const patterns = [
     "cowboy shot",
     "pov","pov hands",
-    "foreshortening",
-    "head out of frame", "close-up",
+    "foreshortening","close-up",
     "multiple views",
+    "head out of frame",
+    "feet out of frame",
+    "out of frame",
+    "foot out of frame",
 ];

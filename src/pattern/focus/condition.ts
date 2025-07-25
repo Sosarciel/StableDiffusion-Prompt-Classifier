@@ -18,6 +18,8 @@ export const patterns = [
     "drooling","saliva trail",
     "wet hair",
     "female ejaculation",
+    "sweat", "sweatdrop",
+    "flying sweatdrops",
 
     //情景状态
     "exhibitionism",

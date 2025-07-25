@@ -172,6 +172,7 @@ export const patterns = [
     "nude", "completely nude", "see-through",
     "no pants","bottomless","topless",
     "underwear only", "no bra",
+    "cleavage cutout",
 
     //风格套装
     "playboy bunny",

@@ -18,20 +18,23 @@ export const patterns = [
     "hair","sidelocks",
 
     //臀部腹部
-    "groin",
+    "ass", "groin",
     "penis", sizeDesc("penis"), "veiny penis","testicles",
     "male pubic hair","female pubic hair","pubic hair",
     "pussy", "anus", "vaginal",
     "anal", "cervix", "clitoris",
+    "navel", "stomach",
 
     //胸部
-    "breasts","nipples",
+    "breasts","nipples", "collarbone",
     "sideboob", "underboob", "backboob",
     "breasts apart",
     "armpit crease",
+    "between breasts",
 
     //腿部
     "legs", "kneepits", "between legs",
+    "thighs",
 
     //脚部
     "feet", "toes", "toenails",
@@ -47,4 +50,6 @@ export const patterns = [
     "linea alba",
     "eldritch abomination",
     "veins", "bulge",
+    "full body",
+    "upper body",
 ]

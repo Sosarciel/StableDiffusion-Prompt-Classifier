@@ -3,6 +3,7 @@ import { format } from "PatternUtils";
 
 /**效果 */
 export const patterns = [
+    "heart",
     "clothes writing",
     "shiny", "shadow", "viewfinder",
     "dutch angle", "science fiction","logo",

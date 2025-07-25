@@ -1,0 +1,15 @@
+import { format } from "PatternUtils";
+
+
+
+
+/** 与衣物的互动 */
+export const patterns = [
+    "panty pull",
+    "clothes lift",
+    "skirt lift",
+    "shirt grab",
+    "clothes grab", "clothes pull",
+    "shirt tug", "pulled by self", "shirt pull",
+    "lifted by self", "dress lift", "skirt hold","shirt lift",
+]
