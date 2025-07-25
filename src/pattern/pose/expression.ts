@@ -27,4 +27,7 @@ export const patterns = [
     "tearing up", "scared", "wavy mouth",
     ":p","clenched teeth", "upper teeth only",
     "torogao","embarrassed",
+    "seductive smile", "light smile",
+    "angry", "anger vein", "annoyed", "disgust", "glaring", "scowl", "tsurime",
+    "uneven eyes",
 ]

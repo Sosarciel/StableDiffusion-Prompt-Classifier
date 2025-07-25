@@ -14,4 +14,5 @@ export const patterns = [
     "tablecloth", "chandelier", "couch",
     "letterboxed", "mirror", "bed","armchair",
     "throne","bed sheet",
+    "chest of drawers", "drawer", "shelf"
 ]

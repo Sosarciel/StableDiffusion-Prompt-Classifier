@@ -11,5 +11,5 @@ export const patterns = [
     "hand mirror","watering can",
     "harp", "instrument","flute","recorder",
     "torch","shower head",
-    "blanket",
+    "blanket", "crime prevention buzzer",
 ]

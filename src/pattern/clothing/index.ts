@@ -163,6 +163,7 @@ export const patterns = [
     "polka dot", "flower knot",
     "buckle", "watch",
     "lace trim", "lace",
+    "name tag", "id card",
 
     //穿着风格
     /^.+ cutout$/,

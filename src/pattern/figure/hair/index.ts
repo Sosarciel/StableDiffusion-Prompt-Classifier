@@ -22,6 +22,7 @@ export const patterns = [
     "hair over one eye",
     "hair between eyes",
     "eyes visible through hair", "hair over eyes",
+    "hair over shoulder",
 
     //马尾辫
     "braided ponytail", "ponytail",
@@ -40,6 +41,8 @@ export const patterns = [
     "curly hair", "hair up",
     "low-tied long hair",
 
+
+    "wavy hair",
     "twin drills", "ahoge",
     "ringlets",
     "curvy",

@@ -10,4 +10,5 @@ export const patterns = [
     "can", "treasure chest",
     "backpack",
     "briefcase", "duffel bag", "school briefcase",
+    "randoseru",
 ]

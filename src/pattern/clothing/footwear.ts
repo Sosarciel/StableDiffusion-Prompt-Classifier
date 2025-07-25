@@ -21,6 +21,6 @@ export const patterns = [
     "sandals",
     "tabi",
     "single shoe",
-    "shoe soles", "zouri", "geta","toeless legwear"
+    "shoe soles", "zouri", "geta","toeless legwear","uwabaki"
 ]
 

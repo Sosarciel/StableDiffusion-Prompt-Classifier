@@ -11,6 +11,7 @@ export const patterns = [
     "skirt lift",
     "shirt grab",
     "clothes grab", "clothes pull",
+    "shirt tug", "pulled by self", "shirt pull",
 
     //身体状态
     "breasts on glass",

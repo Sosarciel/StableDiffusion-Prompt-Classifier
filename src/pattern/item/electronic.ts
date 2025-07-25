@@ -7,4 +7,5 @@ export const patterns = [
     "cable",
     "tablet pc", "computer",
     "handheld game console",  "laptop",
+    "monitor",
 ]
