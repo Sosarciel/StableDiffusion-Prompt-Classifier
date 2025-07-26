@@ -9,4 +9,10 @@ export const patterns = [
     "on bed", "on chair",
     "sitting on desk", "on desk",
     "sitting on table",
+    "showering",
+    "bathing",
+    "breasts on glass",
+    "against glass",
+    "against wall",
+    "on floor",
 ]

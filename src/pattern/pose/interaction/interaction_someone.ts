@@ -22,4 +22,11 @@ export const patterns = [
     "carrying person",
     "lifting person", "lying on person", "on person",
     "sitting on person",
+    "piggyback", "straddling",
+    "hug from behind",
+    "stepped on",
+    "head rest",
+    "wiping tears",
+    "viewer holding leash", "selfie",
+    "reaching towards viewer",
 ]

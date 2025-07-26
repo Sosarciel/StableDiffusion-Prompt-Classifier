@@ -20,6 +20,8 @@ export const patterns = [
     "female ejaculation",
     "sweat", "sweatdrop",
     "flying sweatdrops",
+    "presenting",
+    "bouncing breasts",
 
     //情景状态
     "exhibitionism",

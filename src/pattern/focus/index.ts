@@ -24,6 +24,10 @@ export const patterns = [
     "pussy", "anus", "vaginal",
     "anal", "cervix", "clitoris",
     "navel", "stomach",
+    "ass visible through thighs",
+    "zettai ryouiki",
+    "covered navel",
+    "thigh gap",
 
     //胸部
     "breasts","nipples", "collarbone",
@@ -31,6 +35,7 @@ export const patterns = [
     "breasts apart",
     "armpit crease",
     "between breasts",
+    "cleavage",
 
     //腿部
     "legs", "kneepits", "between legs",

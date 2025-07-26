@@ -3,20 +3,12 @@ import { format } from "PatternUtils";
 /** 姿势 或 某个身体部位的特写 */
 export const patterns = [
     //身体状态
-    "breasts on glass",
-    "bouncing breasts",
     "facing away", "arched back",
     "breast rest",
     "gagged", "covered eyes",
-
-    //体位
-    "doggystyle",
-    "dildo riding",
-    "double penetration",
-    "sex","sex from behind","standing sex",
-    "girl on top",
-    "footjob", "buttjob", "two-footed footjob",
-    "imminent penetration", "imminent vaginal",
+    "floating",
+    "floating hair",
+    "partially submerged",
 
     //目光方向
     "looking up",
@@ -27,9 +19,12 @@ export const patterns = [
     "looking away",
     "looking to the side",
     "looking back",
+    "straight-on",
+    "facing viewer",
 
     //位置
     "in box", "in container",
+    "peeking out",
 
     //手部动作
     "hand up",
@@ -39,6 +34,11 @@ export const patterns = [
     "clenched hands",
     "hand between legs",
     "paw pose", "claw pose",
+    "interlocked fingers",
+    "fingers together",
+    "finger to mouth", "fingering",
+    "waving","clenched hand",
+    "v",
 
     //手臂动作
     "arm at side", "outstretched arm", "arms at sides",
@@ -59,6 +59,19 @@ export const patterns = [
     "legs apart",
     "standing on one leg",
 
+    //脚部动作
+    "plantar flexion","feet up",
+    "crossed ankles",
+    "spread toes",
+
+    //臀部动作
+    "spread pussy","tail raised",
+    "gaping",
+    "spread ass",
+
+    //头部动作
+    "head tilt",
+
     //主体姿势
     "walking",
     "on side",
@@ -68,51 +81,18 @@ export const patterns = [
     "on back",
     "squatting",
     "carrying", "hug",
-
-    "straight-on",
-    "ass visible through thighs",
-    "interlocked fingers",
-    "fingers together",
-    "waving",
-    "peeking out",
-    "dual wielding",
-    "leaning forward",
-    "indian style",
-    "partially submerged",
-    "floating hair",
     "all fours",
-    "zettai ryouiki",
-    "facing viewer",
-    "finger to mouth", "ninja",
-    "mouth hold",
-    "cleavage",
-    "wiping tears",
-    "covered navel",
-    "on floor",
-    "drinking",
-    "fellatio gesture",
-    "floating",
-    "thigh gap",
-    "spread pussy","presenting", "tail raised", "leaning back",
-    "head tilt",
+    "ninja",
+    "indian style",
+    "leaning forward",
+    "leaning back",
     "sitting backwards", "bent over",
-    "bdsm", "bound",
-    "bondage", "shibari","restrained", "bound wrists",
     "yokozuwari",
-    "object insertion", "vaginal object insertion", "anal object insertion",
-    "upside-down", "falling", "shoe dangle", "hanging", "plantar flexion",
-    "viewer holding leash", "selfie", "reaching towards viewer", "leash pull", "clenched hand",
-    "gaping", "reclining",
-    "stepped on",
-    "head rest",
-    "molestation", "fingering", "groping",
-    "on stomach", "the pose", "feet up", "profile",
-    "crossed ankles",
-    "holding smoking pipe", "wariza", "v",
-    "spread ass", "top-down bottom-up",
+    "upside-down", "falling", "hanging",
+    "reclining",
+    "on stomach", "the pose", "profile",
+    "wariza",
+    "top-down bottom-up",
     "ballet",
-    "piggyback", "straddling", 
-    "hug from behind",
-    "talking","female masturbation", "masturbation","spread toes","bathing",
-    "showering", "against wall",
+    "talking",
 ]

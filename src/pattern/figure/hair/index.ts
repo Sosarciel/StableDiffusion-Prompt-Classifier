@@ -41,11 +41,12 @@ export const patterns = [
     //其他发型
     "curly hair", "hair up",
     "low-tied long hair",
-
-
     "wavy hair",
-    "twin drills", "ahoge",
+    "twin drills",
     "ringlets",
-    "curvy",
     "bob cut",
+
+    //其他
+    "sidelocks", "ahoge",
+    "curvy",
 ];
