@@ -7,12 +7,14 @@ import { format } from "PatternUtils";
 export const patterns = [
     "on vehicle",
     "on bed", "on chair",
-    "sitting on desk", "on desk",
+    "on floor", "on desk",
+
+    "sitting on desk",
     "sitting on table",
+    "breasts on glass",
+
     "showering",
     "bathing",
-    "breasts on glass",
     "against glass",
     "against wall",
-    "on floor",
 ]

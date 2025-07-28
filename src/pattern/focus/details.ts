@@ -1,5 +1,9 @@
 import { colorDesc, format } from "PatternUtils";
 
+
+
+
+
 /** 某个身体部位的细节描述 图片焦点 */
 export const patterns = [
     colorDesc("nails"), "nails", "nail polish",

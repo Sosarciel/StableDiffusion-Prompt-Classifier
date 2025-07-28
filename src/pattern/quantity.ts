@@ -5,10 +5,7 @@ import { format } from "PatternUtils";
 export const patterns = [
     "solo",
     "multiple girls",
-    /\dgirls/,
-    /\dboys/,
-    /\dgirl/,
-    /\dboy/,
+    /^\dgirls?$/, /^\dboys?$/,
     "people", "multiple boys", "6+boys",
     "siblings", "couple", "brother and sister",
     "1other",

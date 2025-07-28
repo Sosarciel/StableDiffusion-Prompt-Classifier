@@ -1,7 +1,7 @@
 import { colorDesc, desc, format } from "PatternUtils";
 
 
-/** 背景 地点 时间 等非主体角色因素 */
+/** 自然的 */
 export const patterns = [
     //植物环境
     "grass",
