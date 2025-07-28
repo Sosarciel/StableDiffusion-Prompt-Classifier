@@ -8,6 +8,7 @@ export const patterns = [
     "on vehicle",
     "on bed", "on chair",
     "on floor", "on desk",
+    "on table",
 
     "sitting on desk",
     "sitting on table",

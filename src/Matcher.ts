@@ -20,14 +20,14 @@ export async function classificationPrompt(...prompts:string[]){
                 matchList.push(pobj);
             }
 
-            //如果新项目对原项呈包含关系 则替换原项
+            //如果原项目是新项目的子类 则替换原项
             else if(matchList.length >= 1 && !pobj.include(matchList[0])){
                 matchList[0] = pobj;
                 //console.log(1,matchList);
             }
 
             //如果新项目对原项不呈包含关系 则再次加入
-            else if(matchList.length >= 1 && !matchList[0].include(pobj)){
+            else if(matchList.length >= 1 && !matchList[0].include(pobj) && !pobj.include(matchList[0])){
                 matchList.push(pobj);
                 //console.log(2,matchList);
             }

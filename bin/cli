@@ -1,5 +1,3 @@
 #!/usr/bin/env node
 
-const {cliRoute} = require('../dist/Route.js');
-
-cliRoute();
+require('../dist/Route.js');

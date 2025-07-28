@@ -15,6 +15,8 @@ export const patterns = [
     "elin","sensei (blue archive)",
     "skadi (arknights)", "skadi the corrupting heart (arknights)",
     "specter (arknights)", "doctor (arknights)",
-    "dusk (arknights)","pecorine (princess connect!)"
+    "dusk (arknights)","pecorine (princess connect!)",
+    "ako (blue archive)",
+    "gawr gura", "bloop (gawr gura)"
 ];
 

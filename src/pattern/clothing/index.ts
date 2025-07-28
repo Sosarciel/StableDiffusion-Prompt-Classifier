@@ -9,7 +9,7 @@ export const patterns = [
     "sweatband",
     "headphones", "headphones around neck", "fake animal ears",
     "animal ear headphones",
-    "tiara",
+    "tiara", "maid headdress",
 
     //帽子
     desc("hat"), desc("cape"), desc("cap"),
@@ -27,7 +27,7 @@ export const patterns = [
     /^goggles.+ $/,
     "makeup"    ,
     "eyepatch",
-    "blindfold", 
+    "blindfold",
     "medical eyepatch",
     "eyewear on head",
     "black blindfold",
@@ -177,7 +177,7 @@ export const patterns = [
 
     //风格套装
     "playboy bunny",
-    "wa maid", "maid",
+    "wa maid", "maid", "enmaided",
     "mummy", "jiangshi", "witch",
     /^.+ outfit$/,
     /^.+ costume$/,

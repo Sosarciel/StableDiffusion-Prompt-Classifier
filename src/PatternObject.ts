@@ -65,7 +65,7 @@ export const getPatternCategoryMap = async ()=>{
 /**获取所有子类别 */
 export const getPatternsCategory = memoize(async (pat?:string)=>{
     const categoryMap = await getPatternCategoryMap();
-    if(pat==null) return Object
+    if(pat==null || pat=="pattern") return Object
         .entries(categoryMap)
         .map(([k,v])=>({name:k,path:v}));
 

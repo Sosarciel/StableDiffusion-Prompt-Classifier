@@ -32,4 +32,8 @@ export const patterns = [
     "reaching towards viewer",
     "lactation",
     "breast hold",
+    "breastfeeding",
+    "breast conscious",
+    "breasts squeezed together",
+    "breast lift",
 ]

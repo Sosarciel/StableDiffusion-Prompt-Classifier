@@ -16,6 +16,7 @@ export const patterns = [
     "leash pull",
     "holding smoking pipe",
     "breasts on table",
+    "pouring",
 
     //生物
     "bird on hand",

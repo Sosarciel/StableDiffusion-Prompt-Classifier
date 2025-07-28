@@ -23,6 +23,7 @@ export const patterns = [
     "tongue",
     "mouth hold",
     "licking lips", "split mouth",
+    "lip biting",
 
     //整体
     "parted lips",

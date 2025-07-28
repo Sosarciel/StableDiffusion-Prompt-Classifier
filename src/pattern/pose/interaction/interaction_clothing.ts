@@ -12,4 +12,5 @@ export const patterns = [
     "clothes grab", "clothes pull",
     "shirt tug", "pulled by self", "shirt pull",
     "lifted by self", "dress lift", "skirt hold","shirt lift",
+    "panties around one leg",
 ]
