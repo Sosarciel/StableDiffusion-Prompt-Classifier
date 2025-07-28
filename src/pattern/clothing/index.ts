@@ -1,4 +1,4 @@
-import { desc, descPlural, format } from "PatternUtils";
+import { colorDesc, desc, descPlural, format } from "PatternUtils";
 
 /** 任何和主体角色有关的服装 */
 export const patterns = [
@@ -40,9 +40,10 @@ export const patterns = [
     desc("choker"),
     desc("capelet"),
     desc("scarf"),
+    "ascot", colorDesc("ascot"),
     "necklace",
     "shrug (clothing)", "feather boa",
-    "ascot","turtleneck",
+    "turtleneck",
 
     //腰部
     desc("belt"),

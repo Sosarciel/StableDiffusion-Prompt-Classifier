@@ -14,6 +14,7 @@ export const patterns = [
     //"hand on chin",
     //"hand on head",
     //"hand on hip",
+    "grabbing own breast",
     "grabbing own ass","grabbing","grabbing from behind",
     "ass grab", "leg grab",
     "breast grab", "ankle grab", "arm grab",
@@ -29,4 +30,6 @@ export const patterns = [
     "wiping tears",
     "viewer holding leash", "selfie",
     "reaching towards viewer",
+    "lactation",
+    "breast hold",
 ]

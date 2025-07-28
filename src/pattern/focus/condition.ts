@@ -8,6 +8,7 @@ export const patterns = [
     "skindentation",
     "steaming body",
     "breasts out",
+    "one breast out",
     "breast press",
     "wet", "cumdrip",
     "cum", "cum in pussy",
@@ -22,6 +23,7 @@ export const patterns = [
     "flying sweatdrops",
     "presenting",
     "bouncing breasts",
+    "puffy nipples",
 
     //情景状态
     "exhibitionism",
@@ -36,4 +38,6 @@ export const patterns = [
     "chikan", "hetero", "femdom",
     "clothed female nude male",
     "clothed sex",
+    "mind control",
+    "hypnosis",
 ];

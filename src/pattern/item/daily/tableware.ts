@@ -9,4 +9,5 @@ export const patterns = [
     "tray","wind chime",
     "fork","knife","spoon",
     "cocktail glass", "bowl", "plate",
+    "saucer", "mug",
 ]

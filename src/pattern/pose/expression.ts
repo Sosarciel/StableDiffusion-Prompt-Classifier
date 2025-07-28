@@ -10,16 +10,19 @@ export const patterns = [
     "v-shaped eyebrows","uneven eyes","narrowed eyes", "half-closed eyes", "one eye covered",
     "frown",
     "heart-shaped pupils",
+    "heart in eye", "symbol in eye",
 
     //符号表情
     "+ +","^ ^", "@ @",
     ";d",":d",":3",":<",":o",":/",":p",":t",
+    ":q",
 
     //嘴
     "closed mouth", "open mouth", "wavy mouth",
     "tongue out",
     "tongue",
     "mouth hold",
+    "licking lips", "split mouth",
 
     //整体
     "parted lips",
