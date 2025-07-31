@@ -30,9 +30,6 @@ export const patterns = [
     "mole on breast",
     "flat chest",
 
-    //指甲
-    colorDesc('nails'),
-
     //皮肤
     "albino",
     "sign", "body writing",

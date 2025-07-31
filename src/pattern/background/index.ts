@@ -64,6 +64,7 @@ export const patterns = [
     "confetti",
     "darkness",
     "smoke",
+    "lightning",
     "contrail",
     "overflow", "soap bubbles",
 ]

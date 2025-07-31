@@ -67,7 +67,8 @@ export const getPatternsCategory = memoize(async (pat?:string)=>{
     const categoryMap = await getPatternCategoryMap();
     if(pat==null || pat=="pattern") return Object
         .entries(categoryMap)
-        .map(([k,v])=>({name:k,path:v}));
+        .map(([k,v])=>({name:k,path:v}))
+        .filter(v=>v.name!="pattern");
 
     return Object.entries(categoryMap)
         .filter(([k,v])=>{

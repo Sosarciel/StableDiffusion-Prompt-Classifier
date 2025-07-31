@@ -36,4 +36,5 @@ export const patterns = [
     "breast conscious",
     "breasts squeezed together",
     "breast lift",
+    "biting", "finger biting",
 ]

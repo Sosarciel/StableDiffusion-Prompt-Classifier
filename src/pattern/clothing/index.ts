@@ -82,6 +82,7 @@ export const patterns = [
     "shawl", "criss-cross halter",
     "crop top overhang",
     "uchikake",
+    "hagoromo",
 
     //臀部服饰
     "hip vent",

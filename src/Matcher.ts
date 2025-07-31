@@ -55,9 +55,9 @@ export async function classificationPrompt(...prompts:string[]){
  */
 export async function getTestFunc(...category:string[]) {
     //去除类别
-    const nmap = await Promise.all(category.map(async s=>{
-        const rs = await PatternObject.create(s);
-        if(rs==undefined) throwError(`未找到类别:${s}`);
+    const nmap = await Promise.all(category.map(async cate=>{
+        const rs = await PatternObject.create(cate);
+        if(rs==undefined) throwError(`未找到类别:${cate}`);
         return rs;
     }));
 
