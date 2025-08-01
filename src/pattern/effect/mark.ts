@@ -4,7 +4,7 @@ import { format } from "PatternUtils";
 /**水印 */
 export const patterns = [
     //文字
-    "text", "japanese text", "censored text",
+    "text", "japanese text", "censored text", "korean text",
     "chinese text", "english text","engrish text",
     "character name", "patreon username", "artist name",
     "colophon", "company name", "copyright name", "copyright",

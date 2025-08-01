@@ -105,7 +105,7 @@ export const patterns = [
     desc("bikini"),
     desc("bra"),
     "underwear" ,
-    "bath towel", "towel",
+    "bath towel", "towel", "beach towel",
     "maebari"   ,
     "covered navel", "sports bra",
     "bikini top only","sling bikini top","side-tie bikini bottom",

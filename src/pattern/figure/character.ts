@@ -17,6 +17,7 @@ export const patterns = [
     "specter (arknights)", "doctor (arknights)",
     "dusk (arknights)","pecorine (princess connect!)",
     "ako (blue archive)",
-    "gawr gura", "bloop (gawr gura)"
+    "gawr gura", "bloop (gawr gura)",
+    "nanashi mumei"
 ];
 

@@ -29,6 +29,7 @@ export const patterns = [
     "hanging breasts",
     "mole on breast",
     "flat chest",
+    "inverted nipples",
 
     //皮肤
     "albino",
@@ -65,6 +66,8 @@ export const patterns = [
     "cosplay","kitsune",
     "kemonomimi mode", "werewolf",
     "petite",
+    "muscular male", "manly",
+    "abs", "muscular", "facial", "pectorals",
 
     //不定装饰
     desc("tattoo"),

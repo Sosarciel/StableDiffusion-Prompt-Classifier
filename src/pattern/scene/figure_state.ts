@@ -23,4 +23,5 @@ export const patterns = [
     "presenting",
     "bouncing breasts",
     "puffy nipples",
+    "twitching",
 ];

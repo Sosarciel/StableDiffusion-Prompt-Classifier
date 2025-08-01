@@ -13,13 +13,19 @@ export const patterns = [
     "girl on top",
     "footjob", "buttjob", "two-footed footjob",
     "imminent penetration", "imminent vaginal",
-    "fellatio gesture",
+    "fellatio gesture", "missionary",
+    "threesome", "group sex", "ffm threesome",
+    "paizuri",
+
 
     //自慰
     "molestation", "groping",
     "female masturbation", "masturbation",
 
+    "cum on breasts",
+
     "orgasm",
     "female orgasm",
     "pee", "peeing",
+    "clitoral stimulation",
 ]
