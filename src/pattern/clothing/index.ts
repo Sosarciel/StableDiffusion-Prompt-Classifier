@@ -10,6 +10,7 @@ export const patterns = [
     "headphones", "headphones around neck", "fake animal ears",
     "animal ear headphones",
     "tiara", "maid headdress",
+    "hairpin",
 
     //帽子
     desc("hat"), desc("cape"), desc("cap"),
@@ -175,6 +176,7 @@ export const patterns = [
     "no pants","bottomless","topless",
     "underwear only", "no bra",
     "cleavage cutout",
+    "bare back",
 
     //风格套装
     "playboy bunny",

@@ -3,7 +3,7 @@ import { format } from "PatternUtils";
 
 /**效果 */
 export const patterns = [
-    "monochrome", "greyscale",
+    "monochrome", "greyscale", "spot color",
     "heart",
     "clothes writing",
     "shiny", "shadow", "viewfinder",

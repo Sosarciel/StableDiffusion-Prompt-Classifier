@@ -40,7 +40,7 @@ export const patterns = [
     "fake screenshot",
     "blurry foreground",
     "picture frame", "painting (object)",
-    "blue theme",
+    "blue theme", "grey theme",
 
     //特殊地点
     "ruins",
@@ -64,6 +64,7 @@ export const patterns = [
     "confetti",
     "darkness",
     "smoke",
+    "fog",
     "lightning",
     "contrail",
     "overflow", "soap bubbles",

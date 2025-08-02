@@ -13,6 +13,10 @@ import { colorDesc, desc, format, lengthDesc, sizeDesc } from "PatternUtils";
 export const patterns = [
     //腿部
     "thick thighs",
+
+    //臀部
+    "wide hips", "huge ass",
+
     //手部
     "animal hands", "claws",
 
@@ -37,7 +41,7 @@ export const patterns = [
     "shiny skin",
     "dark-skinned female", "dark skin",
     "dark-skinned male", "pale skin",
-    "fur",
+    "fur", "deep skin",
 
     //头部
     "wolf ears", "animal ear fluff", "animal ears", "pointy ears",

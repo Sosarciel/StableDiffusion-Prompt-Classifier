@@ -63,8 +63,10 @@ export const patterns = [
     "plantar flexion","feet up",
     "crossed ankles",
     "spread toes",
+    "tiptoes",
 
     //臀部动作
+    "spread anus",
     "spread pussy","tail raised",
     "gaping",
     "spread ass",
