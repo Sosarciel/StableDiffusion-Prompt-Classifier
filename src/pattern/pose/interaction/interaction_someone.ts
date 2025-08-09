@@ -39,4 +39,5 @@ export const patterns = [
     "biting", "finger biting",
     "covering mouth", "hand over own mouth",
     "ass support",
+    "leg hold",
 ]
