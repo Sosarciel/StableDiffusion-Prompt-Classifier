@@ -6,6 +6,7 @@ export const patterns = [
     "exhibitionism",
     "public indecency",
     "implied sex",
+    "imminent rape",
     "pet play",
     "netorare",
     "incest",
@@ -17,4 +18,6 @@ export const patterns = [
     "clothed sex",
     "mind control",
     "hypnosis",
+    "defeat",
+    "suspended congress",
 ];

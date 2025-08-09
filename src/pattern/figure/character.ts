@@ -18,6 +18,7 @@ export const patterns = [
     "dusk (arknights)","pecorine (princess connect!)",
     "ako (blue archive)",
     "gawr gura", "bloop (gawr gura)",
-    "nanashi mumei"
+    "nanashi mumei",
+    "fischl (genshin impact)", "hilichurl (genshin impact)",
 ];
 

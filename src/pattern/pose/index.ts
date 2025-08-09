@@ -48,6 +48,7 @@ export const patterns = [
     "arm up", "arm behind head",
     "arm behind back", "v arms",
     "crossed arms", "arm under breasts",
+    "arms behind head",
 
     //腿部动作
     "knee up","kneeling",
@@ -98,4 +99,5 @@ export const patterns = [
     "top-down bottom-up",
     "ballet",
     "talking",
+    "chained",
 ]

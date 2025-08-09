@@ -42,6 +42,7 @@ export const patterns = [
     "dark-skinned female", "dark skin",
     "dark-skinned male", "pale skin",
     "fur", "deep skin",
+    "black skin", "colored skin",
 
     //头部
     "wolf ears", "animal ear fluff", "animal ears", "pointy ears",

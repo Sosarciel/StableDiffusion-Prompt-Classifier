@@ -16,6 +16,8 @@ export const patterns = [
     "fellatio gesture", "missionary",
     "threesome", "group sex", "ffm threesome",
     "paizuri",
+    "gangbang", "rape","mmf threesome",
+    "interspecies",
 
 
     //自慰

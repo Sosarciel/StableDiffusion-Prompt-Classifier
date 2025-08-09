@@ -9,5 +9,6 @@ export const patterns = [
     "people", "multiple boys", "6+boys",
     "siblings", "couple", "brother and sister",
     "1other",
+    "multiple penises",
 ]
 
