@@ -1,7 +1,7 @@
 {
-    "name": "@sosarciel-stablediffusion/imagedata-prompt-classifier",
+    "name": "@sosarciel-stablediffusion/prompt-classifier",
     "version": "1.0.0",
-    "description": "StableDiffusion-PromptClassifier",
+    "description": "StableDiffusion-Prompt-Classifier",
 	"main": "dist/index.js",
     "scripts": {
         "release": "powershell scripts/release",
@@ -12,9 +12,7 @@
     "license": "ISC",
     "files": [
         "data",
-        "dist",
-        "index.js",
-        "index.d.ts"
+        "dist"
     ],
 	"bin": {
 		"Prompt-Classifier": "bin/cli"
