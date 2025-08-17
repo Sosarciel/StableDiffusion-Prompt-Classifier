@@ -72,7 +72,7 @@ export const patterns = [
     "kemonomimi mode", "werewolf",
     "petite",
     "muscular male", "manly",
-    "abs", "muscular", "facial", "pectorals",
+    "abs", "muscular", "facial", "pectorals","plump",
 
     //不定装饰
     desc("tattoo"),

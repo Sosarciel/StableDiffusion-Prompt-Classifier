@@ -98,7 +98,8 @@ export const patterns = [
     "crotchless",
     "overalls",
     "open fly",
-    "pants", "black pants", "grey pants", "shirt tucked in",
+    colorDesc("pants"), "pants",
+    "shirt tucked in",
 
     //内衣
     desc("panties"),

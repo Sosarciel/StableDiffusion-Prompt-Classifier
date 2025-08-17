@@ -20,5 +20,6 @@ export const patterns = [
     "gawr gura", "bloop (gawr gura)",
     "nanashi mumei",
     "fischl (genshin impact)", "hilichurl (genshin impact)",
+    "eula (genshin impact)",
 ];
 

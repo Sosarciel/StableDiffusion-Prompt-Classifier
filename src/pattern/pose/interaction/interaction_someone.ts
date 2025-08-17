@@ -14,7 +14,7 @@ export const patterns = [
     //"hand on chin",
     //"hand on head",
     //"hand on hip",
-    "grabbing own breast",
+    "grabbing own breast","grabbing another's ass",
     "grabbing own ass","grabbing","grabbing from behind",
     "ass grab", "leg grab",
     "breast grab", "ankle grab", "arm grab",

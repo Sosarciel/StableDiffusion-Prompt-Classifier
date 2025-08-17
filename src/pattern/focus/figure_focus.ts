@@ -29,6 +29,7 @@ export const patterns = [
     "zettai ryouiki",
     "covered navel",
     "thigh gap",
+    "butt crack",
 
     //胸部
     "breasts","nipples", "collarbone",
@@ -55,5 +56,6 @@ export const patterns = [
     //其他
     "linea alba",
     "eldritch abomination",
-    "veins", "bulge",
+    "veins", "bulge","tight","median furrow",
+    "shoulder blades",
 ]
