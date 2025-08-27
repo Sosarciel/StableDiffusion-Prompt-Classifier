@@ -23,5 +23,6 @@ export const patterns = [
     "single shoe",
     "shoe soles", "zouri", "geta","toeless legwear","uwabaki",
     "flats",
+    "flip-flops",
 ]
 

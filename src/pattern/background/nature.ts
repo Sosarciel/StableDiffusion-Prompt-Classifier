@@ -10,6 +10,7 @@ export const patterns = [
     "spider lily",
     "flower field","forest","nature",
     "field", "cherry blossoms", "leaf",
+    "wheat",
 
     //自然环境
     "sky", colorDesc("sky"),

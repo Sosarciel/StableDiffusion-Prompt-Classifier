@@ -65,6 +65,7 @@ const color = [
     "orange","blonde","pink","purple","blue","red","grey","black","white","green", "brown","yellow","aqua",
     "light blue","light purple",
     "multicolored","gradient","light brown",
+    "dark blue"
 ] as const;
 /**颜色描述  
  * /^(color) item$/

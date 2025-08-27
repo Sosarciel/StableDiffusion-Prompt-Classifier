@@ -141,6 +141,8 @@ export const patterns = [
     "fishnets",
     "thighlet",
     "bridal garter",
+    "blue overalls",
+    "suspenders",
 
     //不定装饰/小型饰品
     desc("rose"),
@@ -168,6 +170,7 @@ export const patterns = [
     "buckle", "watch",
     "lace trim", "lace",
     "name tag", "id card",
+    "denim",
 
     //穿着风格
     /^.+ cutout$/,
@@ -178,6 +181,7 @@ export const patterns = [
     "underwear only", "no bra",
     "cleavage cutout",
     "bare back",
+    "naked overalls",
 
     //风格套装
     "playboy bunny",
