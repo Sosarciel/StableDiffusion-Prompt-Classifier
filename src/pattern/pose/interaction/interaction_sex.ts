@@ -18,6 +18,8 @@ export const patterns = [
     "paizuri",
     "gangbang", "rape","mmf threesome",
     "interspecies",
+    "oral","fellatio",
+    "penis on face",
 
 
     //自慰
@@ -30,4 +32,5 @@ export const patterns = [
     "female orgasm",
     "pee", "peeing",
     "clitoral stimulation",
+    "penis awe",
 ]

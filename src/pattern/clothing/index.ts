@@ -10,14 +10,14 @@ export const patterns = [
     "headphones", "headphones around neck", "fake animal ears",
     "animal ear headphones",
     "tiara", "maid headdress",
-    "hairpin",
+    "hairpin", "mini crown",
 
     //帽子
     desc("hat"), desc("cape"), desc("cap"),
     desc("hood"), "hood up", "hood down",
     desc("scrunchie"),
     "beret","crown", "bonnet",
-    "qing guanmao", "wataboushi", 
+    "qing guanmao", "wataboushi",
 
     //面部
     desc("mask"), /^mask .+$/,
@@ -151,7 +151,8 @@ export const patterns = [
     desc("flower"),
     desc("bow"),
     "bandaid"   , /^bandaid on .+$/,
-    /^.+ \(symbol\)$/,
+    desc("symbol"), /^.+ \(symbol\)$/,
+    colorDesc("gemstone"),
     "jewelry"   ,
     "bandages"  ,
     "tail ornament",

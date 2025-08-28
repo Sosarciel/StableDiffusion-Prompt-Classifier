@@ -9,7 +9,7 @@ export const patterns = [
     "cowboy shot",
     "full body", "upper body",
 
-    "pov","pov hands", "pov across table",
+    "pov","pov hands", "pov across table", "pov crotch",
     "foreshortening","close-up",
 
     "multiple views",

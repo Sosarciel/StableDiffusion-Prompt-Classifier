@@ -19,6 +19,7 @@ export const patterns = [
     "looking away",
     "looking to the side",
     "looking back",
+    "looking at penis",
     "straight-on",
     "facing viewer",
 

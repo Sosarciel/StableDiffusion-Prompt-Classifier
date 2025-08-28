@@ -51,7 +51,7 @@ export const patterns = [
     "eyes", "eyelashes", "eyeball",
 
     //手部
-    "nails", "fingernails",
+    "nails", "fingernails", "long fingernails", "sharp fingernails",
 
     //其他
     "linea alba",

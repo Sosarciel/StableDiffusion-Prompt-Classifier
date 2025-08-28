@@ -7,6 +7,8 @@ export const patterns = [
     "public indecency",
     "implied sex",
     "imminent rape",
+    "imminent fellatio",
+    "interracial",
     "pet play",
     "netorare",
     "incest",

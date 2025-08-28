@@ -11,6 +11,8 @@ export const patterns = [
     "frown",
     "heart-shaped pupils",
     "heart in eye", "symbol in eye",
+    "wide-eyed","full-face blush","empty eyes",
+    "surprised",
 
     //符号表情
     "+ +","^ ^", "@ @",

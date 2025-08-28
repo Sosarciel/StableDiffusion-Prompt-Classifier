@@ -11,7 +11,7 @@ export const patterns = [
     "train station",
     "city lights",
     "real world location", "street",
-    "classroom", "school",
+    "classroom", "school", "locker room",
 
     //机械背景
     "train", "train interior",

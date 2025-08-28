@@ -46,6 +46,7 @@ export const patterns = [
     "twin drills",
     "ringlets",
     "bob cut",
+    "drill hair",
 
     //其他
     "sidelocks", "ahoge",

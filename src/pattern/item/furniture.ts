@@ -15,5 +15,5 @@ export const patterns = [
     "letterboxed", "mirror", "bed","armchair",
     "throne","bed sheet",
     "chest of drawers", "drawer", "shelf",
-    "barrel", "wood",
+    "barrel", "wood","pendulum",
 ]

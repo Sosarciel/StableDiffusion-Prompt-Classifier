@@ -1,4 +1,4 @@
-import { format } from "PatternUtils";
+import { colorDesc, format } from "PatternUtils";
 
 
 /** 小动物/生物/活动物体 */
@@ -8,7 +8,7 @@ export const patterns = [
     "tanuki","panda",
     "cat","black cat",
     "robot", "drone",
-    "bug", "butterfly",
+    "bug", "butterfly", colorDesc("butterfly"),
     "bat (animal)",
     "monster", "creature", "skeleton", "ghost",
     "fish", "bird", "dragon",

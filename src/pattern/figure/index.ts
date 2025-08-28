@@ -52,7 +52,8 @@ export const patterns = [
 
     //背部
     "wings", "demon wings", "black wings", "bat wings", "mini wings",
-    "feathered wings", "low wings", "head wings", "angel wings",
+    "feathered wings", "low wings", "head wings", "angel wings", "butterfly wings",
+    "colored sclera", colorDesc("sclera"),
 
     //尾巴
     "wolf tail", "tail", "demon tail",
