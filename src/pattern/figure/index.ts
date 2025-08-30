@@ -20,21 +20,6 @@ export const patterns = [
     //手部
     "animal hands", "claws",
 
-    //眼部
-    colorDesc('eyes'),
-    colorDesc("pupils"), "bright pupils",
-    "symbol-shaped pupils",
-    "heterochromia",
-    "extra eyes",
-    "mole under eye",
-
-    //胸部
-    sizeDesc('breasts'),
-    "hanging breasts",
-    "mole on breast",
-    "flat chest",
-    "inverted nipples",
-
     //皮肤
     "albino",
     "sign", "body writing",
