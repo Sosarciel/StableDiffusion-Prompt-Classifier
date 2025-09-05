@@ -78,6 +78,7 @@ export const patterns = [
     "head tilt",
     "eating",
     "food in mouth",
+    "head back",
 
     //主体姿势
     "walking",

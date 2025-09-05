@@ -15,4 +15,5 @@ export const patterns = [
     "panties around one leg",
     "bikini lift", "untied", "bikini pull",
     "clothing aside", "leotard aside",
+    "shorts around one leg","shorts pull",
 ]

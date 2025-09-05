@@ -25,6 +25,7 @@ export const patterns = [
     //自慰
     "molestation", "groping",
     "female masturbation", "masturbation",
+    "anal fingering",
 
     "cum on breasts",
 

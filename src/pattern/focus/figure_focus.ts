@@ -6,6 +6,7 @@ import { format, sizeDesc } from "PatternUtils";
 export const patterns = [
     //焦点
     "vehicle focus", "solo focus", "foot focus", "ass focus", "eye focus",
+    "male focus",
 
     //视角
     "from below", "from behind", "from above", "from side", "back",

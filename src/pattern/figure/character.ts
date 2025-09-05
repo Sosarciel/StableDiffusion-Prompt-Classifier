@@ -21,6 +21,6 @@ export const patterns = [
     "nanashi mumei",
     "fischl (genshin impact)", "hilichurl (genshin impact)",
     "eula (genshin impact)",
-    "minato aqua",
+    "minato aqua","shirakami fubuki",
 ];
 
