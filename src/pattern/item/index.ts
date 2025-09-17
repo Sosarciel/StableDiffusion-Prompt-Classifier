@@ -12,6 +12,7 @@ export const patterns = [
     "panties removed",
     "headwear removed",
     "skirt removed",
-    "shoes removed"
+    "shoes removed",
+    "sandals removed",
 ]
 

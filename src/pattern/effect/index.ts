@@ -13,5 +13,6 @@ export const patterns = [
     "flashing", "motion blur", "motion lines",
     "see-through silhouette", "chromatic aberration",
     "blurry","lens flare", "backlighting",
+    "ripples",
     "绘图", "均匀",
 ];

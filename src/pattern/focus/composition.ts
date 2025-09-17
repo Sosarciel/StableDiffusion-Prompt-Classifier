@@ -11,6 +11,7 @@ export const patterns = [
 
     "pov","pov hands", "pov across table", "pov crotch",
     "foreshortening","close-up",
+    "dakimakura (medium)",
 
     "multiple views",
 ];

@@ -22,5 +22,6 @@ export const patterns = [
     "fischl (genshin impact)", "hilichurl (genshin impact)",
     "eula (genshin impact)",
     "minato aqua","shirakami fubuki",
+    "ch'en (arknights)", "elite ii (arknights)"
 ];
 

@@ -31,6 +31,7 @@ export const patterns = [
     "snow",
     "scenery",
     "beach", "sand",
+    "shallow water", "puddle",
 ]
 
 

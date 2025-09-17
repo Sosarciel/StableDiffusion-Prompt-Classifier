@@ -12,6 +12,6 @@ export const patterns = [
     "bat (animal)",
     "monster", "creature", "skeleton", "ghost",
     "fish", "bird", "dragon",
-    "eastern dragon",
+    "eastern dragon", "starfish", "hibiscus",
 ]
 
