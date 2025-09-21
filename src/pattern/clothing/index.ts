@@ -197,4 +197,5 @@ export const patterns = [
     "lolita fashion",
     "race queen",
     "cheerleader", "pom pom (cheerleading)", "pom pom (clothes)",
+    "bride",
 ]

@@ -12,5 +12,5 @@ export const patterns = [
     "popsicle", "bubble tea",
     "ice cream",
     "chocolate", "heart-shaped chocolate",
-    "tea", "coffee"
+    "tea", "coffee", "strawberry",
 ]
