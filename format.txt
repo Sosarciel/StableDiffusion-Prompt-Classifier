@@ -1,3 +1,3 @@
-1girl, r:eye, c:eye r:pupils
+1girl, r:eye, c:eye, r:pupils
 r:breasts, c:breasts
 c:hair

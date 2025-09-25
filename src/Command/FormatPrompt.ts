@@ -39,18 +39,27 @@ c:string 为类别
         .split(/\n/)
         .map(line => line.trim())
         .filter(Boolean);
+
     for (const line of lines) {
+        const outarr = Array.from(other);
         const matched = await pipe(line,
+            //分割并去除空格
             line=>line.split(','),
             tokens=>tokens.map(t=>t.trim()),
+
+            // 处理每一行
             tokens=>Promise.all(tokens.map(token=>match(token.slice(0,2),{
-                'r:':()=>regexMatch(token,input),
-                'c:':()=>categoryMatch(token,input),
-            },()=>stringMatch(token,input)))),
+                'r:':()=>regexMatch(token,outarr),
+                'c:':()=>categoryMatch(token,outarr),
+            },()=>stringMatch(token,outarr)))),
+
+            //展开并去重
             li=>li.flat(),
-            li=>new Set(li),
+            li=>Array.from(new Set(li)),
         );
-        console.log(`${Array.from(matched).join(', ')},`.trim());
+
+        if(matched.length>0)
+            console.log(`${matched.join(', ')},`.trim());
         matched.forEach(v => other.delete(v));
     }
 
