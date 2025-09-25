@@ -22,4 +22,7 @@ export const patterns = [
     "hypnosis",
     "defeat",
     "suspended congress",
+    "onee-shota",
+    "prostitution",
+    "teacher",
 ];

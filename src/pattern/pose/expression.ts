@@ -45,4 +45,5 @@ export const patterns = [
     "seductive smile", "light smile",
     "angry", "anger vein", "annoyed",
     "disgust", "glaring", "scowl", "tsurime",
+    "nervous",
 ]

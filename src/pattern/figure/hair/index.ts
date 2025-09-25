@@ -33,6 +33,7 @@ export const patterns = [
 
     //辫子
     "braid", "side braid", "single braid", "twin braids","french braid",
+    "cable knit",
 
     //刘海
     "bangs", "crossed bangs",

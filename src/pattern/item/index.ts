@@ -5,7 +5,7 @@ import { format } from "PatternUtils";
 export const patterns = [
     //杂项物品
     "test tube", "vial", "bottle", "signature","stationary restraints",
-    "photo (object)",
+    "photo (object)", "money",
 
     //脱下的衣物
     "eyewear removed",

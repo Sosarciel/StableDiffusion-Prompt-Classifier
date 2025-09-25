@@ -59,6 +59,7 @@ export const patterns = [
     "petite",
     "muscular male", "manly",
     "abs", "muscular", "facial", "pectorals","plump",
+    "male child", "child", "shota",
 
     //不定装饰
     desc("tattoo"),

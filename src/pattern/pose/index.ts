@@ -40,6 +40,7 @@ export const patterns = [
     "finger to mouth", "fingering",
     "waving","clenched hand",
     "v","index finger raised",
+    "shushing",
 
     //手臂动作
     "arm at side", "outstretched arm", "arms at sides",
@@ -50,6 +51,7 @@ export const patterns = [
     "arm behind back", "v arms",
     "crossed arms", "arm under breasts",
     "arms behind head",
+    "arm between breasts",
 
     //腿部动作
     "knee up","kneeling",
