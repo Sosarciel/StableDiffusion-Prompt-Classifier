@@ -81,6 +81,7 @@ export const patterns = [
     "eating",
     "food in mouth",
     "head back",
+    "smelling",
 
     //主体姿势
     "walking",

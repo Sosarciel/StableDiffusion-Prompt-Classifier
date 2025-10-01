@@ -17,4 +17,7 @@ export const patterns = [
     "mole on breast",
     "flat chest",
     "inverted nipples",
+    "large areolae",
+    "alternate breast size",
+    "sagging breasts",
 ];

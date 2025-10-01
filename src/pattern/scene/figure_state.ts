@@ -10,7 +10,7 @@ export const patterns = [
     "one breast out",
     "breast press",
     "wet", "cumdrip",
-    "cum", "cum in pussy",
+    "cum", "cum in pussy", "cum pool",
     "ejaculation", "cum on feet", "cum on body",
     "erection", "precum", "food on body", "chocolate on body",
     "stomach bulge", "saliva",

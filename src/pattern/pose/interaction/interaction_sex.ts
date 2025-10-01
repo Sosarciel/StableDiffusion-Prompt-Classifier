@@ -11,6 +11,7 @@ export const patterns = [
     "double penetration",
     "sex","sex from behind","standing sex",
     "girl on top",
+    "boy on top",
     "footjob", "buttjob", "two-footed footjob",
     "imminent penetration", "imminent vaginal",
     "fellatio gesture", "missionary",
@@ -20,6 +21,10 @@ export const patterns = [
     "interspecies",
     "oral","fellatio",
     "penis on face",
+    "deep penetration",
+    "leg lock",
+    "cunnilingus",
+    "deepthroat",
 
 
     //自慰

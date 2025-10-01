@@ -15,4 +15,5 @@ export const patterns = [
     "blurry","lens flare", "backlighting",
     "ripples",
     "绘图", "均匀",
+    "sound effects",
 ];

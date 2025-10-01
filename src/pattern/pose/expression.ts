@@ -46,4 +46,6 @@ export const patterns = [
     "angry", "anger vein", "annoyed",
     "disgust", "glaring", "scowl", "tsurime",
     "nervous",
+    "fucked silly",
+    "rolling eyes",
 ]

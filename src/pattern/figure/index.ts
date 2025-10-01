@@ -15,7 +15,7 @@ export const patterns = [
     "thick thighs",
 
     //臀部
-    "wide hips", "huge ass",
+    "wide hips", "huge ass", "bush",
 
     //手部
     "animal hands", "claws",
@@ -33,7 +33,7 @@ export const patterns = [
     "wolf ears", "animal ear fluff", "animal ears", "pointy ears",
     "extra ears",  "fox ears", "rabbit ears", "mouse ears", "cat ears", "dog ears",
     "horns", "demon horns", "curled horns", "dragon horns","antlers",
-    "halo",  "hair tie",
+    "halo",  "hair tie", "bald",
 
     //背部
     "wings", "demon wings", "black wings", "bat wings", "mini wings",

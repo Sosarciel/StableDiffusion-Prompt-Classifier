@@ -31,6 +31,7 @@ export const patterns = [
     "covered navel",
     "thigh gap",
     "butt crack",
+    "between thighs",
 
     //胸部
     "breasts","nipples", "collarbone",
