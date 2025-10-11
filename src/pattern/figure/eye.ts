@@ -1,4 +1,4 @@
-import { colorDesc, desc, format, lengthDesc, sizeDesc } from "PatternUtils";
+import { colorDesc, desc, format, lengthDesc, sizeDesc } from 'PatternUtils';
 
 
 
@@ -13,9 +13,10 @@ import { colorDesc, desc, format, lengthDesc, sizeDesc } from "PatternUtils";
 export const patterns = [
     //眼部
     colorDesc('eyes'),
-    colorDesc("pupils"), "bright pupils",
-    "symbol-shaped pupils",
-    "heterochromia",
-    "extra eyes",
-    "mole under eye",
+    colorDesc('pupils'), 'bright pupils',
+    'symbol-shaped pupils',
+    'heterochromia',
+    'extra eyes',
+    'mole under eye',
+    'slit pupils',
 ];

@@ -40,4 +40,7 @@ export const patterns = [
     "covering mouth", "hand over own mouth",
     "ass support",
     "leg hold",
+    "cheek press", "leaning on person",
+    "arm hug",
+    "cheek squash",
 ]

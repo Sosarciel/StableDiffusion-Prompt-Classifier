@@ -1,4 +1,4 @@
-import { colorDesc, desc, format, lengthDesc, sizeDesc } from "PatternUtils";
+import { colorDesc, desc, format, lengthDesc, sizeDesc } from 'PatternUtils';
 
 
 
@@ -13,11 +13,11 @@ import { colorDesc, desc, format, lengthDesc, sizeDesc } from "PatternUtils";
 export const patterns = [
     //胸部
     sizeDesc('breasts'),
-    "hanging breasts",
-    "mole on breast",
-    "flat chest",
-    "inverted nipples",
-    "large areolae",
-    "alternate breast size",
-    "sagging breasts",
+    'hanging breasts',
+    'mole on breast',
+    'flat chest',
+    'inverted nipples',
+    'large areolae',
+    'alternate breast size',
+    'sagging breasts',
 ];

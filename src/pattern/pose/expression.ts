@@ -17,7 +17,7 @@ export const patterns = [
     //符号表情
     "+ +","^ ^", "@ @",
     ";d",":d",":3",":<",":o",":/",":p",":t",
-    ":q",
+    ":q",":i",
 
     //嘴
     "closed mouth", "open mouth", "wavy mouth",
@@ -48,4 +48,8 @@ export const patterns = [
     "nervous",
     "fucked silly",
     "rolling eyes",
+    "light blush",
+    "puffy cheeks",
+    "thinking",
+    'sideways glance',
 ]

@@ -1,8 +1,8 @@
-import { format } from "PatternUtils";
+import { format } from 'PatternUtils';
 
 
 /** 载具相关 */
 export const patterns = [
-    "inflatable raft", "innertube",
-    "motor vehicle","bicycle"
+    'inflatable raft', 'innertube',
+    'motor vehicle','bicycle'
 ]

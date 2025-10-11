@@ -1,4 +1,4 @@
-import { colorDesc, desc, format, lengthDesc, sizeDesc } from "PatternUtils";
+import { colorDesc, desc, format, lengthDesc, sizeDesc } from 'PatternUtils';
 
 
 
@@ -13,9 +13,9 @@ import { colorDesc, desc, format, lengthDesc, sizeDesc } from "PatternUtils";
 export const patterns = [
     //头发
     colorDesc('hair'),
-    "streaked hair",
-    "colored inner hair",
-    "two-tone hair",
-    "gradient hair",
-    "colored tips",
+    'streaked hair',
+    'colored inner hair',
+    'two-tone hair',
+    'gradient hair',
+    'colored tips',
 ];

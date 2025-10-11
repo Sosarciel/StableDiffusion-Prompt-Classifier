@@ -14,5 +14,5 @@ export const patterns = [
     "holding pom poms",
     "dildo","anal beads",
     "vibrator","egg vibrator","used condom","condom",
-    "ball gag","gag"
+    "ball gag","gag","poke ball"
 ]

@@ -1,9 +1,9 @@
-import { format } from "PatternUtils";
+import { format } from 'PatternUtils';
 
 
 /** 植物 */
 export const patterns = [
-    "petals", "branch", "bouquet","potted plant",
-    "plant","bamboo","sunflower",
-    "petals on liquid"
+    'petals', 'branch', 'bouquet','potted plant',
+    'plant','bamboo','sunflower',
+    'petals on liquid'
 ]

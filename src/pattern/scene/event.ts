@@ -10,5 +10,6 @@ export const patterns = [
     "new year",
     "happy new year",
     "christmas",
+    "gameplay mechanics",
 ]
 
