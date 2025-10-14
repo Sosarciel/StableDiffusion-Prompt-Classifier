@@ -50,6 +50,7 @@ export const patterns = [
     'fang', 'skin fang', 'fangs',
     'mole under mouth',
     'sharp teeth',
+    'dot nose',
 
     //风格
     'loli', 'demon girl', 'wolf girl', 'aged down', 'shark girl',

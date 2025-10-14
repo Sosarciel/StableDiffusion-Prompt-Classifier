@@ -14,4 +14,5 @@ export const patterns = [
     'dakimakura (medium)',
 
     'multiple views',
+    'contrapposto',
 ];

@@ -52,4 +52,7 @@ export const patterns = [
     "puffy cheeks",
     "thinking",
     'sideways glance',
+    'spoken sweatdrop',
+    'happy',
+    'nervous smile',
 ]

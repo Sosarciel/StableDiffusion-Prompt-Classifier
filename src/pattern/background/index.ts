@@ -33,6 +33,7 @@ export const patterns = [
     'candlelight',
     'ceiling light', 'tiles', 'stage', 'stage lights',
     'bedroom','bathroom', 'shower (place)', 'tile wall', 'glass',
+    'spotlight', 'concert',
 
     //设计效果背景
     'cover page', 'doujin cover','tachi-e',

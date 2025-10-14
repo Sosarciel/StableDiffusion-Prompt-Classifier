@@ -88,6 +88,7 @@ export const patterns = [
     'crop top overhang',
     'uchikake',
     'hagoromo',
+    'blazer',
 
     //臀部服饰
     'hip vent',
@@ -177,6 +178,8 @@ export const patterns = [
     'name tag', 'id card',
     'denim',
     'heart print',
+    'crescent',
+    'cardigan',
 
     //穿着风格
     /^.+ cutout$/,
@@ -188,6 +191,7 @@ export const patterns = [
     'cleavage cutout',
     'bare back',
     'naked overalls',
+    'single bare shoulder',
 
     //风格套装
     'playboy bunny',
