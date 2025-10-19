@@ -4,6 +4,7 @@ import { format } from "PatternUtils";
 /** 身体状态 */
 export const patterns = [
     "pussy juice",
+    'pussy juice trail',
     "skindentation",
     "steaming body",
     "breasts out",

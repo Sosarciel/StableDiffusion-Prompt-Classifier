@@ -8,6 +8,7 @@ export const patterns = [
     "implied sex",
     "imminent rape",
     "imminent fellatio",
+    'implied yuri',
     "interracial",
     "pet play",
     "netorare",

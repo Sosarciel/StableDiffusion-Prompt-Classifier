@@ -58,4 +58,5 @@ export const patterns = [
     'sidelocks', 'ahoge',
     'curvy',
     'eyebrows hidden by hair',
+    'short hair with long locks',
 ];

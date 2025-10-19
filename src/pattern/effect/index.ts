@@ -6,6 +6,7 @@ export const patterns = [
     'portrait',
     'cover', 'limited palette',
     'monochrome', 'greyscale', 'spot color',
+    'zoom layer',
     'heart',
     'clothes writing',
     'shiny', 'shadow', 'viewfinder',

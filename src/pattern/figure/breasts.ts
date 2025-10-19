@@ -20,4 +20,5 @@ export const patterns = [
     'large areolae',
     'alternate breast size',
     'sagging breasts',
+    'fat mons',
 ];
