@@ -25,6 +25,6 @@ export const patterns = [
     "ch'en (arknights)", "elite ii (arknights)",
     'nahida (genshin impact)',
     'marnie (pokemon)', 'morpeko', 'morpeko (full)',
-    'jougasaki rika'
+    'jougasaki rika', 'amiya (arknights)',
 ];
 

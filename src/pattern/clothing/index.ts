@@ -47,6 +47,7 @@ export const patterns = [
     'shrug (clothing)', 'feather boa',
     'turtleneck',
     'heart necklace',
+    'neck ring',
 
     //腰部
     desc('belt'),
@@ -134,6 +135,8 @@ export const patterns = [
     desc('cuffs'),
     'bare arms', 'sleeveless', 'sleeves past wrists',
     'wristband','armlet',
+    'multiple rings', 'thumb ring',
+    'infection monitor (arknights)',
 
     //腿部
     desc('legwear'),
