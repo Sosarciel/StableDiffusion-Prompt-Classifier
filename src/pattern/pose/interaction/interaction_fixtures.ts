@@ -1,21 +1,21 @@
-import { format } from "PatternUtils";
+import { format } from 'PatternUtils';
 
 
 
 
 /** 与大型物体的互动 */
 export const patterns = [
-    "on vehicle",
-    "on bed", "on chair",
-    "on floor", "on desk",
-    "on table",
+    'on vehicle',
+    'on bed', 'on chair',
+    'on floor', 'on desk',
+    'on table',
 
-    "sitting on desk",
-    "sitting on table",
-    "breasts on glass",
+    'sitting on desk',
+    'sitting on table',
+    'breasts on glass',
 
-    "showering",
-    "bathing",
-    "against glass",
-    "against wall",
+    'showering',
+    'bathing',
+    'against glass',
+    'against wall',
 ]

@@ -1,4 +1,4 @@
-import { format } from "PatternUtils";
+import { format } from 'PatternUtils';
 
 
 

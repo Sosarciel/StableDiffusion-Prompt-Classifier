@@ -11,6 +11,7 @@ export const patterns = [
     'animal ear headphones',
     'tiara', 'maid headdress',
     'hairpin', 'mini crown',
+    'headdress',
 
     //帽子
     desc('hat'), desc('cape'), desc('cap'),
