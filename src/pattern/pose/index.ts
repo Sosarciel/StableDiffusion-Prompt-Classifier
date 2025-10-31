@@ -66,6 +66,7 @@ export const patterns = [
     'spread legs',
     'legs apart',
     'standing on one leg',
+    'seiza',
 
     //脚部动作
     'plantar flexion','feet up',

@@ -26,10 +26,11 @@ export const patterns = [
     'cunnilingus',
     'deepthroat',
 
+    'handjob', 'double handjob', 'gloved handjob',
 
     //自慰
     'molestation', 'groping',
-    'female masturbation', 'masturbation',
+    'female masturbation', 'masturbation', "male masturbation",
     'anal fingering', 'crotch rub',
 
     'cum on breasts',

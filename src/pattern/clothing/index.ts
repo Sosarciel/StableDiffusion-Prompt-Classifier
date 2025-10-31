@@ -91,6 +91,7 @@ export const patterns = [
     'uchikake',
     'hagoromo',
     'blazer',
+    'necktie between breasts',
 
     //臀部服饰
     'hip vent',
@@ -138,6 +139,7 @@ export const patterns = [
     'wristband','armlet',
     'multiple rings', 'thumb ring',
     'infection monitor (arknights)',
+    'armband',
 
     //腿部
     desc('legwear'),
