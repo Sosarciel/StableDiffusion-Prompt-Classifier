@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 
@@ -17,4 +16,7 @@ export const patterns = [
     'clothing aside', 'leotard aside',
     'shorts around one leg','shorts pull',
     'apron lift',
+    'pantyhose pull', 'undressing', 'shirt removed', 'backpack removed',
+    'clothes removed',
+    'coat removed',
 ]

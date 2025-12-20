@@ -1,8 +1,13 @@
-import { colorDesc, desc, format } from 'PatternUtils';
 
 
 /** 固定设施 */
 export const patterns = [
+    //地板
+    'wooden floor',
+    'tile floor',
+    'checkered floor',
+    'rug',
+
     'railing',
     'window',
     'campfire',
@@ -10,8 +15,7 @@ export const patterns = [
     'curtains',
     'stairs',
     'fence',
-    'chalkboard',
-    'wooden floor', 'ceiling',
+    'chalkboard','ceiling',
     'tombstone', 'grave',
     'beach umbrella', 'torii',
     'door','shouji',
@@ -21,7 +25,5 @@ export const patterns = [
     'column', 'cage',
     'sex machine',
     'wooden fence',
-    'tile floor',
-    'checkered floor',
     'bulletin board',
 ]

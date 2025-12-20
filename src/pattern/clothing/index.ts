@@ -1,4 +1,4 @@
-import { colorDesc, desc, descPlural, format } from 'PatternUtils';
+import { colorDesc, desc, descPlural } from 'PatternUtils';
 
 /** 任何和主体角色有关的服装 */
 export const patterns = [
@@ -19,6 +19,7 @@ export const patterns = [
     desc('scrunchie'),
     'beret','crown', 'bonnet',
     'qing guanmao', 'wataboushi',
+    'hat feather',
 
     //面部
     desc('mask'), /^mask .+$/,
@@ -92,6 +93,8 @@ export const patterns = [
     'hagoromo',
     'blazer',
     'necktie between breasts',
+    'dressing',
+    'downblouse',
 
     //臀部服饰
     'hip vent',
@@ -186,6 +189,7 @@ export const patterns = [
     'heart print',
     'crescent',
     'cardigan',
+    'key',
 
     //穿着风格
     /^.+ cutout$/,

@@ -1,5 +1,4 @@
 
-import { format } from 'PatternUtils';
 
 
 /**构图方式 */
@@ -10,7 +9,7 @@ export const patterns = [
     'full body', 'upper body',
 
     'pov','pov hands', 'pov across table', 'pov crotch',
-    'foreshortening','close-up',
+    'foreshortening','close-up','fisheye',
     'dakimakura (medium)',
 
     'multiple views',

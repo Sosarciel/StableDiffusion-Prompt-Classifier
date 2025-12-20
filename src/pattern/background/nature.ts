@@ -1,4 +1,4 @@
-import { colorDesc, desc, format } from 'PatternUtils';
+import { colorDesc } from 'PatternUtils';
 
 
 /** 自然的 */
@@ -11,24 +11,28 @@ export const patterns = [
     'flower field','forest','nature',
     'field', 'cherry blossoms', 'leaf',
     'wheat',
+    'rose petals',
 
-    //自然环境
+    //天空
     'sky', colorDesc('sky'),
     'star \(sky\)',
     'gradient sky', 'cloudy sky', 'night sky',
-    'cloud',
-    'night', 'evening',
-    'twilight', 'moonlight', 'starry sky',
+    'cloud', 'starry sky',
+    'twilight', 'moonlight',
     'full moon', 'moon','red moon',
+
+    //时间
+    'night', 'evening',
     'day', 'sunset', 'sun', 'dusk', 'sunrise', 'sunlight',
+
+    //自然环境
     'underwater', 'water', 'swimming', 'freediving',
     'light rays',
     'bare tree', 'tree',
     'autumn', 'summer', 'winter', 'spring',
-    'rain',
-    'wind',
+    'rain','snowflakes',
+    'wind', 'snow',
     'horizon','skyline',
-    'snow',
     'scenery',
     'beach', 'sand',
     'shallow water', 'puddle','vines',

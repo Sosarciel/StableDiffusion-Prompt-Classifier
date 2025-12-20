@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 /**水印 */
@@ -20,7 +19,9 @@ export const patterns = [
     'convenient censoring',
     'mosaic censoring',
     'blur censor', 'novelty censor', 'bar censor',
+    'sample watermark',
 
     //图案
     'watermark', 'patreon logo',
+    'color guide',
 ];

@@ -1,5 +1,4 @@
 
-import { format } from 'PatternUtils';
 
 
 /**具体人物 */
@@ -26,5 +25,6 @@ export const patterns = [
     'nahida (genshin impact)',
     'marnie (pokemon)', 'morpeko', 'morpeko (full)',
     'jougasaki rika', 'amiya (arknights)',
+    'sora ginko',
 ];
 
