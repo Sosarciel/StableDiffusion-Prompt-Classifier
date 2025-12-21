@@ -1,4 +1,4 @@
-import { format, sizeDesc } from 'PatternUtils';
+import { sizeDesc } from 'PatternUtils';
 
 
 
@@ -23,7 +23,7 @@ export const patterns = [
     'ass', 'groin',
     'penis', sizeDesc('penis'), 'veiny penis','testicles',
     'male pubic hair','female pubic hair','pubic hair',
-    'pussy', 'anus', 'vaginal',
+    'pussy', 'anus', 'vaginal','urethra',
     'anal', 'cervix', 'clitoris',
     'navel', 'stomach',
     'ass visible through thighs',

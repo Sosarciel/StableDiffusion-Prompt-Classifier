@@ -57,6 +57,7 @@ export const patterns = [
     'obi', 'sash',
     'loincloth',
     'leash',
+    'belt pouch',
 
     //上身服饰
     desc('clothes'),
@@ -143,6 +144,7 @@ export const patterns = [
     'multiple rings', 'thumb ring',
     'infection monitor (arknights)',
     'armband',
+    'handcuffs',
 
     //腿部
     desc('legwear'),
@@ -202,6 +204,7 @@ export const patterns = [
     'bare back',
     'naked overalls',
     'single bare shoulder',
+    'side slit',
 
     //风格套装
     'playboy bunny',
@@ -216,4 +219,5 @@ export const patterns = [
     'race queen',
     'cheerleader', 'pom pom (cheerleading)', 'pom pom (clothes)',
     'bride', 'gothic',
+    'police', 'policewoman',
 ]
