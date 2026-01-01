@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 
@@ -43,4 +42,5 @@ export const patterns = [
     'cheek press', 'leaning on person',
     'arm hug',
     'cheek squash',
+    "holding another's wrist",
 ]

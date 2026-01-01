@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 
@@ -25,6 +24,9 @@ export const patterns = [
     'leg lock',
     'cunnilingus',
     'deepthroat',
+    'reverse cowgirl position',
+    'squatting cowgirl position',
+    'cowgirl position',
 
     'handjob', 'double handjob', 'gloved handjob',
 

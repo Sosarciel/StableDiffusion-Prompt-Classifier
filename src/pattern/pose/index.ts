@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 /** 姿势 或 某个身体部位的特写 */
 export const patterns = [
@@ -56,6 +55,7 @@ export const patterns = [
     'hand to own mouth',
     'finger in own mouth',
     'covered mouth', 'reach-around', 'nipple tweak',
+    'arms behind back',
 
     //腿部动作
     'knee up','kneeling',
