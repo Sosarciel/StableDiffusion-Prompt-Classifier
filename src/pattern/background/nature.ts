@@ -12,6 +12,7 @@ export const patterns = [
     'field', 'cherry blossoms', 'leaf',
     'wheat',
     'rose petals',
+    'falling petals',
 
     //天空
     'sky', colorDesc('sky'),
@@ -20,6 +21,7 @@ export const patterns = [
     'cloud', 'starry sky',
     'twilight', 'moonlight',
     'full moon', 'moon','red moon',
+    'horizon', 'sunrise', 'sunset',
 
     //时间
     'night', 'evening',

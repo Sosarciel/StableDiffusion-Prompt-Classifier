@@ -1,4 +1,4 @@
-import { colorDesc, desc, format, lengthDesc, sizeDesc } from 'PatternUtils';
+import { colorDesc, desc } from 'PatternUtils';
 
 
 
@@ -12,7 +12,7 @@ import { colorDesc, desc, format, lengthDesc, sizeDesc } from 'PatternUtils';
 /**人物 */
 export const patterns = [
     //腿部
-    'thick thighs',
+    'thick thighs','long legs',
 
     //臀部
     'wide hips', 'huge ass', 'bush',

@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 /** 冷兵器和热兵器 */
@@ -17,4 +16,5 @@ export const patterns = [
     'scope',
     'trigger discipline', 'bolt action',
     'suppressor',
+    'revolver',
 ]

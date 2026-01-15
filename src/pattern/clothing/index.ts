@@ -96,6 +96,7 @@ export const patterns = [
     'necktie between breasts',
     'dressing',
     'downblouse',
+    'plunging neckline',
 
     //臀部服饰
     'hip vent',

@@ -1,4 +1,4 @@
-import { colorDesc, desc, format, lengthDesc, sizeDesc } from 'PatternUtils';
+import { colorDesc } from 'PatternUtils';
 
 
 
@@ -19,4 +19,5 @@ export const patterns = [
     'extra eyes',
     'mole under eye',
     'slit pupils',
+    'thick eyebrows', 'short eyebrows'
 ];
