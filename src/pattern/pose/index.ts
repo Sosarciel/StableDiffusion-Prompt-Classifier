@@ -56,6 +56,8 @@ export const patterns = [
     'finger in own mouth',
     'covered mouth', 'reach-around', 'nipple tweak',
     'arms behind back',
+    'convenient arm',
+    'elbow rest',
 
     //腿部动作
     'knee up','kneeling',

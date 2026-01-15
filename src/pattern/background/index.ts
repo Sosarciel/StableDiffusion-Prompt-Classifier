@@ -1,4 +1,4 @@
-import { colorDesc, desc, format } from 'PatternUtils';
+import { colorDesc, desc } from 'PatternUtils';
 
 
 /** 背景 地点 时间 等非主体角色因素 */

@@ -193,6 +193,7 @@ export const patterns = [
     'crescent',
     'cardigan',
     'key',
+    'pendant',
 
     //穿着风格
     /^.+ cutout$/,

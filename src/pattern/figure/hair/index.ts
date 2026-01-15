@@ -1,4 +1,4 @@
-import { colorDesc, desc, format, lengthDesc, sizeDesc } from 'PatternUtils';
+import { lengthDesc } from 'PatternUtils';
 
 
 
@@ -53,6 +53,7 @@ export const patterns = [
     'undercut',
     'straight hair',
     'hime cut',
+    'half updo',
 
     //其他
     'sidelocks', 'ahoge',

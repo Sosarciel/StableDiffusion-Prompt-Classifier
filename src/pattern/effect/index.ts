@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 /**效果 */
@@ -16,6 +15,7 @@ export const patterns = [
     'flashing', 'motion blur', 'motion lines',
     'see-through silhouette', 'chromatic aberration',
     'blurry','lens flare', 'backlighting',
+    'glint',
     'ripples',
     '绘图', '均匀',
     'sound effects',
