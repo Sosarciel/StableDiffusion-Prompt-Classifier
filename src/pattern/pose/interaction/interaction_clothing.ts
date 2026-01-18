@@ -19,4 +19,5 @@ export const patterns = [
     'pantyhose pull', 'undressing', 'shirt removed', 'backpack removed',
     'clothes removed',
     'coat removed',
+    'upskirt',
 ]

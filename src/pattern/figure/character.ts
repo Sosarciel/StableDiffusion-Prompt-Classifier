@@ -25,6 +25,6 @@ export const patterns = [
     'nahida (genshin impact)',
     'marnie (pokemon)', 'morpeko', 'morpeko (full)',
     'jougasaki rika', 'amiya (arknights)',
-    'sora ginko',
+    'sora ginko', 'usada pekora', 'hoshimachi suisei',
 ];
 

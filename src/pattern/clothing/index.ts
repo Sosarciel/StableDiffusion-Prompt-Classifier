@@ -20,6 +20,8 @@ export const patterns = [
     'beret','crown', 'bonnet',
     'qing guanmao', 'wataboushi',
     'hat feather',
+    'deerstalker',
+    'hat ornament',
 
     //面部
     desc('mask'), /^mask .+$/,
@@ -97,6 +99,7 @@ export const patterns = [
     'dressing',
     'downblouse',
     'plunging neckline',
+    'jacket on shoulders',
 
     //臀部服饰
     'hip vent',
@@ -194,6 +197,7 @@ export const patterns = [
     'cardigan',
     'key',
     'pendant',
+    'skull',
 
     //穿着风格
     /^.+ cutout$/,
