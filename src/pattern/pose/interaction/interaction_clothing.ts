@@ -20,4 +20,5 @@ export const patterns = [
     'clothes removed',
     'coat removed',
     'upskirt',
+    'bra removed',
 ]

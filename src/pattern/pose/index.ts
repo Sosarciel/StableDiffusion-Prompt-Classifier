@@ -66,7 +66,7 @@ export const patterns = [
     'hugging own legs',
     'crossed legs','leg lift',
     'leg up', 'legs up', 'bound legs',
-    'spread legs',
+    'spread legs','m legs',
     'legs apart',
     'standing on one leg',
     'seiza',

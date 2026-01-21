@@ -198,6 +198,7 @@ export const patterns = [
     'key',
     'pendant',
     'skull',
+    'pocket watch',
 
     //穿着风格
     /^.+ cutout$/,

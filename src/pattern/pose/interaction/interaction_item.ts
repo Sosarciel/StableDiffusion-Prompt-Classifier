@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 
@@ -17,6 +16,7 @@ export const patterns = [
     'holding smoking pipe',
     'breasts on table',
     'pouring',
+    'pillow grab',
 
     //生物
     'bird on hand',
