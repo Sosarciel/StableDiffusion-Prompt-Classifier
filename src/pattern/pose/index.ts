@@ -42,6 +42,7 @@ export const patterns = [
     'shushing',
     'finger to own chin',
     'open hand',
+    'double v',
 
     //手臂动作
     'arm at side', 'outstretched arm', 'arms at sides',

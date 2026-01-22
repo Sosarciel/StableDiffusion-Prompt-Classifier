@@ -41,7 +41,7 @@ export const patterns = [
     'fake screenshot',
     'blurry foreground',
     'picture frame', 'painting (object)',
-    colorDesc('theme'),'dark',
+    colorDesc('theme'),'dark', 'gradient',
 
     //特殊地点
     'ruins',

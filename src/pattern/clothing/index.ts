@@ -100,6 +100,7 @@ export const patterns = [
     'downblouse',
     'plunging neckline',
     'jacket on shoulders',
+    'tube top',
 
     //臀部服饰
     'hip vent',
@@ -136,6 +137,7 @@ export const patterns = [
     'bodystocking', 'naked bandage',
     'thong','crotch rope',
     'sarashi', 'chest sarashi',
+    'bandeau',
 
     //手部
     desc('gauntlets'),

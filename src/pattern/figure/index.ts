@@ -55,6 +55,7 @@ export const patterns = [
     //风格
     'loli', 'demon girl', 'wolf girl', 'aged down', 'shark girl',
     'rabbit girl', 'fox girl', 'cat girl', 'dragon girl',
+    'kyuubi',
     'cosplay','kitsune',
     'kemonomimi mode', 'werewolf',
     'petite',
@@ -64,6 +65,6 @@ export const patterns = [
 
     //不定装饰
     desc('tattoo'),
-    'mole',
+    'mole','oripathy lesion (arknights)',
     'disembodied limb', 'tentacles',
 ];

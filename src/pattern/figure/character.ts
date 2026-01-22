@@ -26,5 +26,6 @@ export const patterns = [
     'marnie (pokemon)', 'morpeko', 'morpeko (full)',
     'jougasaki rika', 'amiya (arknights)',
     'sora ginko', 'usada pekora', 'hoshimachi suisei',
+    'suzuran (arknights)',
 ];
 

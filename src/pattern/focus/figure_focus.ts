@@ -32,6 +32,7 @@ export const patterns = [
     'thigh gap',
     'butt crack',
     'between thighs',
+    'pantyshot',
 
     //胸部
     'breasts','nipples', 'collarbone',
