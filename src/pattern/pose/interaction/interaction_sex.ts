@@ -34,8 +34,10 @@ export const patterns = [
     'molestation', 'groping',
     'female masturbation', 'masturbation', "male masturbation",
     'anal fingering', 'crotch rub',
+    'clothed masturbation',
 
     'cum on breasts',
+    'breast sucking',
 
     'orgasm',
     'female orgasm',
