@@ -33,6 +33,7 @@ export const patterns = [
     'butt crack',
     'between thighs',
     'pantyshot',
+    'pussy peek',
 
     //胸部
     'breasts','nipples', 'collarbone',
@@ -61,4 +62,5 @@ export const patterns = [
     'eldritch abomination',
     'veins', 'bulge','tight','median furrow',
     'shoulder blades',
+    'nipple slip',
 ]

@@ -27,5 +27,6 @@ export const patterns = [
     'jougasaki rika', 'amiya (arknights)',
     'sora ginko', 'usada pekora', 'hoshimachi suisei',
     'suzuran (arknights)',
+    'shenhe (genshin impact)', 'fu hua',
 ];
 

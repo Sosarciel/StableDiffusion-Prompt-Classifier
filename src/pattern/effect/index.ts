@@ -2,6 +2,7 @@
 
 /**效果 */
 export const patterns = [
+    'recording', 'camera',
     'portrait',
     'cover', 'limited palette',
     'monochrome', 'greyscale', 'spot color',

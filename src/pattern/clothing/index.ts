@@ -151,6 +151,7 @@ export const patterns = [
     'infection monitor (arknights)',
     'armband',
     'handcuffs',
+    'arm strap',
 
     //腿部
     desc('legwear'),
@@ -214,6 +215,8 @@ export const patterns = [
     'naked overalls',
     'single bare shoulder',
     'side slit',
+    'unbuttoned',
+    'wedgie',
 
     //风格套装
     'playboy bunny',
