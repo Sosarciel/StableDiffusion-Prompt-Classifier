@@ -17,6 +17,7 @@ export const patterns = [
     'breasts on table',
     'pouring',
     'pillow grab',
+    'condom in mouth',
 
     //生物
     'bird on hand',

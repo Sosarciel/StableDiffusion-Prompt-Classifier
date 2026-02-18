@@ -28,5 +28,6 @@ export const patterns = [
     'sora ginko', 'usada pekora', 'hoshimachi suisei',
     'suzuran (arknights)',
     'shenhe (genshin impact)', 'fu hua',
+    'roxy migurdia',
 ];
 

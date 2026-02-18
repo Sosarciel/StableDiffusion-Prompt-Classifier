@@ -78,6 +78,7 @@ export const patterns = [
     'spread toes',
     'tiptoes',
     'wading',
+    'heel up',
 
     //臀部动作
     'spread anus',

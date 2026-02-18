@@ -54,11 +54,21 @@ export function desc(str:string):PatternTable{
 /**描述匹配符 单数/复数  
  * /^.+ items?$/,"item","items"
  */
-export function descPlural(str:string):PatternTable{
-    return {
-        text :[str,`${str}s`],
-        regex:[new RegExp(`^.+ ${escapeRegExp(str)}s?$`)]
-    }
+export function descPlural(str:string){
+    return { text :[str,`${str}s`] } satisfies PatternTable;
+}
+
+/**严格描述匹配符  
+ * /^.+ item$/,"item"
+ */
+export function strictDesc(str:string):PatternTable{
+    return descPlural(str).text.map(pl=>[
+        colorDesc(pl),sizeDesc(pl),lengthDesc(pl)
+    ]).flat().reduce((acc,cur)=>{
+        acc.text?.push(...cur.text??[]);
+        acc.regex?.push(...cur.regex??[]);
+        return acc;
+    },{text:[...descPlural(str).text],regex:[]} as PatternTable);
 }
 
 const color = [
@@ -71,9 +81,7 @@ const color = [
  * /^(color) item$/
  */
 export function colorDesc(str:string):PatternTable{
-    return {
-        text :[...color.map(c => `${c} ${str}`)],
-    }
+    return { text :[...color.map(c => `${c} ${str}`)] } satisfies PatternTable;
 }
 
 const length = [
@@ -83,9 +91,7 @@ const length = [
  * /^(length) item$/,"item"
  */
 export function lengthDesc(str:string):PatternTable{
-    return {
-        text :[...length.map(c => `${c} ${str}`)],
-    }
+    return { text :[...length.map(c => `${c} ${str}`)] } satisfies PatternTable;
 }
 
 
@@ -96,7 +102,5 @@ const size = [
  * /^(size) item$/
  */
 export function sizeDesc(str:string):PatternTable{
-    return {
-        text :[...size.map(c => `${c} ${str}`)],
-    }
+    return { text :[...size.map(c => `${c} ${str}`)] } satisfies PatternTable;
 }

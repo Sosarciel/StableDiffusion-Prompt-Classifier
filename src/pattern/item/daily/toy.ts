@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 /** 玩具 */
@@ -9,6 +8,7 @@ export const patterns = [
     'card', 'playing card',
     'ball', 'balloon',
     'sex toy', 'riding crop',
+    'condom wrapper',
     'doll', 'character doll', 'babydoll',
     'yarn', 'yarn ball',
     'holding pom poms',

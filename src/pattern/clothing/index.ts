@@ -1,4 +1,4 @@
-import { colorDesc, desc, descPlural } from 'PatternUtils';
+import { colorDesc, desc } from 'PatternUtils';
 
 /** 任何和主体角色有关的服装 */
 export const patterns = [
@@ -141,7 +141,7 @@ export const patterns = [
 
     //手部
     desc('gauntlets'),
-    descPlural('glove'),
+    desc('glove'),
     desc('sleeves'),
     desc('bracelet'),
     desc('cuffs'),
@@ -156,8 +156,8 @@ export const patterns = [
     //腿部
     desc('legwear'),
     desc('pantyhose'),
-    descPlural('thighhigh'),
-    descPlural('kneehigh'),
+    desc('thighhigh'), desc('thighhighs'),
+    desc('kneehigh'),
     'bare legs', 'garter straps',
     'thigh strap',
     'highleg',

@@ -1,5 +1,5 @@
 
-import { desc, descPlural, format } from 'PatternUtils';
+import { desc } from 'PatternUtils';
 
 
 
@@ -7,7 +7,7 @@ import { desc, descPlural, format } from 'PatternUtils';
 export const patterns = [
     desc('footwear'),
     desc('boots'),
-    descPlural('sock'),
+    desc('sock'), desc('socks'),
     desc('shoes'),
     desc('heels'),
 
