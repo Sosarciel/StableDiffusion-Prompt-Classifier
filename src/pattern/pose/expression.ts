@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 /** 姿势 或 某个身体部位的特写 */
 export const patterns = [
@@ -18,7 +17,7 @@ export const patterns = [
     //符号表情
     '+ +','^ ^', '@ @',
     ';d',':d',':3',':<',':o',':/',':p',':t',
-    ':q',':i', '3:', ':|',
+    ':q',':i', '3:', ':|', ';)',
 
     //嘴
     'closed mouth', 'open mouth', 'wavy mouth',
