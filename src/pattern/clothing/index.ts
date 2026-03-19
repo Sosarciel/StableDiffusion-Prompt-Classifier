@@ -131,7 +131,7 @@ export const patterns = [
     desc('hakama'),
     'camisole', 'pajamas',
     'panty straps',
-    'pasties',
+    'pasties','heart pasties',
     'breast curtain', 'breast curtains',
     'lingerie',
     'bodystocking', 'naked bandage',
@@ -141,7 +141,7 @@ export const patterns = [
 
     //手部
     desc('gauntlets'),
-    desc('glove'),
+    desc('glove'),desc('gloves'),
     desc('sleeves'),
     desc('bracelet'),
     desc('cuffs'),

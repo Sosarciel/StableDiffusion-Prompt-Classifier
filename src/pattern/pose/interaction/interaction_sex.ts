@@ -27,6 +27,9 @@ export const patterns = [
     'reverse cowgirl position',
     'squatting cowgirl position',
     'cowgirl position',
+    'spitroast',
+    'suspension',
+    'irrumatio',
 
     'handjob', 'double handjob', 'gloved handjob',
 
