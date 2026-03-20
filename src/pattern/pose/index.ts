@@ -43,7 +43,8 @@ export const patterns = [
     'finger to own chin',
     'open hand',
     'double v',
-    'heart hands',
+    'heart hands','fox shadow puppet',
+    'double fox shadow puppet',
 
     //手臂动作
     'arm at side', 'outstretched arm', 'arms at sides',
@@ -80,6 +81,7 @@ export const patterns = [
     'tiptoes',
     'wading',
     'heel up',
+    'toe scrunch',
 
     //臀部动作
     'spread anus',

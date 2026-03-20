@@ -166,6 +166,7 @@ export const patterns = [
     'bridal garter',
     'blue overalls',
     'suspenders',
+    'skirt around one leg',
 
     //不定装饰/小型饰品
     desc('rose'),
@@ -202,6 +203,7 @@ export const patterns = [
     'pendant',
     'skull',
     'pocket watch',
+    'pentagram',
 
     //穿着风格
     /^.+ cutout$/,

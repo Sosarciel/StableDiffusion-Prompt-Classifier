@@ -67,4 +67,5 @@ export const patterns = [
     desc('tattoo'),
     'mole','oripathy lesion (arknights)',
     'disembodied limb', 'tentacles',
+    'disembodied penis',
 ];

@@ -1,4 +1,3 @@
-import { format } from "PatternUtils";
 
 
 /** 身体状态 */
@@ -27,4 +26,7 @@ export const patterns = [
     "puffy nipples",
     "twitching",
     "bukkake",
+    'splashing',
+    'soaking feet',
+    'partially underwater shot',
 ];

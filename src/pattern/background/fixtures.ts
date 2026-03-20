@@ -26,4 +26,7 @@ export const patterns = [
     'sex machine',
     'wooden fence',
     'bulletin board',
+    'pool',
+    'poolside',
+    'chain-link fence',
 ]
