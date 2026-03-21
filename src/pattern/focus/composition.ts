@@ -14,4 +14,7 @@ export const patterns = [
 
     'multiple views',
     'contrapposto',
+
+    'instant loss',
+    '2koma',
 ];

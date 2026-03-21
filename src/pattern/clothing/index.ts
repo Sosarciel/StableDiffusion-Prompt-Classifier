@@ -157,7 +157,7 @@ export const patterns = [
     desc('legwear'),
     desc('pantyhose'),
     desc('thighhigh'), desc('thighhighs'),
-    desc('kneehigh'),
+    desc('kneehigh'), desc('kneehighs'),
     'bare legs', 'garter straps',
     'thigh strap',
     'highleg',
@@ -204,6 +204,7 @@ export const patterns = [
     'skull',
     'pocket watch',
     'pentagram',
+    'diagonal stripes',
 
     //穿着风格
     /^.+ cutout$/,
