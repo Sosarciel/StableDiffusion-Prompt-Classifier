@@ -32,6 +32,7 @@ export const patterns = [
     'irrumatio',
 
     'handjob', 'double handjob', 'gloved handjob',
+    'two-handed handjob', 'nursing handjob',
 
     //自慰
     'molestation', 'groping',

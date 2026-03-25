@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 /** 电子设备 */
@@ -7,5 +6,5 @@ export const patterns = [
     'cable',
     'tablet pc', 'computer',
     'handheld game console',  'laptop',
-    'monitor',
+    'monitor', 'controller',
 ]
