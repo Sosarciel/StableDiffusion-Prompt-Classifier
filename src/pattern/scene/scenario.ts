@@ -1,4 +1,3 @@
-import { format } from "PatternUtils";
 
 
 /** 情景状态 */
@@ -26,4 +25,10 @@ export const patterns = [
     "onee-shota",
     "prostitution",
     "teacher",
+
+    'meme',
+    'parody',
+    'fine art parody',
+    'taking picture',
+    'traditional media',
 ];

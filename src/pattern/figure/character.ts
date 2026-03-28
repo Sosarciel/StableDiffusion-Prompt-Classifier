@@ -29,5 +29,6 @@ export const patterns = [
     'suzuran (arknights)',
     'shenhe (genshin impact)', 'fu hua',
     'roxy migurdia', 'trainer (umamusume)',
+    'meisho doto (umamusume)',
 ];
 

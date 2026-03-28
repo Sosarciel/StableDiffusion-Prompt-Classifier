@@ -117,6 +117,8 @@ export const patterns = [
     'open fly',
     colorDesc('pants'), 'pants',
     'shirt tucked in',
+    'anal tail',
+    'butt plug',
 
     //内衣
     desc('panties'),

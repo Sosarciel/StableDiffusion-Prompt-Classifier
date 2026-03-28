@@ -88,6 +88,8 @@ export const patterns = [
     'spread pussy','tail raised',
     'gaping',
     'spread ass',
+    'tail between legs',
+    'tail censor',
 
     //头部动作
     'head tilt',
