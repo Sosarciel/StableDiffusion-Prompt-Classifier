@@ -7,4 +7,5 @@ export const patterns = [
     'tablet pc', 'computer',
     'handheld game console',  'laptop',
     'monitor', 'controller',
+    'neon lights',
 ]

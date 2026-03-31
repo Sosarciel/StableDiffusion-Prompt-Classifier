@@ -62,6 +62,9 @@ export const patterns = [
     'arms behind back',
     'convenient arm',
     'elbow rest',
+    'covering own eyes',
+    'covering crotch',
+    'covering face',
 
     //腿部动作
     'knee up','kneeling',
