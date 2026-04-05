@@ -29,4 +29,6 @@ export const patterns = [
     'splashing',
     'soaking feet',
     'partially underwater shot',
+    'pussy juice puddle',
+    'public nudity',
 ];

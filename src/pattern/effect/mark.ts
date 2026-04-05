@@ -20,7 +20,7 @@ export const patterns = [
     'mosaic censoring',
     'blur censor', 'novelty censor', 'bar censor',
     'sample watermark',
-    'barcode',
+    'barcode','heart censor',
 
     //图案
     'watermark', 'patreon logo',
