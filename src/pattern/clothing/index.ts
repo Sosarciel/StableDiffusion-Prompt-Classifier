@@ -237,4 +237,5 @@ export const patterns = [
     'cheerleader', 'pom pom (cheerleading)', 'pom pom (clothes)',
     'bride', 'gothic',
     'police', 'policewoman',
+    'gothic lolita',
 ]

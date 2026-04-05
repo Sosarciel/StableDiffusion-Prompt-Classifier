@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 
@@ -9,6 +8,7 @@ export const patterns = [
     'on bed', 'on chair',
     'on floor', 'on desk',
     'on table',
+    'on couch',
 
     'sitting on desk',
     'sitting on table',
