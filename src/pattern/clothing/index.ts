@@ -101,6 +101,7 @@ export const patterns = [
     'plunging neckline',
     'jacket on shoulders',
     'tube top',
+    'undershirt', 'lapels',
 
     //臀部服饰
     'hip vent',
@@ -154,6 +155,7 @@ export const patterns = [
     'armband',
     'handcuffs',
     'arm strap',
+    'arm warmers',
 
     //腿部
     desc('legwear'),
@@ -207,6 +209,7 @@ export const patterns = [
     'pocket watch',
     'pentagram',
     'diagonal stripes',
+    'wristwatch',
 
     //穿着风格
     /^.+ cutout$/,
@@ -222,6 +225,7 @@ export const patterns = [
     'side slit',
     'unbuttoned',
     'wedgie',
+    'partially unbuttoned',
 
     //风格套装
     'playboy bunny',
@@ -238,4 +242,5 @@ export const patterns = [
     'bride', 'gothic',
     'police', 'policewoman',
     'gothic lolita',
+    'office lady',
 ]

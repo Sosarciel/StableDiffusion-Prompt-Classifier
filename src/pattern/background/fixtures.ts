@@ -8,8 +8,12 @@ export const patterns = [
     'checkered floor',
     'rug',
 
+    //墙壁
+    'brick wall', 'wall',
+
     'railing',
     'window',
+    'blinds',
     'campfire',
     'fireplace',
     'curtains',

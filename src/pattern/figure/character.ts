@@ -30,5 +30,6 @@ export const patterns = [
     'shenhe (genshin impact)', 'fu hua',
     'roxy migurdia', 'trainer (umamusume)',
     'meisho doto (umamusume)',
+    'miorine rembran',
 ];
 

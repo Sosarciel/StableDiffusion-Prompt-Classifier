@@ -24,5 +24,6 @@ export const patterns = [
     'shoe soles', 'zouri', 'geta','toeless legwear','uwabaki',
     'flats',
     'flip-flops',
+    'pumps',
 ]
 

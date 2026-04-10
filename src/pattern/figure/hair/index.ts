@@ -58,7 +58,7 @@ export const patterns = [
     'alternate hairstyle',
 
     //其他
-    'sidelocks', 'ahoge',
+    'sidelocks', 'ahoge', 'huge ahoge',
     'curvy',
     'eyebrows hidden by hair',
     'short hair with long locks',
