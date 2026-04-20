@@ -65,6 +65,8 @@ export const patterns = [
     'covering own eyes',
     'covering crotch',
     'covering face',
+    'covering breasts',
+    'nude cover',
 
     //腿部动作
     'knee up','kneeling',

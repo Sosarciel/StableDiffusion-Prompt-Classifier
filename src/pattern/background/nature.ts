@@ -38,6 +38,8 @@ export const patterns = [
     'scenery',
     'beach', 'sand',
     'shallow water', 'puddle','vines',
+    'mountainous horizon',
+    'shore', 'waves',
 ]
 
 

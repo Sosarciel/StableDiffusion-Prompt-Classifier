@@ -31,5 +31,9 @@ export const patterns = [
     'roxy migurdia', 'trainer (umamusume)',
     'meisho doto (umamusume)',
     'miorine rembran',
+    'artoria pendragon (fate)',
+    'saber',
+    'nishikigi chisato',
+    'inoue takina',
 ];
 

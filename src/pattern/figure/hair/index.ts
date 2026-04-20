@@ -18,6 +18,7 @@ export const patterns = [
     //发髻
     'double bun', 'hair bun', 'single hair bun',
     'bun cover',
+    'braided bun',
 
     //发型位置关系
     'hair over one eye',

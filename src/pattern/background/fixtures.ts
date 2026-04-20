@@ -7,6 +7,7 @@ export const patterns = [
     'tile floor',
     'checkered floor',
     'rug',
+    'stone floor',
 
     //墙壁
     'brick wall', 'wall',

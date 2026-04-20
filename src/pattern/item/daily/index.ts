@@ -1,4 +1,3 @@
-import { format } from 'PatternUtils';
 
 
 /** 生活用品/工具 */
@@ -12,4 +11,6 @@ export const patterns = [
     'harp', 'instrument','flute','recorder',
     'torch','shower head',
     'blanket', 'crime prevention buzzer',
+    'bucket', 'wooden bucket',
+    'soap',
 ]

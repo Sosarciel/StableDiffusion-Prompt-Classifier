@@ -102,6 +102,7 @@ export const patterns = [
     'jacket on shoulders',
     'tube top',
     'undershirt', 'lapels',
+    'breast pocket',
 
     //臀部服饰
     'hip vent',
@@ -141,6 +142,7 @@ export const patterns = [
     'thong','crotch rope',
     'sarashi', 'chest sarashi',
     'bandeau',
+    'naked towel',
 
     //手部
     desc('gauntlets'),
@@ -210,6 +212,7 @@ export const patterns = [
     'pentagram',
     'diagonal stripes',
     'wristwatch',
+    'pocket',
 
     //穿着风格
     /^.+ cutout$/,

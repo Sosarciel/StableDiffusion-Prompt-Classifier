@@ -31,4 +31,5 @@ export const patterns = [
     'partially underwater shot',
     'pussy juice puddle',
     'public nudity',
+    'foam',
 ];

@@ -50,6 +50,7 @@ export const patterns = [
     'graveyard',
     'castle',
     'alley',
+    'onsen',
 
     //特殊环境/特效背景
     'explosion',
