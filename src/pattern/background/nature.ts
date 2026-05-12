@@ -40,6 +40,7 @@ export const patterns = [
     'shallow water', 'puddle','vines',
     'mountainous horizon',
     'shore', 'waves',
+    'spring (season)', 'dappled sunlight',
 ]
 
 

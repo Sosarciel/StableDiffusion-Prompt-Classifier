@@ -1,4 +1,4 @@
-import { colorDesc, format } from 'PatternUtils';
+import { colorDesc } from 'PatternUtils';
 
 
 /** 小动物/生物/活动物体 */
@@ -14,5 +14,8 @@ export const patterns = [
     'fish', 'bird', 'dragon',
     'eastern dragon', 'starfish', 'hibiscus',
     'pokemon (creature)',
+    'snake',
+    'white snake',
+    'oversized animal',
 ]
 

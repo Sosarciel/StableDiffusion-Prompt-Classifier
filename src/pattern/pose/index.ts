@@ -25,6 +25,7 @@ export const patterns = [
     //位置
     'in box', 'in container',
     'peeking out',
+    'in tree', 'sitting in tree',
 
     //手部动作
     'hand up',
@@ -78,6 +79,7 @@ export const patterns = [
     'legs apart',
     'standing on one leg',
     'seiza',
+    'legs together', 'convenient leg',
 
     //脚部动作
     'plantar flexion','feet up',

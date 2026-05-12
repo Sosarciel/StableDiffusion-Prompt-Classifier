@@ -9,7 +9,7 @@ export const patterns = [
     'zoom layer',
     'heart',
     'clothes writing',
-    'shiny', 'shadow', 'viewfinder',
+    'shiny', 'shadow', 'viewfinder', 'shade',
     'dutch angle', 'science fiction','logo', 'steam',
     'dated', 'sparkle', 'reflection', 'light particles',
     'glowing', 'magic', 'floating object',

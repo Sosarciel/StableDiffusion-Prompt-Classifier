@@ -33,7 +33,8 @@ export const patterns = [
     'wolf ears', 'animal ear fluff', 'animal ears', 'pointy ears',
     'extra ears',  'fox ears', 'rabbit ears', 'mouse ears', 'cat ears', 'dog ears', 'horse ears',
     'horns', 'demon horns', 'curled horns', 'dragon horns','antlers',
-    'halo',  'hair tie', 'bald',
+    'halo',  'hair tie', 'bald',  'oni horns', 'single horn', 'skin-covered horns',
+    'facial mark', 'forehead mark',
 
     //背部
     'wings', 'demon wings', 'black wings', 'bat wings', 'mini wings',
@@ -51,13 +52,14 @@ export const patterns = [
     'mole under mouth',
     'sharp teeth',
     'dot nose',
+    'forked tongue',
 
     //风格
-    'loli', 'demon girl', 'wolf girl', 'aged down', 'shark girl',
+    'loli', 'demon girl', 'wolf girl', 'aged down', 'shark girl', 'oni', 'monster girl',
     'rabbit girl', 'fox girl', 'cat girl', 'dragon girl', 'dog girl', 'horse girl',
     'kyuubi',
     'cosplay','kitsune',
-    'kemonomimi mode', 'werewolf',
+    'kemonomimi mode', 'werewolf', 'elf',
     'petite',
     'muscular male', 'manly',
     'abs', 'muscular', 'facial', 'pectorals','plump',

@@ -19,5 +19,9 @@ export const patterns = [
     'extra eyes',
     'mole under eye',
     'slit pupils',
-    'thick eyebrows', 'short eyebrows'
+    'glowing eyes',
+
+    'eyeliner', 'eyeshadow',
+    'thick eyebrows', 'short eyebrows',
+    'hikimayu',
 ];

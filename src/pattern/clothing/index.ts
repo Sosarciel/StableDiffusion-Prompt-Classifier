@@ -12,6 +12,7 @@ export const patterns = [
     'tiara', 'maid headdress',
     'hairpin', 'mini crown',
     'headdress',
+    'headpiece',
 
     //帽子
     desc('hat'), desc('cape'), desc('cap'),
@@ -60,6 +61,7 @@ export const patterns = [
     'loincloth',
     'leash',
     'belt pouch',
+    'red sash',
 
     //上身服饰
     desc('clothes'),
@@ -103,6 +105,7 @@ export const patterns = [
     'tube top',
     'undershirt', 'lapels',
     'breast pocket',
+    'sleeves past fingers',
 
     //臀部服饰
     'hip vent',
@@ -213,6 +216,7 @@ export const patterns = [
     'diagonal stripes',
     'wristwatch',
     'pocket',
+    'obijime',
 
     //穿着风格
     /^.+ cutout$/,
@@ -229,6 +233,7 @@ export const patterns = [
     'unbuttoned',
     'wedgie',
     'partially unbuttoned',
+    'meme attire',
 
     //风格套装
     'playboy bunny',

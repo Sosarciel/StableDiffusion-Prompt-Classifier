@@ -57,6 +57,7 @@ export const patterns = [
     'hime cut',
     'half updo',
     'alternate hairstyle',
+    'snake hair',
 
     //其他
     'sidelocks', 'ahoge', 'huge ahoge',

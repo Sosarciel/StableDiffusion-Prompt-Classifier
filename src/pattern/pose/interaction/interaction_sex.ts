@@ -30,6 +30,7 @@ export const patterns = [
     'spitroast',
     'suspension',
     'irrumatio',
+    'bestiality',
 
     'handjob', 'double handjob', 'gloved handjob',
     'two-handed handjob', 'nursing handjob',
