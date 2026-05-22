@@ -19,4 +19,6 @@ export const patterns = [
 
     'instant loss',
     '2koma',
+
+    'walk-in',
 ];

@@ -32,4 +32,5 @@ export const patterns = [
     'pussy juice puddle',
     'public nudity',
     'foam',
+    'caught',
 ];

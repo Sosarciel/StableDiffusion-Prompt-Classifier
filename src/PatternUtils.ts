@@ -74,7 +74,7 @@ export function strictDesc(str:string):PatternTable{
 const color = [
     "orange","blonde","pink","purple","blue","red","grey","black","white","green", "brown","yellow","aqua",
     "light blue","light purple",
-    "multicolored","gradient","light brown",
+    "multicolored","gradient","light brown","light green",
     "dark blue"
 ] as const;
 /**颜色描述  

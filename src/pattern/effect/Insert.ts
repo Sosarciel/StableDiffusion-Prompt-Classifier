@@ -4,5 +4,5 @@
 export const patterns = [
     'speech bubble','^^^','spoken heart','tally',
     'inset', 'picture (object)',
-    'thought bubble',
+    'thought bubble', 'notice lines',
 ];

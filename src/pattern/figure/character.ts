@@ -33,7 +33,7 @@ export const patterns = [
     'miorine rembran',
     'artoria pendragon (fate)',
     'saber',
-    'nishikigi chisato',
-    'inoue takina',
+    'nishikigi chisato','inoue takina',
+    "kal'tsit (arknights)",
 ];
 
