@@ -42,6 +42,9 @@ export const patterns = [
     'armpit crease',
     'between breasts',
     'cleavage',
+    'bursting breasts',
+    'underbust',
+    'low neckline',
 
     //腿部
     'legs', 'kneepits', 'between legs',

@@ -107,6 +107,7 @@ export const patterns = [
     'breast pocket',
     'sleeves past fingers',
     'chemise',
+    'wardrobe malfunction',
 
     //臀部服饰
     'hip vent',

@@ -1,4 +1,4 @@
-import { colorDesc, desc, format, lengthDesc, sizeDesc } from 'PatternUtils';
+import { sizeDesc } from 'PatternUtils';
 
 
 
