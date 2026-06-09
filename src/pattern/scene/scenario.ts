@@ -17,6 +17,7 @@ export const patterns = [
     "public use",
     "chikan", "hetero", "femdom", "yuri",
     "clothed female nude male",
+    'clothed male nude female',
     "clothed sex",
     "mind control",
     "hypnosis",

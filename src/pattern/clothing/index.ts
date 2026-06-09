@@ -23,6 +23,7 @@ export const patterns = [
     'hat feather',
     'deerstalker',
     'hat ornament',
+    'towel on head',
 
     //面部
     desc('mask'), /^mask .+$/,
@@ -108,6 +109,9 @@ export const patterns = [
     'sleeves past fingers',
     'chemise',
     'wardrobe malfunction',
+    'bathrobe',
+    'robe',
+    'wet towel',
 
     //臀部服饰
     'hip vent',

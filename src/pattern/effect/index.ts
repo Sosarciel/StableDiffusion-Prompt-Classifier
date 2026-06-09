@@ -20,4 +20,5 @@ export const patterns = [
     'ripples',
     '绘图', '均匀',
     'sound effects',
+    'toned',
 ];
