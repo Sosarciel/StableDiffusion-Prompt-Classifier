@@ -1,0 +1,5 @@
+r:<lora
+r:^st
+1girl, r:eye, c:eye, r:pupils
+r:breasts, c:breasts
+c:hair
