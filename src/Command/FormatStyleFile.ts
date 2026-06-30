@@ -73,7 +73,7 @@ export const CmdFormatStyleFile = (program: Command) => program
         // 5. 写回原文件
         const finalTxt = updatedStyleBlocks.join('\n');
         //console.log(finalTxt)
-        await fs.promises.writeFile(file, `${finalTxt.trim()}\n`, 'utf-8');
+        await fs.promises.writeFile(file, finalTxt.trim(), 'utf-8');
 
         console.log(`>> 成功格式化并写回文件: ${file}`);
     });
