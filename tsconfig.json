@@ -8,6 +8,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "skipLibCheck": true,
+    "types": ["node"],
     "paths": {
 			"PatternUtils"      : ["./src/PatternUtils"],
 			"@/src/*"           : ["./src/*"],
