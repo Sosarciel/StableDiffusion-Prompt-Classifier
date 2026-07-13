@@ -1,4 +1,4 @@
-import { pipe, SLogger, throwError } from '@zwa73/utils';
+import { SLogger, throwError } from '@zwa73/utils';
 import { getPatternCategoryMap, PatternObject } from './PatternObject';
 
 
@@ -50,12 +50,21 @@ export async function classificationPrompt(...prompts:string[]){
 }
 
 /**获取测试函数
- * @param category 类别
+ * @param category 类别 或 正则 `/{string}/`
  * @returns 测试函数
  */
 export async function getTestFunc(...category:string[]) {
+
+    const regexList:RegExp[] = [];
+    const fixedCate = category.filter(v=>{
+        const notRegex = !v.startsWith("/")&&!v.endsWith("/");
+        if(notRegex) return true;
+        regexList.push(new RegExp(v.slice(1,-1)));
+        return false;
+    });
+
     //去除类别
-    const nmap = await Promise.all(category.map(async cate=>{
+    const nmap = await Promise.all(fixedCate.map(async cate=>{
         const rs = await PatternObject.create(cate);
         if(rs==undefined) throwError(`未找到类别:${cate}`);
         return rs;
@@ -65,6 +74,9 @@ export async function getTestFunc(...category:string[]) {
     const filterincs = nmap.map(v=>v.subcategory()).flat();
 
     const fullPatterns = nmap.filter(v=>!filterincs.includes(v.name));
+
+    if(regexList.length>0)
+        return (s:string)=>regexList.some(re=>re.test(s)) || fullPatterns.some(r=>r.autotest(s));
 
     return (s:string)=>fullPatterns.some(r=>r.autotest(s));
 }
