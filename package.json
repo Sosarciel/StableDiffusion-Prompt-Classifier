@@ -18,7 +18,7 @@
         "Prompt-Classifier": "bin/cli"
     },
     "devDependencies": {
-        "@types/node": "^22.13.9"
+        "@types/node": "^22.20.1"
     },
     "dependencies": {
         "@zwa73/js-utils": "^1.0.86",
