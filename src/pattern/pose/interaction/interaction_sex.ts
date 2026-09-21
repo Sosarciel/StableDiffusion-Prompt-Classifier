@@ -36,7 +36,7 @@ export const patterns = [
     'two-handed handjob', 'nursing handjob',
 
     //自慰
-    'molestation', 'groping',
+    'molestation', 'groping', 'self fondle',
     'female masturbation', 'masturbation', "male masturbation",
     'anal fingering', 'crotch rub',
     'clothed masturbation',
